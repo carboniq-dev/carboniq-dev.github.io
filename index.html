@@ -4,10 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <link rel="icon" href="site/assets/images/favicon.png" />
-    <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.7" />
+    <link rel="next" href="use-cases/" />
 
-    <title>SnapCentral</title>
+    <link rel="icon" href="site/assets/images/favicon.png" />
+    <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8" />
+
+    <title>Snap Central - Documentation</title>
 
     <link
       rel="stylesheet"
@@ -26,6 +28,8 @@
       }
     </style>
 
+    <link rel="stylesheet" href="stylesheets/extra.css" />
+
     <script>
       (__md_scope = new URL(".", location)),
         (__md_hash = (e) =>
@@ -38,6 +42,42 @@
           } catch (e) {}
         });
     </script>
+
+    <link href="site/assets/stylesheets/glightbox.min.css" rel="stylesheet" />
+    <style>
+      html.glightbox-open {
+        overflow: initial;
+        height: 100%;
+      }
+      .gslide-title {
+        margin-top: 0px;
+        user-select: text;
+      }
+      .gslide-desc {
+        color: #666;
+        user-select: text;
+      }
+      .gslide-image img {
+        background: white;
+      }
+
+      .gscrollbar-fixer {
+        padding-right: 15px;
+      }
+      .gdesc-inner {
+        font-size: 0.75rem;
+      }
+      body[data-md-color-scheme="slate"] .gdesc-inner {
+        background: var(--md-default-bg-color);
+      }
+      body[data-md-color-scheme="slate"] .gslide-title {
+        color: var(--md-default-fg-color);
+      }
+      body[data-md-color-scheme="slate"] .gslide-desc {
+        color: var(--md-default-fg-color);
+      }
+    </style>
+    <script src="site/assets/javascripts/glightbox.min.js"></script>
   </head>
 
   <body dir="ltr">
@@ -67,7 +107,7 @@
     />
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      <a href="#welcome-to-mkdocs" class="md-skip"> Skip to content </a>
+      <a href="#introduction" class="md-skip"> Skip to content </a>
     </div>
     <div data-md-component="announce"></div>
 
@@ -75,9 +115,9 @@
       <nav class="md-header__inner md-grid" aria-label="Header">
         <a
           href="."
-          title="SnapCentral"
+          title="Snap Central - Documentation"
           class="md-header__button md-logo"
-          aria-label="SnapCentral"
+          aria-label="Snap Central - Documentation"
           data-md-component="logo"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -94,15 +134,13 @@
         <div class="md-header__title" data-md-component="header-title">
           <div class="md-header__ellipsis">
             <div class="md-header__topic">
-              <span class="md-ellipsis"> SnapCentral </span>
+              <span class="md-ellipsis"> Snap Central - Documentation </span>
             </div>
             <div class="md-header__topic" data-md-component="header-topic">
-              <span class="md-ellipsis"> Welcome to MkDocs </span>
+              <span class="md-ellipsis"> Introduction </span>
             </div>
           </div>
         </div>
-
-        <form class="md-header__option" data-md-component="palette"></form>
 
         <label class="md-header__button md-icon" for="__search">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -141,6 +179,23 @@
                 </svg>
               </label>
               <nav class="md-search__options" aria-label="Search">
+                <a
+                  href="javascript:void(0)"
+                  class="md-search__icon md-icon"
+                  title="Share"
+                  aria-label="Share"
+                  data-clipboard
+                  data-clipboard-text=""
+                  data-md-component="search-share"
+                  tabindex="-1"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"
+                    />
+                  </svg>
+                </a>
+
                 <button
                   type="reset"
                   class="md-search__icon md-icon"
@@ -155,6 +210,11 @@
                   </svg>
                 </button>
               </nav>
+
+              <div
+                class="md-search__suggest"
+                data-md-component="search-suggest"
+              ></div>
             </form>
             <div class="md-search__output">
               <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -180,16 +240,16 @@
             <div class="md-sidebar__scrollwrap">
               <div class="md-sidebar__inner">
                 <nav
-                  class="md-nav md-nav--primary"
+                  class="md-nav md-nav--primary md-nav--integrated"
                   aria-label="Navigation"
                   data-md-level="0"
                 >
                   <label class="md-nav__title" for="__drawer">
                     <a
                       href="."
-                      title="SnapCentral"
+                      title="Snap Central - Documentation"
                       class="md-nav__button md-logo"
-                      aria-label="SnapCentral"
+                      aria-label="Snap Central - Documentation"
                       data-md-component="logo"
                     >
                       <svg
@@ -201,7 +261,7 @@
                         />
                       </svg>
                     </a>
-                    SnapCentral
+                    Snap Central - Documentation
                   </label>
 
                   <ul class="md-nav__list" data-md-scrollfix>
@@ -212,79 +272,90 @@
                         id="__toc"
                       />
 
+                      <a href="." class="md-nav__link md-nav__link--active">
+                        Introduction
+                      </a>
+                    </li>
+
+                    <li class="md-nav__item">
+                      <a href="use-cases/" class="md-nav__link">
+                        Possible Use Cases
+                      </a>
+                    </li>
+
+                    <li class="md-nav__item">
+                      <a href="setup/" class="md-nav__link"> Setup </a>
+                    </li>
+
+                    <li class="md-nav__item">
+                      <a href="the-grid/" class="md-nav__link">
+                        The Grid Actor
+                      </a>
+                    </li>
+
+                    <li
+                      class="md-nav__item md-nav__item--section md-nav__item--nested"
+                    >
+                      <input
+                        class="md-nav__toggle md-toggle md-toggle--indeterminate"
+                        type="checkbox"
+                        id="__nav_5"
+                      />
+
                       <label
-                        class="md-nav__link md-nav__link--active"
-                        for="__toc"
+                        class="md-nav__link"
+                        for="__nav_5"
+                        id="__nav_5_label"
+                        tabindex="0"
                       >
-                        Welcome to MkDocs
+                        The Function
                         <span class="md-nav__icon md-icon"></span>
                       </label>
 
-                      <a href="." class="md-nav__link md-nav__link--active">
-                        Welcome to MkDocs
-                      </a>
-
                       <nav
-                        class="md-nav md-nav--secondary"
-                        aria-label="Table of contents"
+                        class="md-nav"
+                        data-md-level="1"
+                        aria-labelledby="__nav_5_label"
+                        aria-expanded="false"
                       >
-                        <label class="md-nav__title" for="__toc">
+                        <label class="md-nav__title" for="__nav_5">
                           <span class="md-nav__icon md-icon"></span>
-                          Table of contents
+                          The Function
                         </label>
-                        <ul
-                          class="md-nav__list"
-                          data-md-component="toc"
-                          data-md-scrollfix
-                        >
+                        <ul class="md-nav__list" data-md-scrollfix>
                           <li class="md-nav__item">
-                            <a href="#commands" class="md-nav__link">
-                              Commands
+                            <a href="usage/" class="md-nav__link">
+                              Basic Usage
                             </a>
                           </li>
 
                           <li class="md-nav__item">
-                            <a href="#project-layout" class="md-nav__link">
-                              Project layout
+                            <a href="example/" class="md-nav__link">
+                              Example
+                            </a>
+                          </li>
+
+                          <li class="md-nav__item">
+                            <a href="input-parameters/" class="md-nav__link">
+                              Input Parameters
+                            </a>
+                          </li>
+
+                          <li class="md-nav__item">
+                            <a href="output-parameters/" class="md-nav__link">
+                              Output Parameters
                             </a>
                           </li>
                         </ul>
                       </nav>
                     </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
 
-          <div
-            class="md-sidebar md-sidebar--secondary"
-            data-md-component="sidebar"
-            data-md-type="toc"
-          >
-            <div class="md-sidebar__scrollwrap">
-              <div class="md-sidebar__inner">
-                <nav
-                  class="md-nav md-nav--secondary"
-                  aria-label="Table of contents"
-                >
-                  <label class="md-nav__title" for="__toc">
-                    <span class="md-nav__icon md-icon"></span>
-                    Table of contents
-                  </label>
-                  <ul
-                    class="md-nav__list"
-                    data-md-component="toc"
-                    data-md-scrollfix
-                  >
                     <li class="md-nav__item">
-                      <a href="#commands" class="md-nav__link"> Commands </a>
+                      <a href="faq/" class="md-nav__link"> FAQ </a>
                     </li>
 
                     <li class="md-nav__item">
-                      <a href="#project-layout" class="md-nav__link">
-                        Project layout
-                      </a>
+                      <a href="epilogue/" class="md-nav__link"> Epilogue </a>
                     </li>
                   </ul>
                 </nav>
@@ -294,49 +365,81 @@
 
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
-              <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
+              <div class="admonition info">
+                <p class="admonition-title">Info</p>
+                <p>
+                  Although the documentation is already available, the plugin is
+                  currently undergoing the Unreal review process.
+                </p>
+              </div>
+              <h1 id="introduction">
+                Introduction<a
+                  class="headerlink"
+                  href="#introduction"
+                  title="Permanent link"
+                  >&para;</a
+                >
+              </h1>
+              <!-- # CarbonIQ -->
+
               <p>
-                For full documentation visit
-                <a href="https://www.mkdocs.org">mkdocs.org</a>.
+                Welcome to the documentation for <strong>Snap Central</strong>,
+                an Unreal Engine 5 plugin designed for
+                <mark>runtime usage</mark> that provides a versatile and
+                efficient solution for managing a precise 3D snapping system
+                that spans across the entire world, ensuring
+                <mark>high performance</mark>.
               </p>
-              <h2 id="commands">Commands</h2>
-              <ul>
-                <li>
-                  <code>mkdocs new [dir-name]</code> - Create a new project.
-                </li>
-                <li>
-                  <code>mkdocs serve</code> - Start the live-reloading docs
-                  server.
-                </li>
-                <li>
-                  <code>mkdocs build</code> - Build the documentation site.
-                </li>
-                <li><code>mkdocs -h</code> - Print help message and exit.</li>
-              </ul>
-              <h2 id="project-layout">Project layout</h2>
-              <pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+              <p>
+                The plugin's <strong>Central Grid</strong> actor simplifies
+                snapping management by exposing its functionality through a
+                single function, allowing developers to obtain snap locations,
+                UIDs, and other relevant information. This enables easy
+                implementation of custom snapping logic at runtime, making it
+                suitable for games that require dynamic or procedural level
+                design.
+              </p>
+              <p>
+                The visuals provide a clear and intuitive visual representation
+                of the snapping system, simplifying the process for developers.
+              </p>
+              <p>
+                <strong>In summary</strong>, SnapCentral is a useful tool for
+                developers looking to implement a grid snapping system at
+                runtime in their Unreal Engine 5 games. With its straightforward
+                function and optimized performance, the plugin simplifies
+                snapping management with no computational overhead.
+              </p>
             </article>
           </div>
         </div>
       </main>
 
       <footer class="md-footer">
+        <nav class="md-footer__inner md-grid" aria-label="Footer">
+          <a
+            href="use-cases/"
+            class="md-footer__link md-footer__link--next"
+            aria-label="Next: Possible Use Cases"
+            rel="next"
+          >
+            <div class="md-footer__title">
+              <span class="md-footer__direction"> Next </span>
+              <div class="md-ellipsis">Possible Use Cases</div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"
+                />
+              </svg>
+            </div>
+          </a>
+        </nav>
+
         <div class="md-footer-meta md-typeset">
           <div class="md-footer-meta__inner md-grid">
-            <div class="md-copyright">
-              Made with
-              <a
-                href="https://squidfunk.github.io/mkdocs-material/"
-                target="_blank"
-                rel="noopener"
-              >
-                Material for MkDocs
-              </a>
-            </div>
+            <div class="md-copyright"></div>
           </div>
         </div>
       </footer>
@@ -348,7 +451,17 @@ docs/
     <script id="__config" type="application/json">
       {
         "base": ".",
-        "features": [],
+        "features": [
+          "navigation.tracking",
+          "header.autohide",
+          "navigation.instant",
+          "navigation.expand",
+          "search.suggest",
+          "search.share",
+          "navigation.footer",
+          "navigation.sections",
+          "toc.integrate"
+        ],
         "search": "site/assets/javascripts/workers/search.208ed371.min.js",
         "translations": {
           "clipboard.copied": "Copied to clipboard",
@@ -366,5 +479,19 @@ docs/
     </script>
 
     <script src="site/assets/javascripts/bundle.51198bba.min.js"></script>
+
+    <script>
+      document$.subscribe(() => {
+        const lightbox = GLightbox({
+          touchNavigation: true,
+          loop: false,
+          zoomable: true,
+          draggable: true,
+          openEffect: "zoom",
+          closeEffect: "zoom",
+          slideEffect: "slide",
+        });
+      });
+    </script>
   </body>
 </html>
