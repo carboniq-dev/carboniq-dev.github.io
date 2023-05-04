@@ -427,8 +427,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
-        FAQ
+      <a href="../epilogue/" class="md-nav__link">
+        Epilogue
       </a>
     </li>
   
@@ -442,8 +442,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../epilogue/" class="md-nav__link">
-        Epilogue
+      <a href="../faq/" class="md-nav__link">
+        FAQ
       </a>
     </li>
   
@@ -508,13 +508,13 @@
 <td>Specifies the area size of the grid. <strong>Snapping will stay unaffected.</strong></td>
 </tr>
 <tr>
-<td>Grid Height</td>
+<td>Grid Extent</td>
 <td>Float</td>
-<td>Specifies the height of the grid. The greater the landscape elevation, the higher this value should be. <strong>Snapping will stay unaffected.</strong></td>
+<td>Specifies the extent of the grid. The greater the landscape elevation, the higher this value should be. <strong>Snapping will stay unaffected.</strong></td>
 </tr>
 <tr>
 <td>Grid Draw Height Start</td>
-<td>Float</td>
+<td>Int</td>
 <td>Specifies the start height from where the grid will be drawn. <strong>Snapping will stay unaffected.</strong></td>
 </tr>
 <tr>
@@ -524,7 +524,7 @@
 </tr>
 <tr>
 <td>Tile Size</td>
-<td>Float</td>
+<td>Int</td>
 <td>Defines the size of the grid tiles.</td>
 </tr>
 <tr>
@@ -547,22 +547,22 @@
 <tbody>
 <tr>
 <td>Grid Color</td>
-<td>Color</td>
+<td>Linear Color</td>
 <td>Defines the color of the grid.</td>
 </tr>
 <tr>
 <td>Area Color</td>
-<td>Color</td>
+<td>Linear Color</td>
 <td>Defines the color of the area surrounding the tile.</td>
 </tr>
 <tr>
 <td>Selection Color</td>
-<td>Color</td>
+<td>Linear Color</td>
 <td>Defines the color of the selected tile.</td>
 </tr>
 <tr>
 <td>Preview Mesh Color</td>
-<td>Color</td>
+<td>Linear Color</td>
 <td>Defines the color of the preview mesh.</td>
 </tr>
 <tr>
@@ -584,6 +584,11 @@
 <td>Preview Mesh Glow</td>
 <td>Float</td>
 <td>Defines the glow intensity of the preview mesh.</td>
+</tr>
+<tr>
+<td>Preview Mesh Transparency</td>
+<td>Float</td>
+<td>Defines the transparency of the preview mesh.</td>
 </tr>
 <tr>
 <td>Custom Grid Material</td>
@@ -616,7 +621,7 @@
 <tr>
 <td>Enable</td>
 <td>Boolean</td>
-<td>If set to <em>true</em>, audio feedback for selected tiles is enabled.</td>
+<td>If set to <em>true</em>, audio feedback for selected tiles is enabled. The playing of audio is dependent on the settings configured in the <strong>Get Snap Parameter</strong> function.</td>
 </tr>
 <tr>
 <td>Volume Multiplier</td>
@@ -625,7 +630,7 @@
 </tr>
 <tr>
 <td>Custom Cue</td>
-<td>AudioCue</td>
+<td>Sound Cue</td>
 <td>Replaces the audio cue used by the plugin.</td>
 </tr>
 </tbody>
@@ -647,14 +652,14 @@
 <td>Defines the <strong>Target Object</strong> trace distance. This value will be overwritten if <strong>Lock Z-Axis</strong> is set to <em>true</em> on the <strong>GetSnapParameter</strong> function.</td>
 </tr>
 <tr>
-<td>Line Trace Height</td>
+<td>Line Trace Extent</td>
 <td>Float</td>
 <td>Alters the start and end location for the line traces to calculate the z-coordinate to snap to.</td>
 </tr>
 <tr>
 <td>Tile Corner Line Trace Padding</td>
 <td>Float</td>
-<td>Specifies the padding of the corner line traces. It's <mark>important</mark> to <mark>note</mark> that the value should only be intentionally set to zero, as the traces may hit the neighboring tile and cause unwanted side effects.</td>
+<td>Specifies the padding of the corner line traces. It is <mark>crucial</mark> to <mark>note</mark> that the value should only be intentionally set to zero or lower, as traces will hit the neighboring tile and potentially cause undesired side effects. The minimum value, which corresponds to the center location of the tile, is equivalent to half the tile size.</td>
 </tr>
 <tr>
 <td>Drag Height Multiplier</td>
@@ -715,7 +720,7 @@
 <td>If set to <em>true</em>, a debug panel containing the most important information will be displayed in the top-left corner.</td>
 </tr>
 <tr>
-<td>Grid Line Trace Color</td>
+<td>Line Trace Color</td>
 <td>Color</td>
 <td>Defines the color of the line traces.</td>
 </tr>

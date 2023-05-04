@@ -317,9 +317,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Example
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Example
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-grid-actor" class="md-nav__link">
+    Add the Grid Actor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-function" class="md-nav__link">
+    Add the function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hook-up-events" class="md-nav__link">
+    Hook up events
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -368,8 +413,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
-        FAQ
+      <a href="../epilogue/" class="md-nav__link">
+        Epilogue
       </a>
     </li>
   
@@ -383,8 +428,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../epilogue/" class="md-nav__link">
-        Epilogue
+      <a href="../faq/" class="md-nav__link">
+        FAQ
       </a>
     </li>
   
@@ -407,11 +452,16 @@
 
 <h1 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h1>
 <p>The following steps demonstrate one possible setup for using the snap functionality in a game.</p>
+<h2 id="add-the-grid-actor">Add the Grid Actor<a class="headerlink" href="#add-the-grid-actor" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Create a project by selecting the third person template.</li>
 <li>Open the project.</li>
 <li>Go to the Place Actor tab and search for the <strong>Central Grid</strong> actor.</li>
-<li>Drag the actor into your world.</li>
+<li>Drag the actor into your world and set the grid visuals to true.</li>
+</ol>
+<p><a class="glightbox" href="../images/grid-settings-example.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Get Snap Parameters" src="../images/grid-settings-example.PNG" /></a></p>
+<h2 id="add-the-function">Add the function<a class="headerlink" href="#add-the-function" title="Permanent link">&para;</a></h2>
+<ol>
 <li>Open the character blueprint or any other blueprint you wish to place the logic into.</li>
 <li>Create a reference to the <strong>Central Grid</strong> actor.</li>
 <li>Drag out from the actor reference and search for the <strong>Get Snap Parameter</strong> function.</li>
@@ -420,10 +470,13 @@
 <li>Tick all <strong>Snap to</strong> checkboxes.</li>
 <li>Create three boolean variables named <em>Lock X-Axis</em>, <em>Lock Y-Axis</em> and <em>Lock Z-Axis</em> and connect them to the corresponding <strong>Lock</strong> pin.</li>
 <li>Split the output pin and promote the <strong>Snap Location</strong> to a variable.</li>
+</ol>
+<p><a class="glightbox" href="../images/example.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Get Snap Parameters" src="../images/example.PNG" /></a></p>
+<h2 id="hook-up-events">Hook up events<a class="headerlink" href="#hook-up-events" title="Permanent link">&para;</a></h2>
+<ol>
 <li>In this example we use the <em>Left Ctrl</em>, <em>Left Shift</em> and <em>Left Alt</em> key to toggle the boolean variables.</li>
 <li>To use the snap location, simply facilitate the built-in Unreal Engine <em>Spawn Actor</em> function to spawn any actor at the snap location. In this example we use the <em>Left Mouse Button</em> to execute.</li>
 </ol>
-<p><a class="glightbox" href="../images/example.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Get Snap Parameters" src="../images/example.PNG" /></a></p>
 <p><a class="glightbox" href="../images/key-events.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Get Snap Parameters" src="../images/key-events.PNG" /></a></p>
 <p><a class="glightbox" href="../images/spawn-actor.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Get Snap Parameters" src="../images/spawn-actor.PNG" /></a></p>
 

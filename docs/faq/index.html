@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../output-parameters/">
+        <link rel="prev" href="../epilogue/">
       
-      
-        <link rel="next" href="../epilogue/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
@@ -356,6 +354,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../epilogue/" class="md-nav__link">
+        Epilogue
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -371,21 +384,6 @@
         FAQ
       </a>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../epilogue/" class="md-nav__link">
-        Epilogue
-      </a>
     </li>
   
 
@@ -412,11 +410,11 @@
 </ul>
 <p><strong>Why is the snap location jumping when I try to snap underneath an actor like a bridge?</strong></p>
 <ul>
-<li>If this happens, it is likely that the line trace hit the above actor first, causing the plugin to take it as the reference for calculating the snap location. To avoid this issue, you can adjust the <strong>Line Trace Height</strong> property by decreasing its value, or add specific actors that should not be considered to the <strong>Ignore Actors For Line Traces</strong> array. In addition, you can enable debugging visuals to make it easier to spot issues.</li>
+<li>If this happens, it is likely that the line trace hit the above actor first, causing the plugin to take it as the reference for calculating the snap location. To avoid this issue, you can adjust the <strong>Line Trace Extent</strong> property by decreasing its value, or add specific actors that should not be considered to the <strong>Ignore Actors For Line Traces</strong> array. In addition, you can enable debugging visuals to make it easier to spot issues.</li>
 </ul>
 <p><strong>Why is the snap location elevated when I use the plugin on my custom landscape?</strong></p>
 <ul>
-<li>This issue can occur if the scale of the Z-axis doesn't match the original scale. To prevent any displacement issues, it's important to ensure that the scaling values in the software used for creating landscape geometry are accurate. In most cases, export information is displayed that shows the scaling values.</li>
+<li>This issue can occur if the scale of the landscape's Z-axis does not match the original scale. To prevent any displacement issues, it's important to ensure that the scaling values in the software used for creating landscape geometry are accurate. In most cases, export information is displayed that shows the scaling values.</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -428,7 +426,7 @@
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>It's important to note that if you want to reproduce the grid lines, you'll need to take the Tile Size into account. By doing so, you can ensure that the grid lines align properly with the rest of the grid.</p>
+<p>It's important to note that if you want to reproduce the grid lines, you'll need to take the <strong>Tile Size</strong> into account. By doing so, you can ensure that the grid lines align properly with the rest of the grid.</p>
 </div>
 
 
@@ -451,7 +449,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../output-parameters/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Output Parameters" rel="prev">
+          <a href="../epilogue/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Epilogue" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -460,26 +458,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Output Parameters
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../epilogue/" class="md-footer__link md-footer__link--next" aria-label="Next: Epilogue" rel="next">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
                 Epilogue
               </div>
             </div>
-            <div class="md-footer__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
           </a>
+        
         
       </nav>
     
