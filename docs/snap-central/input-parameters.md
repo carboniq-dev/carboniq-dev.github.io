@@ -2,7 +2,7 @@
 
 This section provides an overview of the input parameters available on the exposed **Get Snap Parameters** function.
 
-![Get Snap Parameters](./images/function-default-view.png)
+![Get Snap Parameters](../assets/images/snap-central/function-default-view.png)
 
 ### Parameters
 
@@ -18,7 +18,7 @@ This section provides an overview of the input parameters available on the expos
 
 #### Snap Type
 
-![Snap Type](./images/snap-type.PNG)
+![Snap Type](../assets/images/snap-central/snap-type.PNG)
 
 | Option         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -30,7 +30,7 @@ This section provides an overview of the input parameters available on the expos
 
 #### Snap To
 
-![Snap To](./images/snap-to.png)
+![Snap To](../assets/images/snap-central/snap-to.png)
 
 | Property       | Type    | Description                                          |
 | -------------- | ------- | ---------------------------------------------------- |
@@ -40,7 +40,7 @@ This section provides an overview of the input parameters available on the expos
 
 #### Lock
 
-![Lock](./images/lock-axis.png)
+![Lock](../assets/images/snap-central/lock-axis.png)
 
 | Property    | Type    | Description                                                |
 | ----------- | ------- | ---------------------------------------------------------- |

@@ -16,25 +16,25 @@ theme:
 nav:
   - Plugins: ./index.md
   - Snap Central:
-      - Introduction: ./snap-central.md
-      - Possible Use Cases: ./use-cases.md
-      - Setup: ./setup.md
-      - The Grid Actor: ./the-grid.md
+      - Introduction: ./snap-central/index.md
+      - Possible Use Cases: ./snap-central/use-cases.md
+      - Setup: ./snap-central/setup.md
+      - The Grid Actor: ./snap-central/the-grid.md
       - The Function:
-          - Basic Usage: ./usage.md
-          - Example: ./example.md
-          - Input Parameters: ./input-parameters.md
-          - Output Parameters: ./output-parameters.md
-      - Runtime Controls: ./runtime-controls.md
-      - Epilogue: ./epilogue.md
-      - FAQ: ./faq.md
-      - Changelog: ./changelog.md
+          - Basic Usage: ./snap-central/usage.md
+          - Example: ./snap-central/example.md
+          - Input Parameters: ./snap-central/input-parameters.md
+          - Output Parameters: ./snap-central/output-parameters.md
+      - Runtime Controls: ./snap-central/runtime-controls.md
+      - Epilogue: ./snap-central/epilogue.md
+      - FAQ: ./snap-central/faq.md
+      - Changelog: ./snap-central/changelog.md
   - Trail Blazer:
-     - Introduction: ./trail-blazer.md
-     - Possible Use Cases: ./tb-use-cases.md
-     - The Actor: ./tb-parameters.md
+     - Introduction: ./trail-blazer/index.md
+     - Possible Use Cases: ./trail-blazer/use-cases.md
+     - The Actor: ./trail-blazer/the-actor.md
      - The Function:
-          - Usage: ./tb-usage.md
+          - Usage: ./trail-blazer/usage.md
 plugins:
   - search
   - glightbox

@@ -4,7 +4,7 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 
 ## Grid
 
-![Grid](./images/trail-blazer/grid.PNG)
+![Grid](../assets/images/trail-blazer/grid.PNG)
 
 | Property                 | Type    | Description                                                                                                                                                                   |
 | ------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -16,7 +16,7 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 
 ## Obstacles
 
-![Obstacles](./images/trail-blazer/obstacles.PNG)
+![Obstacles](../assets/images/trail-blazer/obstacles.PNG)
 
 | Property                 | Type    | Description                                                                                                                                                                   |
 | ------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -28,7 +28,7 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 
 ## Tracing
 
-![Tracing](./images/trail-blazer/tracing.PNG)
+![Tracing](../assets/images/trail-blazer/tracing.PNG)
 
 | Property                 | Type    | Description                                                                                                                                                                   |
 | ------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -38,7 +38,7 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 
 ## Debug
 
-![Debug](./images/trail-blazer/debug.PNG)
+![Debug](../assets/images/trail-blazer/debug.PNG)
 
 | Property                 | Type    | Description                                                                                                                                                                   |
 | ------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

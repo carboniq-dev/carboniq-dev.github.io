@@ -6,6 +6,9 @@ There are two ways to use the **Get Snap Parameter** function. Both options basi
 
 The fastest way to get started is to use the built-in debug functionality. Drag the **TrailBlazerGrid_BP** actor into the world, place two actors within the grid and set the following prameter.
 
+!!! Tip
+    Depending on the placement of your **TrailBlazerGrid_BP** actor and obstacle actors, you may need to consider adjusting **Cell Height** property, the **Max Height Above Ground** property, or both if the expected path is not calculated.
+
 ![Quickstart](./images/trail-blazer/quickstart.PNG)
 
 ## Custom
@@ -32,6 +35,6 @@ To quickly visualize the calculated locations, you can use the **Debug Path Loca
 
 ### Example
 
-Here's an example of the pathfinding in action.
+Here's an example of the pathfinding algorithm in action.
 
 ![Get Path Locations](./images/trail-blazer/example.PNG)

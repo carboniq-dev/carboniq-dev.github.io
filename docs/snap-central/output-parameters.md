@@ -4,11 +4,11 @@ This section provides an overview of the ouput parameters available on the expos
 
 _collapsed_
 
-![Get Snap Parameters](./images/out-pin.PNG)
+![Get Snap Parameters](../assets/images/snap-central/out-pin.PNG)
 
 _expanded_
 
-![Get Snap Parameters](./images/output-parameters.png)
+![Get Snap Parameters](../assets/images/snap-central/output-parameters.png)
 
 ### Snap Parameters
 

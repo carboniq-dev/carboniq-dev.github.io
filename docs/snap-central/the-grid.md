@@ -4,7 +4,7 @@ This section provides an overview of the **CentralGrid** actor's properties that
 
 ### Main
 
-![Get Snap Parameters](./images/grid-main.PNG)
+![Get Snap Parameters](../assets/images/snap-central/grid-main.PNG)
 
 | Property                 | Type    | Description                                                                                                                                                                   |
 | ------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -22,7 +22,7 @@ This section provides an overview of the **CentralGrid** actor's properties that
 
 ### Colors & Materials
 
-![Colors & Materials](./images/grid-colors.PNG)
+![Colors & Materials](../assets/images/snap-central/grid-colors.PNG)
 
 | Property                  | Type         | Description                                                                 |
 | ------------------------- | ------------ | --------------------------------------------------------------------------- |
@@ -41,7 +41,7 @@ This section provides an overview of the **CentralGrid** actor's properties that
 
 ### Audio
 
-![Audio](./images/grid-audio.PNG)
+![Audio](../assets/images/snap-central/grid-audio.PNG)
 
 | Property          | Type      | Description                                                                                                                                                          |
 | ----------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -51,7 +51,7 @@ This section provides an overview of the **CentralGrid** actor's properties that
 
 ### Advanced
 
-![Advanced](./images/grid-advanced.PNG)
+![Advanced](../assets/images/snap-central/grid-advanced.PNG)
 
 | Property                       | Type          | Description                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------ | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -64,7 +64,7 @@ This section provides an overview of the **CentralGrid** actor's properties that
 
 ### Debug
 
-![Debug](./images/grid-debug.PNG)
+![Debug](../assets/images/snap-central/grid-debug.PNG)
 
 | Property                     | Type    | Description                                                                                                         |
 | ---------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
