@@ -1,0 +1,49 @@
+site_name: CarbonIQ Plugins (UE)
+dev_addr: 0.0.0.0:8000
+theme:
+  name: material
+  features:
+    - navigation.tracking
+    - header.autohide
+    - navigation.instant
+    - navigation.expand
+    - search.suggest
+    - search.share
+    - navigation.footer
+    - navigation.sections
+    - navigation.tabs
+    - toc.integrate
+nav:
+  - Plugins: ./index.md
+  - Snap Central:
+      - Introduction: ./snap-central.md
+      - Possible Use Cases: ./use-cases.md
+      - Setup: ./setup.md
+      - The Grid Actor: ./the-grid.md
+      - The Function:
+          - Basic Usage: ./usage.md
+          - Example: ./example.md
+          - Input Parameters: ./input-parameters.md
+          - Output Parameters: ./output-parameters.md
+      - Runtime Controls: ./runtime-controls.md
+      - Epilogue: ./epilogue.md
+      - FAQ: ./faq.md
+      - Changelog: ./changelog.md
+  - Trail Blazer:
+     - Introduction: ./trail-blazer.md
+     - Possible Use Cases: ./tb-use-cases.md
+     - The Actor: ./tb-parameters.md
+     - The Function:
+          - Usage: ./tb-usage.md
+plugins:
+  - search
+  - glightbox
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: True
+extra:
+  generator: false
