@@ -9,7 +9,7 @@ The fastest way to get started is to use the built-in debug functionality. Drag 
 !!! Tip
     Depending on the placement of your **TrailBlazerGrid_BP** actor and obstacle actors, you may need to consider adjusting **Cell Height** property, the **Max Height Above Ground** property, or both if the expected path is not calculated.
 
-![Quickstart](./images/trail-blazer/quickstart.PNG)
+![Quickstart](../assets/images/trail-blazer/quickstart.PNG)
 
 ## Custom
 
@@ -19,22 +19,22 @@ To get started with your custom implementation, open the actor you wish to have 
 
 Specify the start and end locations. Keep in mind that the locations must be within the grid.
 
-![Get Path Locations](./images/trail-blazer/custom-setup-1.PNG){ width="800" }
+![Get Path Locations](../assets/images/trail-blazer/custom-setup-1.PNG){ width="800" }
 
 ### With actor references
 
 Specify the start and end actor references. Keep in mind that the actors must be placed within the grid.
 
-![Get Path Locations](./images/trail-blazer/custom-setup-2.PNG){ width="800" }
+![Get Path Locations](../assets/images/trail-blazer/custom-setup-2.PNG){ width="800" }
 
 ### Debug path locations
 
 To quickly visualize the calculated locations, you can use the **Debug Path Location** node.
 
-![Get Path Locations](./images/trail-blazer/debug-path-locations.PNG)
+![Get Path Locations](../assets/images/trail-blazer/debug-path-locations.PNG)
 
 ### Example
 
 Here's an example of the pathfinding algorithm in action.
 
-![Get Path Locations](./images/trail-blazer/example.PNG)
+![Get Path Locations](../assets/images/trail-blazer/example.PNG)
