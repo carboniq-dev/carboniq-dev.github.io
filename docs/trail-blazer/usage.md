@@ -37,8 +37,6 @@ To quickly visualize the calculated locations, you can use the **Debug Path Loca
 
 In this showcase, the calculation is nearly instantaneous and is based on the following parameters.
 
-![Grid](../assets/images/trail-blazer/grid.PNG)
-
 | Property                 | Value    |
 | ------------------------ | ------- |
 | Cell Size| 20 |
