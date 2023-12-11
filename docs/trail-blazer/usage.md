@@ -33,8 +33,21 @@ To quickly visualize the calculated locations, you can use the **Debug Path Loca
 
 ![Get Path Locations](../assets/images/trail-blazer/debug-path-locations.PNG)
 
-### Example
+### Showcase
 
-Here's an example of the pathfinding algorithm in action.
+In this showcase, the calculation is nearly instantaneous and is based on the following parameters.
+
+![Grid](../assets/images/trail-blazer/grid.PNG)
+
+| Property                 | Value    |
+| ------------------------ | ------- |
+| Cell Size| 20 |
+| Cell Height| 100 |
+| Num Columns | 300 |
+| Num Rows | 300 |
+| Include Diagonals | True |
+| Max Height Above Ground | 1.0 |
+| Treat Buffer as Unwalkable | True |
+| Buffer Distance | 2 |
 
 ![Get Path Locations](../assets/images/trail-blazer/example.PNG)

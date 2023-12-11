@@ -13,6 +13,9 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 | Num Columns | Int | Specifies the number of cells vertically across the pathfinding grid, determining the grid's height.                                                                               |
 | Num Rows | Int | Specifies the number of cells horizontally along the pathfinding grid, establishing the grid's width.                                                                                         |
 | Include Diagonals | Boolean   |  Specifies whether the pathfinding algorithm should consider diagonal paths between adjacent grid cells. |
+| Smooth | Boolean   |  When enabled, activates the path smoothing feature, creating more natural and curved trajectories between waypoints in the generated path |
+| Smoothing Interpolation Points | Int   |  Specifies the number of intermediate points used in the smoothing process to create more gradual curves along the path. |
+| Smoothing Angle Threshold | Float   |  Specifies the minimum angle between path segments at which the smoothing algorithm is applied to create smoother turns. |
 
 ## Obstacles
 
