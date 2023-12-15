@@ -12,6 +12,8 @@
         <link rel="prev" href="../the-actor/">
       
       
+        <link rel="next" href="../epilogue/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
     
@@ -661,29 +663,15 @@
     Custom
   </a>
   
-    <nav class="md-nav" aria-label="Custom">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended" class="md-nav__link">
+    Recommended
+  </a>
+  
+    <nav class="md-nav" aria-label="Recommended">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#with-vectors" class="md-nav__link">
-    With vectors
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#with-actor-references" class="md-nav__link">
-    With actor references
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debug-path-locations" class="md-nav__link">
-    Debug path locations
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#showcase" class="md-nav__link">
@@ -713,6 +701,34 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../epilogue/" class="md-nav__link">
+        Epilog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -735,25 +751,19 @@
 
 
 <h1 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h1>
-<p>There are two ways to use the <strong>Get Snap Parameter</strong> function. Both options basically do the same with one exception.</p>
 <h2 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h2>
-<p>The fastest way to get started is to use the built-in debug functionality. Drag the <strong>TrailBlazerGrid_BP</strong> actor into the world, place two actors within the grid and set the following prameter.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Depending on the placement of your <strong>TrailBlazerGrid_BP</strong> actor and obstacle actors, you may need to consider adjusting <strong>Cell Height</strong> property, the <strong>Max Height Above Ground</strong> property, or both if the expected path is not calculated.</p>
-</div>
+<p>The fastest way to get started is to use the built-in debug functionality. Drag the <strong>TrailBlazerGrid_BP</strong> actor into the world, place two actors within the grid and set the following parameters. Alternatively you can set the start and end location.</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/quickstart.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Quickstart" src="../../assets/images/trail-blazer/quickstart.PNG" /></a></p>
 <h2 id="custom">Custom<a class="headerlink" href="#custom" title="Permanent link">&para;</a></h2>
-<p>To get started with your custom implementation, open the actor you wish to have control over the pathfinding feature. Get a reference to the <strong>TrailBlazerGrid_BP</strong> previously placed in the world. Drag out from the output pin and search for the <strong>Get Path Locations</strong> function.</p>
-<h3 id="with-vectors">With vectors<a class="headerlink" href="#with-vectors" title="Permanent link">&para;</a></h3>
-<p>Specify the start and end locations. Keep in mind that the locations must be within the grid.</p>
+<p>To get started with your custom implementation, open the actor you wish to have control over the pathfinding feature. Obtain a reference to the <strong>TrailBlazerGrid_BP</strong> previously placed in the world. Drag out from the output pin and bind the <strong>On Path Calculated</strong> event. Afterward, drag out again and search for the <strong>Find Path Async</strong> function.
+Specify the start and end locations. Please note that the locations must be within the grid. Now, connect the nodes as illustrated below.</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/custom-setup-1.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Get Path Locations" src="../../assets/images/trail-blazer/custom-setup-1.PNG" width="800" /></a></p>
-<h3 id="with-actor-references">With actor references<a class="headerlink" href="#with-actor-references" title="Permanent link">&para;</a></h3>
-<p>Specify the start and end actor references. Keep in mind that the actors must be placed within the grid.</p>
-<p><a class="glightbox" href="../../assets/images/trail-blazer/custom-setup-2.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Get Path Locations" src="../../assets/images/trail-blazer/custom-setup-2.PNG" width="800" /></a></p>
-<h3 id="debug-path-locations">Debug path locations<a class="headerlink" href="#debug-path-locations" title="Permanent link">&para;</a></h3>
-<p>To quickly visualize the calculated locations, you can use the <strong>Debug Path Location</strong> node.</p>
-<p><a class="glightbox" href="../../assets/images/trail-blazer/debug-path-locations.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Get Path Locations" src="../../assets/images/trail-blazer/debug-path-locations.PNG" /></a></p>
+<h2 id="recommended">Recommended<a class="headerlink" href="#recommended" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Fine-tune the grid size and cell size based on your environment’s scale and complexity.</li>
+<li>Use appropriate heuristic calculations based on your game’s requirements.</li>
+<li>Regularly profile and monitor performance, especially in larger or more complex environments.</li>
+</ul>
 <h3 id="showcase">Showcase<a class="headerlink" href="#showcase" title="Permanent link">&para;</a></h3>
 <p>In this showcase, the calculation is nearly instantaneous and is based on the following parameters.</p>
 <table>
@@ -769,10 +779,6 @@
 <td>20</td>
 </tr>
 <tr>
-<td>Cell Height</td>
-<td>100</td>
-</tr>
-<tr>
 <td>Num Columns</td>
 <td>300</td>
 </tr>
@@ -785,11 +791,7 @@
 <td>True</td>
 </tr>
 <tr>
-<td>Max Height Above Ground</td>
-<td>1.0</td>
-</tr>
-<tr>
-<td>Treat Buffer as Unwalkable</td>
+<td>Add Cell Buffer</td>
 <td>True</td>
 </tr>
 <tr>
@@ -834,6 +836,21 @@
             </div>
           </a>
         
+        
+          
+          <a href="../epilogue/" class="md-footer__link md-footer__link--next" aria-label="Next: Epilog" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Epilog
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     

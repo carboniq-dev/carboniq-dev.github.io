@@ -6,54 +6,67 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 
 ![Grid](../assets/images/trail-blazer/grid.PNG)
 
-| Property                 | Type    | Description                                                                                                                                                                   |
-| ------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Cell Size | Float | Defines the dimensions of each individual cell within the grid used for pathfinding .                                                                                                       |
-| Cell Height | Float |  Sets the starting height on the Z-axis from which the plugin begins its vertical detection of obstacles and terrain features within the grid.
-| Num Columns | Int | Specifies the number of cells vertically across the pathfinding grid, determining the grid's height.                                                                               |
-| Num Rows | Int | Specifies the number of cells horizontally along the pathfinding grid, establishing the grid's width.                                                                                         |
-| Include Diagonals | Boolean   |  Specifies whether the pathfinding algorithm should consider diagonal paths between adjacent grid cells. |
-| Smooth | Boolean   |  When enabled, activates the path smoothing feature, creating more natural and curved trajectories between waypoints in the generated path |
-| Smoothing Interpolation Points | Int   |  Specifies the number of intermediate points used in the smoothing process to create more gradual curves along the path. |
-| Smoothing Angle Threshold | Float   |  Specifies the minimum angle between path segments at which the smoothing algorithm is applied to create smoother turns. |
+| Property                             | Type                             | Description                                                                                                                        |
+| ------------------------------------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Cell Size                            | Float                            | Defines the dimensions of each individual cell within the grid used for pathfinding.                                             |
+| Num Columns                          | Integer                          | Specifies the number of columns in the grid. Increasing this value expands the grid horizontally.                                 |
+| Num Rows                             | Integer                          | Determines the number of rows in the grid. Increasing this value expands the grid vertically.                                     |
+| Heuristic Type                       | Enumeration                      | Selects the type of heuristic algorithm used for calculating the pathfinding cost. Different heuristics can affect the efficiency and path quality. |
+| Euclidean Weight                     | Float                            | Applies a weight to the Euclidean distance in the pathfinding calculation, influencing how straight or direct paths are.           |
+| Include Diagonals                    | Boolean                          | Allows the pathfinding algorithm to consider diagonal movements, potentially creating more direct paths.                          |
+| Add Cell Buffer                      | Boolean                          | Enables a buffer zone around each cell, marking nearby cells as unwalkable to create a safer path.                                 |
+| Buffer Distance                      | Integer                          | Sets the size of the buffer zone around obstacles, defined as the number of cells. Larger values increase the clearance around obstacles. |
+| Smooth Turns                         | Boolean                          | Activates path smoothing to reduce sharp turns, making movement along the path more natural.                                    |
+| Smoothing Interpolation Points       | Integer                          | Determines the number of points used to smooth out turns along the path. Higher values result in smoother paths but may affect performance. |
+| Smoothing Angle Threshold            | Float                            | Sets the angle threshold for smoothing. Turns sharper than this angle will be smoothed out.                                      |
+
+## Heuristic Types
+
+![Heuristic](../assets/images/trail-blazer/heuristic.PNG)
+
+| Type                              | Description                                                                                                                                        |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Euclidean Distance                | Measures the straight-line distance between two points in the grid. This is the most direct and shortest path but may not always be the most efficient in terms of path cost or real-world navigation. |
+| Weighted Euclidean Distance       | Similar to Euclidean, but with a weight multiplier applied. This emphasizes straight-line paths, making them more favorable in the pathfinding calculation, often leading to more direct routes. |
+| Manhattan Distance             | Calculates the sum of the absolute differences of the Cartesian coordinates. Ideal for grid-based maps where movement is typically restricted to horizontal and vertical directions (like city blocks). |
+| Chebyshev Distance                | Considers the maximum of the absolute differences of the Cartesian coordinates. It's effective for grids allowing diagonal movement, as it treats horizontal, vertical, and diagonal moves as having equal cost. |
+| Manhattan Euclidean Distance      | A hybrid approach that averages Manhattan and Euclidean distances. This can provide a balance between direct paths and path costs, especially in less restricted grid environments. |
+| Tie-Breaking Euclidean Heuristic  | Adds a small cost to the standard Euclidean heuristic to help break ties between paths of equal length. This can be useful in reducing the number of nodes explored and ensuring more deterministic pathfinding. |
 
 ## Obstacles
 
 ![Obstacles](../assets/images/trail-blazer/obstacles.PNG)
 
-| Property                 | Type    | Description                                                                                                                                                                   |
-| ------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Ignore Obstacles   | Boolean | Allows the pathfinding algorithm to disregard obstacles.                                     |
-| Exclude Obstacle Types   | Array | An array of actor types that the pathfinding algorithm will exclude from consideration as obstacles, allowing paths to be calculated without being affected by specific types of actors in the world..                                     |
-| Max Height Above Ground | Float | Defines the maximum height above the ground level at which obstacles will be detected and considered in path calculations.
-| Treat Buffer as Unwalkable | Boolean   | If set, marks all cells within the buffer distance of obstacles as unwalkable. |
-| Buffer Distance | Int   |  Determines the number of cells around each obstacle to be maintained as a buffer zone.                                                                                                       |
+| Property                             | Type                             | Description                                                                                                                        |
+| ------------------------------------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Ignore All Obstacles                 | Boolean                          | If enabled, the pathfinding algorithm will ignore all obstacles, allowing free movement across the grid.                         |
+| Obstacle Types To Exclude            | Array of TSubclassOf<AActor>      | Defines a list of actor types that should be ignored as obstacles, allowing paths to pass through them.                           |
+| Obstacles To Exclude                 | Array of AActor*                  | Specifies individual actors to be excluded from being considered as obstacles in path calculations.                              |
 
 ## Tracing
 
 ![Tracing](../assets/images/trail-blazer/tracing.PNG)
 
-| Property                 | Type    | Description                                                                                                                                                                   |
-| ------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Ignore Actors | Array  | Holds an array of actors that the pathfinding system will exclude when conducting traces to determine the z-axis values of path locations. |
-| Trace Landscape Only       | Boolean | When enabled, restricts the obstacle detection process to only consider the landscape.
-| Landscape Height Trace Extent       | Float | Specifies the vertical extent (both above and below) for the line trace used in determining the landscape height.                                                                               |
+| Property                             | Type                             | Description                                                                                                                        |
+| ------------------------------------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Adjust Path To Landscape Height      | Boolean                          | When enabled, adjusts the path's height to match the landscape's contour, useful for uneven terrain.                             |
+| Trace Extent Z                       | Float                            | Determines the vertical range for landscape height adjustments during path calculations. Increase for more accurate results on varied terrain. |
+| Actors To Exclude                    | Array of AActor*                  | Additional actors to exclude from height tracing.                                                                                   |
 
 ## Debug
 
 ![Debug](../assets/images/trail-blazer/debug.PNG)
 
-| Property                 | Type    | Description                                                                                                                                                                   |
-| ------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Start Location       | Vector | A vector specifying the starting point for the pathfinding process. **Will be overwritten if Start Actor is set.**                                                                                        |
-| End Location       | Vector |  A vector specifying the end point for the pathfinding process. **Will be overwritten if End Actor is set.** |                                                          |
-| Start Actor       | Actor | An actor reference that serves as the starting point for the pathfinding process.                                                                                         |
-| End Actor       | Actor | An actor reference that serves as the end point for the pathfinding process.                                                                                         |
-| Find Path on Begin Play       | Boolean | When enabled, triggers the pathfinding process automatically on BeginPlay.                                                                                          |
-| Show Path Locations       | Boolean | When enabled, triggers visual debugging aids to display the calculated path locations.                                                                                         |
-| Show Path Life       | Float | Defines the time in seconds for which the visual representation of the path will be displayed. |
-| Show Path Movement       | Boolean | Enables real-time visual representation of an actor's movement along the calculated path.                                                                                        |
-| Show Grid | Boolean | When enabled, visually outlines the total area covered by the pathfinding grid and it's cells. |
-
-!!! Tip
-    If no path was found or obstacles are not detected but you're sure everything is set up correctly, consider adjusting either the **Cell Height** property, the **Max Height Above Ground** property, or both.
+| Property                             | Type                             | Description                                                                                                                        |
+| ------------------------------------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Start Actor                          | AActor*                          | Reference actor to mark the start of the path for debugging.                                                                      |
+| End Actor                            | AActor*                          | Reference actor to mark the end of the path for debugging.                                                                        |
+| Debug Start Location                 | FVector                          | Start location for pathfinding used in debugging.                                                                                 |
+| Debug End Location                   | FVector                          | End location for pathfinding used in debugging.                                                                                   |
+| Show Grid                            | Boolean                          | Display the grid in the game world for debugging purposes.                                                                       |
+| Grid Extent                          | Float                            | Size of the visual representation of the grid for debugging.                                                                     |
+| Show Path Locations                  | Boolean                          | Display calculated path locations in the game world for debugging.                                                               |
+| Show Path Life Time                  | Float                            | Lifetime of the visual representation of the path. Increase for longer-lasting paths.                                            |
+| Path Particles Scale                 | Float                            | Scale of the particles used to visualize the path.                                                                               |
+| Show Path Movement                   | Boolean                          | Visualize the movement along the path for debugging.                                                                             |
+| Find Path On Begin Play              | Boolean                          | Automatically find a path when the game begins. Useful for initial testing.                                                      |

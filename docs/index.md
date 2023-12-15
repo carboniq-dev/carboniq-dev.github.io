@@ -18,14 +18,14 @@ Epic Store | [Documentation](https://carboniq-dev.github.io/site/trail-blazer)
 
 !!! Note
     This plugin is currently undergoing the review process by Epic Games.
-<!-- 
+
 ## Atmo Sim
 
 A comprehensive atmospheric simulation plugin for Unreal Engine
 
 Epic Store | Documentation
 
-![Get Snap Parameters](./images/atmo-sim-cover.png){ width="500" }
+![Get Snap Parameters](./assets/images/atmo-sim/atmo-sim-cover.png){ width="500" }
 
 !!! Note
     Release date: 01.02.2024
@@ -36,7 +36,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxx
 
 Epic Store | Documentation
 
-![Get Snap Parameters](./images/cover-cube-verse.png){ width="500" }
+![Get Snap Parameters](./assets/images/cube-verse/cover-cube-verse.png){ width="500" }
 
 !!! Note
     Release date: 01.02.2024
@@ -50,4 +50,4 @@ Epic Store | Documentation
 ![Get Snap Parameters](./images/atmo-sim-cover.png){ width="500" }
 
 !!! Note
-    Release date: 01.02.2024 -->
+    Release date: 01.02.2024

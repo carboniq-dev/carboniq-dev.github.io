@@ -614,6 +614,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#heuristic-types" class="md-nav__link">
+    Heuristic Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#obstacles" class="md-nav__link">
     Obstacles
   </a>
@@ -695,6 +702,34 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../epilogue/" class="md-nav__link">
+        Epilog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -732,42 +767,93 @@
 <tr>
 <td>Cell Size</td>
 <td>Float</td>
-<td>Defines the dimensions of each individual cell within the grid used for pathfinding .</td>
-</tr>
-<tr>
-<td>Cell Height</td>
-<td>Float</td>
-<td>Sets the starting height on the Z-axis from which the plugin begins its vertical detection of obstacles and terrain features within the grid.</td>
+<td>Defines the dimensions of each individual cell within the grid used for pathfinding.</td>
 </tr>
 <tr>
 <td>Num Columns</td>
-<td>Int</td>
-<td>Specifies the number of cells vertically across the pathfinding grid, determining the grid's height.</td>
+<td>Integer</td>
+<td>Specifies the number of columns in the grid. Increasing this value expands the grid horizontally.</td>
 </tr>
 <tr>
 <td>Num Rows</td>
-<td>Int</td>
-<td>Specifies the number of cells horizontally along the pathfinding grid, establishing the grid's width.</td>
+<td>Integer</td>
+<td>Determines the number of rows in the grid. Increasing this value expands the grid vertically.</td>
+</tr>
+<tr>
+<td>Heuristic Type</td>
+<td>Enumeration</td>
+<td>Selects the type of heuristic algorithm used for calculating the pathfinding cost. Different heuristics can affect the efficiency and path quality.</td>
+</tr>
+<tr>
+<td>Euclidean Weight</td>
+<td>Float</td>
+<td>Applies a weight to the Euclidean distance in the pathfinding calculation, influencing how straight or direct paths are.</td>
 </tr>
 <tr>
 <td>Include Diagonals</td>
 <td>Boolean</td>
-<td>Specifies whether the pathfinding algorithm should consider diagonal paths between adjacent grid cells.</td>
+<td>Allows the pathfinding algorithm to consider diagonal movements, potentially creating more direct paths.</td>
 </tr>
 <tr>
-<td>Smooth</td>
+<td>Add Cell Buffer</td>
 <td>Boolean</td>
-<td>When enabled, activates the path smoothing feature, creating more natural and curved trajectories between waypoints in the generated path</td>
+<td>Enables a buffer zone around each cell, marking nearby cells as unwalkable to create a safer path.</td>
+</tr>
+<tr>
+<td>Buffer Distance</td>
+<td>Integer</td>
+<td>Sets the size of the buffer zone around obstacles, defined as the number of cells. Larger values increase the clearance around obstacles.</td>
+</tr>
+<tr>
+<td>Smooth Turns</td>
+<td>Boolean</td>
+<td>Activates path smoothing to reduce sharp turns, making movement along the path more natural.</td>
 </tr>
 <tr>
 <td>Smoothing Interpolation Points</td>
-<td>Int</td>
-<td>Specifies the number of intermediate points used in the smoothing process to create more gradual curves along the path.</td>
+<td>Integer</td>
+<td>Determines the number of points used to smooth out turns along the path. Higher values result in smoother paths but may affect performance.</td>
 </tr>
 <tr>
 <td>Smoothing Angle Threshold</td>
 <td>Float</td>
-<td>Specifies the minimum angle between path segments at which the smoothing algorithm is applied to create smoother turns.</td>
+<td>Sets the angle threshold for smoothing. Turns sharper than this angle will be smoothed out.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="heuristic-types">Heuristic Types<a class="headerlink" href="#heuristic-types" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="../../assets/images/trail-blazer/heuristic.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Heuristic" src="../../assets/images/trail-blazer/heuristic.PNG" /></a></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Euclidean Distance</td>
+<td>Measures the straight-line distance between two points in the grid. This is the most direct and shortest path but may not always be the most efficient in terms of path cost or real-world navigation.</td>
+</tr>
+<tr>
+<td>Weighted Euclidean Distance</td>
+<td>Similar to Euclidean, but with a weight multiplier applied. This emphasizes straight-line paths, making them more favorable in the pathfinding calculation, often leading to more direct routes.</td>
+</tr>
+<tr>
+<td>Manhattan Distance</td>
+<td>Calculates the sum of the absolute differences of the Cartesian coordinates. Ideal for grid-based maps where movement is typically restricted to horizontal and vertical directions (like city blocks).</td>
+</tr>
+<tr>
+<td>Chebyshev Distance</td>
+<td>Considers the maximum of the absolute differences of the Cartesian coordinates. It's effective for grids allowing diagonal movement, as it treats horizontal, vertical, and diagonal moves as having equal cost.</td>
+</tr>
+<tr>
+<td>Manhattan Euclidean Distance</td>
+<td>A hybrid approach that averages Manhattan and Euclidean distances. This can provide a balance between direct paths and path costs, especially in less restricted grid environments.</td>
+</tr>
+<tr>
+<td>Tie-Breaking Euclidean Heuristic</td>
+<td>Adds a small cost to the standard Euclidean heuristic to help break ties between paths of equal length. This can be useful in reducing the number of nodes explored and ensuring more deterministic pathfinding.</td>
 </tr>
 </tbody>
 </table>
@@ -783,29 +869,19 @@
 </thead>
 <tbody>
 <tr>
-<td>Ignore Obstacles</td>
+<td>Ignore All Obstacles</td>
 <td>Boolean</td>
-<td>Allows the pathfinding algorithm to disregard obstacles.</td>
+<td>If enabled, the pathfinding algorithm will ignore all obstacles, allowing free movement across the grid.</td>
 </tr>
 <tr>
-<td>Exclude Obstacle Types</td>
-<td>Array</td>
-<td>An array of actor types that the pathfinding algorithm will exclude from consideration as obstacles, allowing paths to be calculated without being affected by specific types of actors in the world..</td>
+<td>Obstacle Types To Exclude</td>
+<td>Array of TSubclassOf<AActor></td>
+<td>Defines a list of actor types that should be ignored as obstacles, allowing paths to pass through them.</td>
 </tr>
 <tr>
-<td>Max Height Above Ground</td>
-<td>Float</td>
-<td>Defines the maximum height above the ground level at which obstacles will be detected and considered in path calculations.</td>
-</tr>
-<tr>
-<td>Treat Buffer as Unwalkable</td>
-<td>Boolean</td>
-<td>If set, marks all cells within the buffer distance of obstacles as unwalkable.</td>
-</tr>
-<tr>
-<td>Buffer Distance</td>
-<td>Int</td>
-<td>Determines the number of cells around each obstacle to be maintained as a buffer zone.</td>
+<td>Obstacles To Exclude</td>
+<td>Array of AActor*</td>
+<td>Specifies individual actors to be excluded from being considered as obstacles in path calculations.</td>
 </tr>
 </tbody>
 </table>
@@ -821,19 +897,19 @@
 </thead>
 <tbody>
 <tr>
-<td>Ignore Actors</td>
-<td>Array</td>
-<td>Holds an array of actors that the pathfinding system will exclude when conducting traces to determine the z-axis values of path locations.</td>
-</tr>
-<tr>
-<td>Trace Landscape Only</td>
+<td>Adjust Path To Landscape Height</td>
 <td>Boolean</td>
-<td>When enabled, restricts the obstacle detection process to only consider the landscape.</td>
+<td>When enabled, adjusts the path's height to match the landscape's contour, useful for uneven terrain.</td>
 </tr>
 <tr>
-<td>Landscape Height Trace Extent</td>
+<td>Trace Extent Z</td>
 <td>Float</td>
-<td>Specifies the vertical extent (both above and below) for the line trace used in determining the landscape height.</td>
+<td>Determines the vertical range for landscape height adjustments during path calculations. Increase for more accurate results on varied terrain.</td>
+</tr>
+<tr>
+<td>Actors To Exclude</td>
+<td>Array of AActor*</td>
+<td>Additional actors to exclude from height tracing.</td>
 </tr>
 </tbody>
 </table>
@@ -849,56 +925,62 @@
 </thead>
 <tbody>
 <tr>
-<td>Start Location</td>
-<td>Vector</td>
-<td>A vector specifying the starting point for the pathfinding process. <strong>Will be overwritten if Start Actor is set.</strong></td>
-</tr>
-<tr>
-<td>End Location</td>
-<td>Vector</td>
-<td>A vector specifying the end point for the pathfinding process. <strong>Will be overwritten if End Actor is set.</strong></td>
-</tr>
-<tr>
 <td>Start Actor</td>
-<td>Actor</td>
-<td>An actor reference that serves as the starting point for the pathfinding process.</td>
+<td>AActor*</td>
+<td>Reference actor to mark the start of the path for debugging.</td>
 </tr>
 <tr>
 <td>End Actor</td>
-<td>Actor</td>
-<td>An actor reference that serves as the end point for the pathfinding process.</td>
+<td>AActor*</td>
+<td>Reference actor to mark the end of the path for debugging.</td>
 </tr>
 <tr>
-<td>Find Path on Begin Play</td>
-<td>Boolean</td>
-<td>When enabled, triggers the pathfinding process automatically on BeginPlay.</td>
+<td>Debug Start Location</td>
+<td>FVector</td>
+<td>Start location for pathfinding used in debugging.</td>
 </tr>
 <tr>
-<td>Show Path Locations</td>
-<td>Boolean</td>
-<td>When enabled, triggers visual debugging aids to display the calculated path locations.</td>
-</tr>
-<tr>
-<td>Show Path Life</td>
-<td>Float</td>
-<td>Defines the time in seconds for which the visual representation of the path will be displayed.</td>
-</tr>
-<tr>
-<td>Show Path Movement</td>
-<td>Boolean</td>
-<td>Enables real-time visual representation of an actor's movement along the calculated path.</td>
+<td>Debug End Location</td>
+<td>FVector</td>
+<td>End location for pathfinding used in debugging.</td>
 </tr>
 <tr>
 <td>Show Grid</td>
 <td>Boolean</td>
-<td>When enabled, visually outlines the total area covered by the pathfinding grid and it's cells.</td>
+<td>Display the grid in the game world for debugging purposes.</td>
+</tr>
+<tr>
+<td>Grid Extent</td>
+<td>Float</td>
+<td>Size of the visual representation of the grid for debugging.</td>
+</tr>
+<tr>
+<td>Show Path Locations</td>
+<td>Boolean</td>
+<td>Display calculated path locations in the game world for debugging.</td>
+</tr>
+<tr>
+<td>Show Path Life Time</td>
+<td>Float</td>
+<td>Lifetime of the visual representation of the path. Increase for longer-lasting paths.</td>
+</tr>
+<tr>
+<td>Path Particles Scale</td>
+<td>Float</td>
+<td>Scale of the particles used to visualize the path.</td>
+</tr>
+<tr>
+<td>Show Path Movement</td>
+<td>Boolean</td>
+<td>Visualize the movement along the path for debugging.</td>
+</tr>
+<tr>
+<td>Find Path On Begin Play</td>
+<td>Boolean</td>
+<td>Automatically find a path when the game begins. Useful for initial testing.</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If no path was found or obstacles are not detected but you're sure everything is set up correctly, consider adjusting either the <strong>Cell Height</strong> property, the <strong>Max Height Above Ground</strong> property, or both.</p>
-</div>
 
 
 

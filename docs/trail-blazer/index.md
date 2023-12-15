@@ -1,14 +1,6 @@
 # Introduction
 
-Offering customizable solutions for specific pathfinding needs, this plugin excels in dynamically handling obstacles and uses the A* algorithm for asynchronous, grid-based pathfinding. It's particularly suited for smaller maps or designated areas and can handle multiple pathfinding grids simultaneously, making it perfect for workload distribution across larger maps.
+TrailBlazer is a specialized **grid-based pathfinding plugin** tailored for Unreal Engine projects requiring precise and customizable navigation solutions. Ideal for puzzle games, mazes, and small to medium-sized game environments, this plugin provides an alternative to Unreal Engine's built-in pathfinding, focusing on specific scenarios where grid-based navigation is preferred. While it offers capabilities for larger landscapes, its optimal performance is seen in more contained environments. The plugin includes various adjustable settings like grid size, cell dimensions, and **heuristic methods**, giving developers the flexibility to fine-tune navigation to suit their game's unique requirements.
 
 !!! Info
     This plugin is not intended to replace Unreal Engine's built-in pathfinding tools. It is tailored for developers who require complete control over all path locations and intricate navigation scenarios.
-
-## Key Features
-
-1. Customizable Pathfinding Logic
-
-2. Obstacle Detection and Handling
-
-3. Debug Tools

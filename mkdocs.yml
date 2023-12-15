@@ -35,6 +35,8 @@ nav:
      - The Actor: ./trail-blazer/the-actor.md
      - The Function:
           - Usage: ./trail-blazer/usage.md
+     - Epilog: ./trail-blazer/epilogue.md
+     - FAQ: ./trail-blazer/faq.md
 plugins:
   - search
   - glightbox
