@@ -26,12 +26,12 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 
 | Type                              | Description                                                                                                                                        |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Euclidean Distance                | Measures the straight-line distance between two points in the grid. This is the most direct and shortest path but may not always be the most efficient in terms of path cost or real-world navigation. |
-| Weighted Euclidean Distance       | Similar to Euclidean, but with a weight multiplier applied. This emphasizes straight-line paths, making them more favorable in the pathfinding calculation, often leading to more direct routes. |
-| Manhattan Distance             | Calculates the sum of the absolute differences of the Cartesian coordinates. Ideal for grid-based maps where movement is typically restricted to horizontal and vertical directions (like city blocks). |
-| Chebyshev Distance                | Considers the maximum of the absolute differences of the Cartesian coordinates. It's effective for grids allowing diagonal movement, as it treats horizontal, vertical, and diagonal moves as having equal cost. |
-| Manhattan Euclidean Distance      | A hybrid approach that averages Manhattan and Euclidean distances. This can provide a balance between direct paths and path costs, especially in less restricted grid environments. |
-| Tie-Breaking Euclidean Heuristic  | Adds a small cost to the standard Euclidean heuristic to help break ties between paths of equal length. This can be useful in reducing the number of nodes explored and ensuring more deterministic pathfinding. |
+| Euclidean                | Measures the straight-line distance between two points in the grid. This is the most direct and shortest path but may not always be the most efficient in terms of path cost or real-world navigation. |
+| Weighted Euclidean       | Similar to Euclidean, but with a weight multiplier applied. This emphasizes straight-line paths, making them more favorable in the pathfinding calculation, often leading to more direct routes. |
+| Manhattan             | Calculates the sum of the absolute differences of the Cartesian coordinates. Ideal for grid-based maps where movement is typically restricted to horizontal and vertical directions (like city blocks). |
+| Chebyshev                | Considers the maximum of the absolute differences of the Cartesian coordinates. It's effective for grids allowing diagonal movement, as it treats horizontal, vertical, and diagonal moves as having equal cost. |
+| Manhattan Euclidean      | A hybrid approach that averages Manhattan and Euclidean distances. This can provide a balance between direct paths and path costs, especially in less restricted grid environments. |
+| Tie-Breaking Euclidean  | Adds a small cost to the standard Euclidean heuristic to help break ties between paths of equal length. This can be useful in reducing the number of nodes explored and ensuring more deterministic pathfinding. |
 
 ## Obstacles
 
