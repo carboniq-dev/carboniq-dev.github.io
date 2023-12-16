@@ -693,7 +693,7 @@
 <h1 id="epilogue">Epilogue<a class="headerlink" href="#epilogue" title="Permanent link">&para;</a></h1>
 <p><strong>How does the performance of TrailBlazer compare to Unreal Engine's native pathfinding?</strong></p>
 <ul>
-<li>TrailBlazer is optimized for <del class="critic"></del><ins class="critic">grid-based pathfinding</ins> with a focus on customization. It performs exceptionally well in smaller to medium-sized environments. For very large landscapes, performance may vary, and it's recommended to adjust parameters like grid size and cell size for optimal performance.</li>
+<li>TrailBlazer is optimized for <mark class="critic">grid-based pathfinding</mark> with a focus on customization. It performs exceptionally well in smaller to medium-sized environments. For very large landscapes, performance may vary, and it's recommended to adjust parameters like grid size and cell size for optimal performance.</li>
 </ul>
 <p><strong>Can TrailBlazer be used for large open-world games?</strong></p>
 <ul>
@@ -701,8 +701,24 @@
 </ul>
 <p><strong>How are round objects handled in the pathfinding process?</strong></p>
 <ul>
-<li>The plugin incorporates a specific flag named <del class="critic"></del><ins class="critic">Use Max Precision</ins> to enhance the handling of circular objects during pathfinding calculations. When this flag is enabled, the plugin takes into consideration the spherical attributes of objects.</li>
+<li>The plugin incorporates a specific flag named <mark class="critic">Use Max Precision</mark> to enhance the handling of circular objects during pathfinding calculations. When this flag is enabled, the plugin takes into consideration the spherical attributes of objects.</li>
 <li>It's essential to point out that, for this flag to operate effectively, circular objects in your game world should be equipped with a sphere collision component. This component is utilized to accurately define the object's boundaries and facilitate path adjustments as needed.</li>
+</ul>
+<p><strong>Why do I sometimes not receive path locations on certain maps and configurations?</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There can be several reasons for this issue. It's important to note that the availability of a path can be influenced by various settings. To address this, consider the following steps.</p>
+</div>
+<ul>
+<li>
+<p><mark class="critic">Adjust Cell Size</mark>: In tight or constrained spaces, the default cell size might not be suitable for generating paths. Try changing the cell size to better fit the specific environment.</p>
+</li>
+<li>
+<p><mark class="critic">Heuristic Calculation</mark>: Experiment with different heuristic calculation methods. The choice of heuristic can impact the pathfinding results significantly, so finding the right one for your scenario is important.</p>
+</li>
+<li>
+<p><mark class="critic">Explore Plugin Options</mark>: Explore additional options exposed by the plugin that can affect pathfinding behavior. These options might include settings related to path smoothing, collision handling, or other parameters that can impact the generation of paths.</p>
+</li>
 </ul>
 <p><strong>Is TrailBlazer suitable for dynamic environments?</strong></p>
 <ul>
@@ -710,7 +726,7 @@
 </ul>
 <p><strong>How does the plugin handle different terrain elevations or 3D environments?</strong></p>
 <ul>
-<li>TrailBlazer can adjust path heights to match terrain elevations if the <del class="critic"></del><ins class="critic">Adjust Path to Landscape Height</ins> option is enabled. However, its primary strength is in 2D grid-based pathfinding.</li>
+<li>TrailBlazer can adjust path heights to match terrain elevations if the <mark class="critic">Adjust Path to Landscape Height</mark> option is enabled. However, its primary strength is in 2D grid-based pathfinding.</li>
 </ul>
 <p><strong>Can I customize the pathfinding algorithm?</strong></p>
 <ul>
