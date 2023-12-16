@@ -14,6 +14,7 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 | Heuristic Type                       | Enumeration                      | Selects the type of heuristic algorithm used for calculating the pathfinding cost. Different heuristics can affect the efficiency and path quality. |
 | Euclidean Weight                     | Float                            | Applies a weight to the Euclidean distance in the pathfinding calculation, influencing how straight or direct paths are.           |
 | Include Diagonals                    | Boolean                          | Allows the pathfinding algorithm to consider diagonal movements, potentially creating more direct paths.                          |
+| Use Max Precision                    | Boolean                          | Enables the pathfinding algorithm to take into account the presence of spheres in the environment, resulting in the generation of more realistic paths. In certain scenarios, this functionality may be essential for optimal pathfinding.                        |
 | Add Cell Buffer                      | Boolean                          | Enables a buffer zone around each cell, marking nearby cells as unwalkable to create a safer path.                                 |
 | Buffer Distance                      | Integer                          | Sets the size of the buffer zone around obstacles, defined as the number of cells. Larger values increase the clearance around obstacles. |
 | Smooth Turns                         | Boolean                          | Activates path smoothing to reduce sharp turns, making movement along the path more natural.                                    |
@@ -40,6 +41,8 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 | Property                             | Type                             | Description                                                                                                                        |
 | ------------------------------------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | Ignore All Obstacles                 | Boolean                          | If enabled, the pathfinding algorithm will ignore all obstacles, allowing free movement across the grid.                         |
+| Enable Vertical Obstacle Detection  | Float | Toggles the vertical obstacle detection. If disabled, obstacles are detected regardless of their position on the z-axis. |
+| Vertical Obstacle Offset  | Boolean | Defines the Z-axis offset, either above or below the Trail Blazer actors location, for detecting obstacles. |
 | Obstacle Types To Exclude            | Array of TSubclassOf<AActor>      | Defines a list of actor types that should be ignored as obstacles, allowing paths to pass through them.                           |
 | Obstacles To Exclude                 | Array of AActor*                  | Specifies individual actors to be excluded from being considered as obstacles in path calculations.                              |
 

@@ -652,15 +652,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#quickstart" class="md-nav__link">
-    Quickstart
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom" class="md-nav__link">
-    Custom
+  <a href="#setup" class="md-nav__link">
+    Setup
   </a>
   
 </li>
@@ -751,21 +744,26 @@
 
 
 <h1 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h1>
-<h2 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h2>
-<p>The fastest way to get started is to use the built-in debug functionality. Drag the <strong>TrailBlazerGrid_BP</strong> actor into the world, place two actors within the grid and set the following parameters. Alternatively you can set the start and end location.</p>
-<p><a class="glightbox" href="../../assets/images/trail-blazer/quickstart.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Quickstart" src="../../assets/images/trail-blazer/quickstart.PNG" /></a></p>
-<h2 id="custom">Custom<a class="headerlink" href="#custom" title="Permanent link">&para;</a></h2>
-<p>To get started with your custom implementation, open the actor you wish to have control over the pathfinding feature. Obtain a reference to the <strong>TrailBlazerGrid_BP</strong> previously placed in the world. Drag out from the output pin and bind the <strong>On Path Calculated</strong> event. Afterward, drag out again and search for the <strong>Find Path Async</strong> function.
-Specify the start and end locations. Please note that the locations must be within the grid. Now, connect the nodes as illustrated below.</p>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<p>To get started, open the actor you wish to have control over the pathfinding feature. Obtain a reference to the <strong>TrailBlazerGrid_BP</strong> previously placed in the world. Drag out from the output pin and bind the <strong>On Path Calculated</strong> event. Afterward, drag out again and search for the <strong>Find Path Async</strong> function.
+Specify the start and end locations. Please note that the locations must be within the grid. 
+Connect the nodes as illustrated below.</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/custom-setup-1.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Get Path Locations" src="../../assets/images/trail-blazer/custom-setup-1.PNG" width="800" /></a></p>
 <h2 id="recommended">Recommended<a class="headerlink" href="#recommended" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Cameras and pawns hovering within the obstacle detection range on game start will also be detected as obstacles, potentially preventing a path from being found. In such cases, they should be explicitly excluded in the obstacles section to avoid this issue.</p>
+</div>
 <ul>
 <li>Fine-tune the grid size and cell size based on your environment’s scale and complexity.</li>
 <li>Use appropriate heuristic calculations based on your game’s requirements.</li>
 <li>Regularly profile and monitor performance, especially in larger or more complex environments.</li>
 </ul>
 <h3 id="showcase">Showcase<a class="headerlink" href="#showcase" title="Permanent link">&para;</a></h3>
-<p>In this showcase, the calculation is nearly instantaneous and is based on the following parameters.</p>
+<div class="admonition maze example">
+<p class="admonition-title">Maze</p>
+<p>Showcases pathfinding through a rather complicated maze.</p>
+</div>
 <table>
 <thead>
 <tr>

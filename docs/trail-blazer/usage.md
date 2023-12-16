@@ -1,19 +1,18 @@
 # Usage
 
-## Quickstart
+## Setup
 
-The fastest way to get started is to use the built-in debug functionality. Drag the **TrailBlazerGrid_BP** actor into the world, place two actors within the grid and set the following parameters. Alternatively you can set the start and end location.
-
-![Quickstart](../assets/images/trail-blazer/quickstart.PNG)
-
-## Custom
-
-To get started with your custom implementation, open the actor you wish to have control over the pathfinding feature. Obtain a reference to the **TrailBlazerGrid_BP** previously placed in the world. Drag out from the output pin and bind the **On Path Calculated** event. Afterward, drag out again and search for the **Find Path Async** function.
-Specify the start and end locations. Please note that the locations must be within the grid. Now, connect the nodes as illustrated below.
+To get started, open the actor you wish to have control over the pathfinding feature. Obtain a reference to the **TrailBlazerGrid_BP** previously placed in the world. Drag out from the output pin and bind the **On Path Calculated** event. Afterward, drag out again and search for the **Find Path Async** function.
+Specify the start and end locations. Please note that the locations must be within the grid. 
+Connect the nodes as illustrated below.
 
 ![Get Path Locations](../assets/images/trail-blazer/custom-setup-1.PNG){ width="800" }
 
 ## Recommended
+
+!!! Warning
+
+    Cameras and pawns hovering within the obstacle detection range on game start will also be detected as obstacles, potentially preventing a path from being found. In such cases, they should be explicitly excluded in the obstacles section to avoid this issue.
 
 - Fine-tune the grid size and cell size based on your environment’s scale and complexity.
 - Use appropriate heuristic calculations based on your game’s requirements.
@@ -21,7 +20,8 @@ Specify the start and end locations. Please note that the locations must be with
 
 ### Showcase
 
-In this showcase, the calculation is nearly instantaneous and is based on the following parameters.
+!!! Maze Example
+    Showcases pathfinding through a rather complicated maze.
 
 | Property                 | Value    |
 | ------------------------ | ------- |

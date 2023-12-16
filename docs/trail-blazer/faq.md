@@ -2,11 +2,17 @@
 
 **How does the performance of TrailBlazer compare to Unreal Engine's native pathfinding?**
 
-- TrailBlazer is optimized for grid-based pathfinding with a focus on customization. It performs exceptionally well in smaller to medium-sized environments. For very large landscapes, performance may vary, and it's recommended to adjust parameters like grid size and cell size for optimal performance.
+- TrailBlazer is optimized for {~~~>grid-based pathfinding~~} with a focus on customization. It performs exceptionally well in smaller to medium-sized environments. For very large landscapes, performance may vary, and it's recommended to adjust parameters like grid size and cell size for optimal performance.
 
 **Can TrailBlazer be used for large open-world games?**
 
 - While possible, TrailBlazer is ideally suited for smaller, more controlled environments. For large open-world games, careful consideration of grid size and cell count is necessary to balance performance.
+
+
+**How are round objects handled in the pathfinding process?**
+
+- The plugin incorporates a specific flag named {~~~>Use Max Precision~~} to enhance the handling of circular objects during pathfinding calculations. When this flag is enabled, the plugin takes into consideration the spherical attributes of objects.
+- It's essential to point out that, for this flag to operate effectively, circular objects in your game world should be equipped with a sphere collision component. This component is utilized to accurately define the object's boundaries and facilitate path adjustments as needed.
 
 **Is TrailBlazer suitable for dynamic environments?**
 
@@ -14,7 +20,7 @@
 
 **How does the plugin handle different terrain elevations or 3D environments?**
 
-- TrailBlazer can adjust path heights to match terrain elevations if the _Adjust Path to Landscape Height_ option is enabled. However, its primary strength is in 2D grid-based pathfinding.
+- TrailBlazer can adjust path heights to match terrain elevations if the {~~~>Adjust Path to Landscape Height~~} option is enabled. However, its primary strength is in 2D grid-based pathfinding.
 
 **Can I customize the pathfinding algorithm?**
 

@@ -795,6 +795,11 @@
 <td>Allows the pathfinding algorithm to consider diagonal movements, potentially creating more direct paths.</td>
 </tr>
 <tr>
+<td>Use Max Precision</td>
+<td>Boolean</td>
+<td>Enables the pathfinding algorithm to take into account the presence of spheres in the environment, resulting in the generation of more realistic paths. In certain scenarios, this functionality may be essential for optimal pathfinding.</td>
+</tr>
+<tr>
 <td>Add Cell Buffer</td>
 <td>Boolean</td>
 <td>Enables a buffer zone around each cell, marking nearby cells as unwalkable to create a safer path.</td>
@@ -872,6 +877,16 @@
 <td>Ignore All Obstacles</td>
 <td>Boolean</td>
 <td>If enabled, the pathfinding algorithm will ignore all obstacles, allowing free movement across the grid.</td>
+</tr>
+<tr>
+<td>Enable Vertical Obstacle Detection</td>
+<td>Float</td>
+<td>Toggles the vertical obstacle detection. If disabled, obstacles are detected regardless of their position on the z-axis.</td>
+</tr>
+<tr>
+<td>Vertical Obstacle Offset</td>
+<td>Boolean</td>
+<td>Defines the Z-axis offset, either above or below the Trail Blazer actors location, for detecting obstacles.</td>
 </tr>
 <tr>
 <td>Obstacle Types To Exclude</td>
