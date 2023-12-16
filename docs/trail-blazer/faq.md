@@ -22,7 +22,7 @@
 
 - {==Heuristic Calculation==}: Experiment with different heuristic calculation methods. The choice of heuristic can impact the pathfinding results significantly, so finding the right one for your scenario is important.
 
-- {==Explore Plugin Options==}: Explore additional options exposed by the plugin that can affect pathfinding behavior. These options might include settings related to path smoothing, collision handling, or other parameters that can impact the generation of paths.
+- {==Explore Plugin Options==}: Explore additional options exposed by the plugin that can affect pathfinding behavior.
 
 **Is TrailBlazer suitable for dynamic environments?**
 
