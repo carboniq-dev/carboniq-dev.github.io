@@ -695,15 +695,14 @@
 <ul>
 <li>TrailBlazer is optimized for <mark class="critic">grid-based pathfinding</mark> with a focus on customization. It performs exceptionally well in smaller to medium-sized environments. For very large landscapes, performance may vary, and it's recommended to adjust parameters like grid size and cell size for optimal performance.</li>
 </ul>
-<p><strong>Can TrailBlazer be used for large open-world games?</strong></p>
-<ul>
-<li>While possible, TrailBlazer is ideally suited for smaller, more controlled environments. For large open-world games, careful consideration of grid size and cell count is necessary to balance performance.</li>
-</ul>
 <p><strong>How are round objects handled in the pathfinding process?</strong></p>
 <ul>
 <li>The plugin incorporates a specific flag named <mark class="critic">Use Max Precision</mark> to enhance the handling of circular objects during pathfinding calculations. When this flag is enabled, the plugin takes into consideration the spherical attributes of objects.</li>
-<li>It's essential to point out that, for this flag to operate effectively, circular objects in your game world should be equipped with a sphere collision component. This component is utilized to accurately define the object's boundaries and facilitate path adjustments as needed.</li>
 </ul>
+<div class="admonition important warning">
+<p class="admonition-title">Important</p>
+<p>It's essential to point out that, for this flag to operate effectively, circular objects in your game world should be equipped with a sphere collision component. This component is utilized to accurately define the object's boundaries and facilitate path adjustments as needed.</p>
+</div>
 <p><strong>Why do I sometimes not receive path locations on certain maps and configurations?</strong></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
