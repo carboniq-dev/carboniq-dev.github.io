@@ -7,4 +7,3 @@
 - Useful for creating paths for placement of visual effects.
 - Useful in simulation games that involve navigating through complex grid-based environments.
 - Serves as a blueprint for more complex pathfinding solutions.
-- and more...
