@@ -753,6 +753,8 @@
 
 <h1 id="actor">Actor<a class="headerlink" href="#actor" title="Permanent link">&para;</a></h1>
 <p>This section provides an overview of the <strong>TrailBlazer</strong> actor's properties that affect the pathfinding logic and debugging.</p>
+<p>When activated, actors of a designated type will function as grid cells.</p>
+<p>Defines an actor type that should function as grid cells.</p>
 <h2 id="grid">Grid<a class="headerlink" href="#grid" title="Permanent link">&para;</a></h2>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/grid.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Grid" src="../../assets/images/trail-blazer/grid.PNG" /></a></p>
 <table>
@@ -783,6 +785,16 @@
 <td>Grid Height</td>
 <td>Float</td>
 <td>Specifies the vertical scope of the grid. Obstructions beyond this range will not be detected.</td>
+</tr>
+<tr>
+<td>Use Actors As Cells</td>
+<td>Boolean</td>
+<td>When activated, actors of a designated type will function as grid cells.</td>
+</tr>
+<tr>
+<td>Actor Type As Cell</td>
+<td>TSubclassOf<AActor></td>
+<td>Defines an actor type that should function as grid cells.</td>
 </tr>
 <tr>
 <td>Heuristic Type</td>

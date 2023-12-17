@@ -2,6 +2,13 @@
 
 This section provides an overview of the **TrailBlazer** actor's properties that affect the pathfinding logic and debugging.
 
+
+When activated, actors of a designated type will function as grid cells.
+
+Defines an actor type that should function as grid cells.
+
+
+
 ## Grid
 
 ![Grid](../assets/images/trail-blazer/grid.PNG)
@@ -12,6 +19,8 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 | Num Columns                          | Integer                          | Specifies the number of columns in the grid. Increasing this value expands the grids width.                                 |
 | Num Rows                             | Integer                          | Specifies the number of rows in the grid. Increasing this value expands the grids depth.                                     |
 | Grid Height | Float | Specifies the vertical scope of the grid. Obstructions beyond this range will not be detected. |
+| Use Actors As Cells | Boolean | When activated, actors of a designated type will function as grid cells. |
+| Actor Type As Cell | TSubclassOf<AActor> | Defines an actor type that should function as grid cells. |
 | Heuristic Type                       | Enumeration                      | Selects the type of heuristic algorithm used for calculating the pathfinding cost. Different heuristics can affect the efficiency and path quality. |
 | Weight                     | Float                            | Applies a weight to the Euclidean distance in the pathfinding calculation, influencing how straight or direct paths are.           |
 | Include Diagonals                    | Boolean                          |  This setting enables diagonal movements in pathfinding, offering a balance between simplicity and coverage. It is the most performant option, ideal for environments where precise obstacle shapes and rotations are less critical.                          |
