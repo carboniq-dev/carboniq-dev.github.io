@@ -4,9 +4,9 @@
 
 - TrailBlazer is optimized for {==grid-based pathfinding==} with a focus on customization. It performs exceptionally well in smaller to medium-sized environments. For very large landscapes, performance may vary, and it's recommended to adjust parameters like grid size and cell size for optimal performance.
 
-**How are round objects handled in the pathfinding process?**
+**How are round or rotated objects handled in the pathfinding process?**
 
-- The plugin incorporates a specific flag named {==Use Max Precision==} to enhance the handling of circular objects during pathfinding calculations. When this flag is enabled, the plugin takes into consideration the spherical attributes of objects.
+- The plugin incorporates specific flags named {==Use Sperical Precision==} and {==Use Rotation Precision==} to enhance the handling of circular and rotated rectangular objects  during obstacle detection on game start.
 
 !!! Important Warning
     It's essential to point out that, for this flag to operate effectively, circular objects in your game world should be equipped with a sphere collision component. This component is utilized to accurately define the object's boundaries and facilitate path adjustments as needed.
@@ -20,13 +20,15 @@
 
 - {==Heuristic Calculation==}: Experiment with different heuristic calculation methods. The choice of heuristic can impact the pathfinding results significantly, so finding the right one for your scenario is important.
 
-- {==Use Max Precision==}: If you encounter difficulties navigating around circular objects within confined spaces, you may want to consider enabling this parameter, which incorporates spherical objects into the path calculation.
+- {==Use Sperical Precision / Use Rotation Precision==}: If you encounter difficulties navigating around circular or rotated objects within confined spaces, you may want to consider enabling these parameters, which incorporate spherical and rotated objects into the object detection process.
 
 - {==Explore Plugin Options==}: Explore additional options exposed by the plugin that can affect pathfinding behavior.
 
 **Is TrailBlazer suitable for dynamic environments?**
 
-- TrailBlazer is capable of adapting to dynamic environmental changes. However, it's important to note that the grid is initially calculated on game start, and using it during gameplay could lead to blocking unless combined with a loading screen. Frequent recalculations in highly dynamic environments may also impact performance. Therefore, it's advisable to employ TrailBlazer in scenarios where environmental changes are less frequent or can be predictably managed.
+- While TrailBlazer is not primarily intended for dynamic environments, it can be utilized in specific scenarios where dynamic elements are involved, but it's important to use it at your own discretion and risk. The plugin's optimal performance is typically seen in more static or contained environments, so implementing it in highly dynamic settings may require additional considerations and testing to ensure desired results.
+
+- Additionally, when dealing with dynamic environments, one will need to facilitate the **Initialize Grid** function to reinitialize the grid as needed. It's worth noting that debug functions are wrapped in the TrailBlazerGrid_BP blueprint, so you will need to reconstruct it or copy-paste the existing functionality.
 
 **How does the plugin handle different terrain elevations or 3D environments?**
 

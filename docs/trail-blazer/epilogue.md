@@ -1,7 +1,5 @@
 # Epilogue
 
-The **Trail Blazer** pathfinding plugin is a versatile and powerful tool, thoughtfully crafted to provide developers with a customizable and alternative pathfinding solution, especially in scenarios requiring grid-based navigation. While it's not designed to replace Unreal Engine's native pathfinding solutions, it excels in particular use cases such as puzzles, mazes, and situations where fine-grained control over the pathfinding process and environment is essential.
+In closing, **Trail Blazer** is a solution for customizable pathfinding in grid-based scenarios. Its true potential shines in applications like puzzles, mazes, and situations where you need precise control over your pathfinding. While it doesn't aim to replace Unreal Engine's native pathfinding tools, it offers a versatile alternative for specific games. Keep in mind that, with some consideration, Trail Blazer can also adapt to larger landscapes, although you should always keep an eye on performance and scalability.
 
-TrailBlazer's flexibility extends to adapting it for larger landscapes, although it's important to keep performance and scalability considerations in mind when doing so.
-
-Thank you for showing interest in **Trail Blazer**. I hope it proves to be a valuable tool for you.
+Thank you for considering Trail Blazer, and I hope it becomes a valuable asset in your project's toolbox.
