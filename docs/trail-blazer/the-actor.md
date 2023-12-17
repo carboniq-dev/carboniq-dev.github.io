@@ -11,10 +11,12 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 | Cell Size                            | Float                            | Defines the dimensions of each individual cell within the grid used for pathfinding.                                             |
 | Num Columns                          | Integer                          | Specifies the number of columns in the grid. Increasing this value expands the grid horizontally.                                 |
 | Num Rows                             | Integer                          | Determines the number of rows in the grid. Increasing this value expands the grid vertically.                                     |
+| Grid Height | Float | Specifies the vertical scope of the grid. Obstructions beyond this range will not be detected. |
 | Heuristic Type                       | Enumeration                      | Selects the type of heuristic algorithm used for calculating the pathfinding cost. Different heuristics can affect the efficiency and path quality. |
-| Euclidean Weight                     | Float                            | Applies a weight to the Euclidean distance in the pathfinding calculation, influencing how straight or direct paths are.           |
-| Include Diagonals                    | Boolean                          | Allows the pathfinding algorithm to consider diagonal movements, potentially creating more direct paths.                          |
-| Use Max Precision                    | Boolean                          | Enables the pathfinding algorithm to take into account the presence of spheres in the environment, resulting in the generation of more realistic paths. In certain scenarios, this functionality may be essential for optimal pathfinding.                        |
+| Weight                     | Float                            | Applies a weight to the Euclidean distance in the pathfinding calculation, influencing how straight or direct paths are.           |
+| Include Diagonals                    | Boolean                          |  This setting enables diagonal movements in pathfinding, offering a balance between simplicity and coverage. It is the most performant option, ideal for environments where precise obstacle shapes and rotations are less critical.                          |
+| Use Sperical Precision                    | Boolean                          | When enabled, this mode takes spherical shapes into account during obstacle detection. This setting is useful for environments with round obstacles like spheres or cylinders, providing more accurate paths around such shapes. However, this increased precision comes with a moderate performance cost on game start.  |
+| Use Rotation Precision  | Boolean    | This is the most detailed and performance-intensive mode during obstacle detection on game start. It considers the rotation obstacles, allowing for precise pathfinding around irregularly shaped and rotated objects. This mode is ideal for complex environments with non-axis aligned or intricately shaped obstacles. |
 | Add Cell Buffer                      | Boolean                          | Enables a buffer zone around each cell, marking nearby cells as unwalkable to create a safer path.                                 |
 | Buffer Distance                      | Integer                          | Sets the size of the buffer zone around obstacles, defined as the number of cells. Larger values increase the clearance around obstacles. |
 | Smooth Turns                         | Boolean                          | Activates path smoothing to reduce sharp turns, making movement along the path more natural.                                    |
@@ -27,10 +29,10 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 
 | Type                              | Description                                                                                                                                        |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Chebyshev                | Considers the maximum of the absolute differences of the Cartesian coordinates. It's effective for grids allowing diagonal movement, as it treats horizontal, vertical, and diagonal moves as having equal cost. |
 | Euclidean                | Measures the straight-line distance between two points in the grid. This is the most direct and shortest path but may not always be the most efficient in terms of path cost or real-world navigation. |
 | Weighted Euclidean       | Similar to Euclidean, but with a weight multiplier applied. This emphasizes straight-line paths, making them more favorable in the pathfinding calculation, often leading to more direct routes. |
 | Manhattan             | Calculates the sum of the absolute differences of the Cartesian coordinates. Ideal for grid-based maps where movement is typically restricted to horizontal and vertical directions (like city blocks). |
-| Chebyshev                | Considers the maximum of the absolute differences of the Cartesian coordinates. It's effective for grids allowing diagonal movement, as it treats horizontal, vertical, and diagonal moves as having equal cost. |
 | Manhattan Euclidean      | A hybrid approach that averages Manhattan and Euclidean distances. This can provide a balance between direct paths and path costs, especially in less restricted grid environments. |
 | Tie-Breaking Euclidean  | Adds a small cost to the standard Euclidean heuristic to help break ties between paths of equal length. This can be useful in reducing the number of nodes explored and ensuring more deterministic pathfinding. |
 
@@ -41,8 +43,6 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 | Property                             | Type                             | Description                                                                                                                        |
 | ------------------------------------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | Ignore All Obstacles                 | Boolean                          | If enabled, the pathfinding algorithm will ignore all obstacles, allowing free movement across the grid.                         |
-| Enable Vertical Obstacle Detection  | Float | Toggles the vertical obstacle detection. If disabled, obstacles are detected regardless of their position on the z-axis. |
-| Vertical Obstacle Offset  | Boolean | Defines the Z-axis offset, either above or below the Trail Blazer actors location, for detecting obstacles. |
 | Obstacle Types To Exclude            | Array of TSubclassOf<AActor>      | Defines a list of actor types that should be ignored as obstacles, allowing paths to pass through them.                           |
 | Obstacles To Exclude                 | Array of AActor*                  | Specifies individual actors to be excluded from being considered as obstacles in path calculations.                              |
 
@@ -62,12 +62,7 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 
 | Property                             | Type                             | Description                                                                                                                        |
 | ------------------------------------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Start Actor                          | AActor*                          | Reference actor to mark the start of the path for debugging.                                                                      |
-| End Actor                            | AActor*                          | Reference actor to mark the end of the path for debugging.                                                                        |
-| Debug Start Location                 | FVector                          | Start location for pathfinding used in debugging.                                                                                 |
-| Debug End Location                   | FVector                          | End location for pathfinding used in debugging.                                                                                   |
 | Show Grid                            | Boolean                          | Display the grid in the game world for debugging purposes.                                                                       |
-| Grid Extent                          | Float                            | Size of the visual representation of the grid for debugging.                                                                     |
 | Show Path Locations                  | Boolean                          | Display calculated path locations in the game world for debugging.                                                               |
 | Show Path Life Time                  | Float                            | Lifetime of the visual representation of the path. Increase for longer-lasting paths.                                            |
 | Path Particles Scale                 | Float                            | Scale of the particles used to visualize the path.                                                                               |

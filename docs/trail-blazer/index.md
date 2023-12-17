@@ -1,6 +1,8 @@
 # Introduction
 
-TrailBlazer is a specialized **grid-based pathfinding plugin** tailored for Unreal Engine projects requiring precise and customizable navigation solutions. Ideal for puzzle games, mazes, and small to medium-sized game environments, this plugin provides an alternative to Unreal Engine's built-in pathfinding, focusing on specific scenarios where grid-based navigation is preferred. While it offers capabilities for larger landscapes, its optimal performance is seen in more contained environments. The plugin includes various adjustable settings like grid size, cell dimensions, and **heuristic methods**, giving developers the flexibility to fine-tune navigation to suit their game's unique requirements.
+TrailBlazer is a specialized plugin designed for {==grid-based pathfinding==}, making it an excellent choice for projects that demand precise and customizable navigation solutions. While its primary strength lies in 2D grid-based pathfinding, it also offers an option to consider landscape height along the z-axis. This plugin is particularly well-suited for puzzle games, mazes, and game environments of small to medium size.
+
+TrailBlazer is focused on specific scenarios where grid-based navigation is the preferred approach. While it does provide capabilities for larger landscapes, it performs optimally in more contained environments. You can take advantage of various adjustable settings such as grid size, cell dimensions, obstacle detection options and heuristic methods to fine-tune navigation and tailor it to the unique requirements of your game.
 
 !!! Info
-    This plugin is not intended to replace Unreal Engine's built-in pathfinding tools. It is tailored for developers who require complete control over all path locations and intricate navigation scenarios.
+    This {==grid-based==} plugin is {==not==} intended to replace Unreal Engine's built-in pathfinding tools. It is tailored for developers who require complete control over all path locations and intricate navigation scenarios within a grid-based environment. It is not ideally suited for highly complex landscapes and environments.

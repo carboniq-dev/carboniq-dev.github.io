@@ -20,6 +20,8 @@
 
 - {==Heuristic Calculation==}: Experiment with different heuristic calculation methods. The choice of heuristic can impact the pathfinding results significantly, so finding the right one for your scenario is important.
 
+- {==Use Max Precision==}: If you encounter difficulties navigating around circular objects within confined spaces, you may want to consider enabling this parameter, which incorporates spherical objects into the path calculation.
+
 - {==Explore Plugin Options==}: Explore additional options exposed by the plugin that can affect pathfinding behavior.
 
 **Is TrailBlazer suitable for dynamic environments?**
