@@ -32,6 +32,8 @@ nav:
   - Trail Blazer:
      - Introduction: ./trail-blazer/index.md
      - Possible Use Cases: ./trail-blazer/use-cases.md
+     - Examples: ./trail-blazer/examples.md
+     - IMPORTANT: ./trail-blazer/important.md
      - The Actor: ./trail-blazer/the-actor.md
      - The Function:
           - Usage: ./trail-blazer/usage.md

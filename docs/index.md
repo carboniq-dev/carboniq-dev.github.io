@@ -10,7 +10,7 @@ Designed for runtime usage that provides a versatile and efficient solution for 
 
 ## Trail Blazer
 
-!!! Note
+!!! Danger "Review"
     This plugin is currently undergoing the review process by Epic Games.
 
 Provides customizable solutions for specific pathfinding requirements in game development. It features dynamic obstacle handling and grid-based logic.

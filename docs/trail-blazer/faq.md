@@ -4,13 +4,6 @@
 
 - TrailBlazer is optimized for {==grid-based pathfinding==} with a focus on customization. It performs exceptionally well in smaller to medium-sized environments. For very large landscapes, performance may vary, and it's recommended to adjust parameters like grid size and cell size for optimal performance.
 
-**How are round or rotated objects handled in the pathfinding process?**
-
-- The plugin incorporates specific flags named {==Use Sperical Precision==} and {==Use Rotation Precision==} to enhance the handling of circular and rotated rectangular objects  during obstacle detection on game start.
-
-!!! Important Warning
-    It's essential to point out that, for this flag to operate effectively, circular objects in your game world should be equipped with a sphere collision component. This component is utilized to accurately define the object's boundaries and facilitate path adjustments as needed.
-
 **Why do I sometimes not receive path locations on certain maps and configurations?**
 
 !!! Note
