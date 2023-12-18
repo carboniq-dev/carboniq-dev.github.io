@@ -10,4 +10,4 @@ TrailBlazer is focused on specific scenarios where grid-based navigation is the 
 !!! Warning "Handling complex enviroments"
     To enhance the flexibility of pathfinding in unusual situations, I've introduced additional settings that influence obstacle detection. These settings allow for the detection of circular objects (provided they have a sphere collision) and rotated rectangular objects that don't align with the grid.
 
-    {==It's important to note that these settings should primarily be reserved for edge cases, confined spaces, or complex scenarios where no path is found, serving as a last-resort solution.==}
+    {==It's important to note that these settings should primarily be reserved for edge cases, confined spaces, or complex scenarios where no path is found.==}
