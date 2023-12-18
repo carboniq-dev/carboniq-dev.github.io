@@ -1,6 +1,6 @@
 # Introduction
 
-<!-- # CarbonIQ -->
+![Get Snap Parameters](../assets/images/snap-central/snap-central-banner.jpg){ width="200" }
 
 Welcome to the documentation for **Snap Central**, an Unreal Engine 5 plugin designed for <mark>runtime usage</mark> that provides a versatile and efficient solution for managing a precise 3D snapping system that spans across the entire world, ensuring <mark>high performance</mark>.
 

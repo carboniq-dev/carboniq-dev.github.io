@@ -10,14 +10,14 @@ Designed for runtime usage that provides a versatile and efficient solution for 
 
 ## Trail Blazer
 
+!!! Note
+    This plugin is currently undergoing the review process by Epic Games.
+
 Provides customizable solutions for specific pathfinding requirements in game development. It features dynamic obstacle handling and grid-based logic.
 
 Epic Store | [Documentation](https://carboniq-dev.github.io/site/trail-blazer)
 
 ![Get Snap Parameters](./assets/images/trail-blazer/trail-blazer-cover.png){ width="500" }
-
-!!! Note
-    This plugin is currently undergoing the review process by Epic Games.
 
 <!-- ## Atmo Sim
 

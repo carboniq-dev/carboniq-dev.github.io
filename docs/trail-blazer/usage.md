@@ -1,7 +1,13 @@
 # Usage
 
-!!! Tip
-    If you don't see the plugin content described in the documentation, be sure to either enable the option to display plugin content or navigate to the TrailBlazer plugin folder itself.
+!!! Tip "Plugin content"
+    If for any reason you cannot locate the plugin content mentioned in this documentation within the _Place Actor_ tab, please enable the option to display plugin content and navigate directly to the TrailBlazer plugin folder.
+
+!!! Warning "Handling rotated static meshes and actors"
+    When dealing with rotated static meshes and actors, it's crucial to place them within an actor that includes a box collision component accurately encapsulating the target mesh. This step ensures that the obstacle detection system can precisely identify the boundaries of the actual shape, when the mesh or actor is not aligned with the grid rotation.
+
+!!! Warning "Handling round objects"
+    Similarly, if you have round objects that need to be considered in obstacle detection, it's advisable to enclose them within an actor featuring a sphere collision component. This approach allows the system to accurately detect the boundaries of round objects, ensuring they are appropriately recognized during pathfinding calculations.
 
 ## Quickstart
 

@@ -765,8 +765,16 @@
 
 <h1 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h1>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If you don't see the plugin content described in the documentation, be sure to either enable the option to display plugin content or navigate to the TrailBlazer plugin folder itself.</p>
+<p class="admonition-title">Plugin content</p>
+<p>If for any reason you cannot locate the plugin content mentioned in this documentation within the <em>Place Actor</em> tab, please enable the option to display plugin content and navigate directly to the TrailBlazer plugin folder.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Handling rotated static meshes and actors</p>
+<p>When dealing with rotated static meshes and actors, it's crucial to place them within an actor that includes a box collision component accurately encapsulating the target mesh. This step ensures that the obstacle detection system can precisely identify the boundaries of the actual shape, when the mesh or actor is not aligned with the grid rotation.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Handling round objects</p>
+<p>Similarly, if you have round objects that need to be considered in obstacle detection, it's advisable to enclose them within an actor featuring a sphere collision component. This approach allows the system to accurately detect the boundaries of round objects, ensuring they are appropriately recognized during pathfinding calculations.</p>
 </div>
 <h2 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h2>
 <p>I've prepared an initial blueprint setup that demonstrates the intended usage of the TrailBlazer plugin. Begin by adding the <strong>TrailBlazerGrid_BP</strong>, <strong>TrailBlazerStarter_BP</strong>, and two <strong>TrailBlazer_Debug_StartEndIndicator_BP</strong> blueprints to your world. Next, select the placed TrailBlazerStarter_BP and configure either the start/end actor or the start/end location. To initiate the pathfinding process, press the play button and left-click in your world.</p>
