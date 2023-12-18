@@ -69,4 +69,3 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 | Show Path Life Time                  | Float                            | Lifetime of the visual representation of the path. Increase for longer-lasting paths.                                            |
 | Path Particles Scale                 | Float                            | Scale of the particles used to visualize the path.                                                                               |
 | Show Path Movement                   | Boolean                          | Visualize the movement along the path for debugging.                                                                             |
-| Find Path On Begin Play              | Boolean                          | Automatically find a path when the game begins. Useful for initial testing.                                                      |
