@@ -33,7 +33,6 @@ nav:
      - Introduction: ./trail-blazer/index.md
      - Possible Use Cases: ./trail-blazer/use-cases.md
      - Examples: ./trail-blazer/examples.md
-     - IMPORTANT: ./trail-blazer/important.md
      - The Actor: ./trail-blazer/the-actor.md
      - Usage: ./trail-blazer/usage.md
      - Epilog: ./trail-blazer/epilogue.md

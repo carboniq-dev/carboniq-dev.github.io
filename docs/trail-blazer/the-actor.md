@@ -64,7 +64,8 @@ This section provides an overview of the **TrailBlazer** actor's properties that
 
 | Property                             | Type                             | Description                                                                                                                        |
 | ------------------------------------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Show Grid                            | Boolean                          | Display the grid in the game world for debugging purposes.                                                                       |
+| Show Grid Cells                           | Boolean                          | Display the grid cells in the game world for debugging purposes.                                                                       |
+| Grid Decal Extent                           | Float                          | READONLY: This variable is set to a value that mirrors the current grid height and ensures that the grid cells will always be visible.                                                                       |
 | Show Path Locations                  | Boolean                          | Display calculated path locations in the game world for debugging.                                                               |
 | Show Path Life Time                  | Float                            | Lifetime of the visual representation of the path. Increase for longer-lasting paths.                                            |
 | Path Particles Scale                 | Float                            | Scale of the particles used to visualize the path.                                                                               |
