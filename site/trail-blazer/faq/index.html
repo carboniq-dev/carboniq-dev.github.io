@@ -690,15 +690,6 @@
 <p><mark class="critic">Explore Plugin Options</mark>: Explore additional options exposed by the plugin that can affect pathfinding behavior.</p>
 </li>
 </ul>
-<p><strong>Is TrailBlazer suitable for dynamic environments?</strong></p>
-<ul>
-<li>
-<p>While TrailBlazer is not primarily intended for dynamic environments, it can be utilized in specific scenarios where dynamic elements are involved, but it's important to use it at your own discretion and risk. The plugin's optimal performance is typically seen in more static or contained environments, so implementing it in highly dynamic settings may require additional considerations and testing to ensure desired results.</p>
-</li>
-<li>
-<p>Additionally, when dealing with dynamic environments, one will need to facilitate the <strong>Initialize Grid</strong> function to reinitialize the grid as needed. It's worth noting that debug functions are wrapped in the TrailBlazerGrid_BP blueprint, so you will need to reconstruct it or copy-paste the existing functionality.</p>
-</li>
-</ul>
 <p><strong>How does the plugin handle different terrain elevations or 3D environments?</strong></p>
 <ul>
 <li>TrailBlazer can adjust path heights to match terrain elevations if the <mark class="critic">Adjust Path to Landscape Height</mark> option is enabled. However, its primary strength is in 2D grid-based pathfinding.</li>
