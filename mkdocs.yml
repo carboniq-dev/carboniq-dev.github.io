@@ -13,6 +13,7 @@ theme:
     - navigation.sections
     - navigation.tabs
     - toc.integrate
+    - content.tabs.link
 nav:
   - Plugins: ./index.md
   - Snap Central:
@@ -41,7 +42,7 @@ plugins:
   - search
   - glightbox
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
 markdown_extensions:
   - admonition
   - attr_list
@@ -52,7 +53,6 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true

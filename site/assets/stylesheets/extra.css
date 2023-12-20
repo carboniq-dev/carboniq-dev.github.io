@@ -5,6 +5,16 @@
   display: none !important;
 }
 
+/* OVERRIDES --> */
+.critic {
+  background-color: rgba(255, 148, 87, 0.5) !important;
+}
+
+.md-tabs {
+  background-color: rgb(35, 142, 255);
+}
+
+/* OVERRIDES <-- */
 div {
   border-color: rgb(234, 234, 234) !important;
 }
@@ -62,12 +72,12 @@ strong {
 
 .md-typeset .example > .admonition-title:before,
 .md-typeset .example > summary:before {
-  background-color: rgb(255, 205, 205);
+  background-color: rgb(255, 150, 51);
 }
 
 .md-typeset .example > .admonition-title,
 .md-typeset .example > summary {
-  background-color: rgb(255, 149, 158);
+  background-color: rgb(255, 211, 182);
 }
 
 .social-media {

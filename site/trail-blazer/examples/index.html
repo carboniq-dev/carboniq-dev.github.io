@@ -39,7 +39,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chebyshev" class="md-skip">
+        <a href="#examples" class="md-skip">
           Skip to content
         </a>
       
@@ -579,109 +579,12 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Examples
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Examples
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#chebyshev" class="md-nav__link">
-    Chebyshev
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#euclidean" class="md-nav__link">
-    Euclidean
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#euclidean-weighted" class="md-nav__link">
-    Euclidean Weighted
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#manhatten" class="md-nav__link">
-    Manhatten
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tie-breaking-euclidean" class="md-nav__link">
-    Tie Breaking Euclidean
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#90-degrees-turns" class="md-nav__link">
-    90 Degrees Turns
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diagonals" class="md-nav__link">
-    Diagonals
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#no-buffer" class="md-nav__link">
-    No Buffer
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#buffer" class="md-nav__link">
-    Buffer
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sharp-turns" class="md-nav__link">
-    Sharp Turns
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#smooth-turns" class="md-nav__link">
-    Smooth Turns
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -765,8 +668,7 @@
                   
 
 
-  <h1>Examples</h1>
-
+<h1 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h1>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Showcases</label><label for="__tabbed_1_2">Edge cases</label><label for="__tabbed_1_3">Heuristic Types</label><label for="__tabbed_1_4">Pathfinding Settings</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -797,7 +699,7 @@
 </div>
 </div>
 <div class="tabbed-block">
-<p><mark class="critic">These scenarios go beyond what this plugin was originally designed for. However, with the new options for spherical and rectangular precision, you can adapt it to handle some unique situations. But remember, these adjustments come with a trade-off: longer load times. It's particularly important to be mindful when you're expanding the grid size while also shrinking the cell size to a smaller dimension. Doing so can lead to significantly longer load times, especially when you're working with rectangular precision. The reason behind this is the complex way the system calculates obstructions. There's a noticeable difference in how it processes objects that are rotated versus those aligned with the grid's orientation. Each requires a specific method in their calculation, adding to the complexity and load time.</mark></p>
+<p><mark class="critic">These scenarios go beyond what this plugin was originally designed for. However, with the options for spherical and rectangular precision, you can adapt it to handle some unique situations. But remember, these adjustments come with a trade-off: longer load times. It's particularly important to be mindful when you're expanding the grid size while also shrinking the cell size to a smaller dimension. Doing so can lead to significantly longer load times, especially when you're working with rectangular precision. The reason behind this is the complex way the system calculates obstructions. There's a noticeable difference in how it processes objects that are rotated versus those aligned with the grid's orientation. Each requires a specific method in their calculation, adding to the complexity and load time.</mark></p>
 <p>The current limitations are recognized, and there are plans for future optimization. This will aim to streamline these functionalities and incorporate them seamlessly as a feature of the plugin. Stay tuned for updates!</p>
 <div class="admonition example">
 <p class="admonition-title">8. Obstacles rotation not aligned with grid  "</p>
@@ -809,29 +711,29 @@
 </div>
 </div>
 <div class="tabbed-block">
-<h3 id="chebyshev">Chebyshev<a class="headerlink" href="#chebyshev" title="Permanent link">&para;</a></h3>
+<p>Chebyshev</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/heuristic/chebyshev.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="chebyshev" src="../../assets/images/trail-blazer/heuristic/chebyshev.PNG" width="200" /></a></p>
-<h3 id="euclidean">Euclidean<a class="headerlink" href="#euclidean" title="Permanent link">&para;</a></h3>
+<p>Euclidean</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/heuristic/euclidean.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="euclidean" src="../../assets/images/trail-blazer/heuristic/euclidean.PNG" width="200" /></a></p>
-<h3 id="euclidean-weighted">Euclidean Weighted<a class="headerlink" href="#euclidean-weighted" title="Permanent link">&para;</a></h3>
+<p>Euclidean Weighted</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/heuristic/euclidean_weighted.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="euclidean_weighted" src="../../assets/images/trail-blazer/heuristic/euclidean_weighted.PNG" width="200" /></a></p>
-<h3 id="manhatten">Manhatten<a class="headerlink" href="#manhatten" title="Permanent link">&para;</a></h3>
+<p>Manhatten</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/heuristic/manhatten.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="manhatten" src="../../assets/images/trail-blazer/heuristic/manhatten.PNG" width="200" /></a></p>
-<h3 id="tie-breaking-euclidean">Tie Breaking Euclidean<a class="headerlink" href="#tie-breaking-euclidean" title="Permanent link">&para;</a></h3>
+<p>Tie Breaking Euclidean</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/heuristic/tieBreakingEuclidean.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="tieBreakingEuclidean" src="../../assets/images/trail-blazer/heuristic/tieBreakingEuclidean.PNG" width="200" /></a></p>
 </div>
 <div class="tabbed-block">
-<h3 id="90-degrees-turns">90 Degrees Turns<a class="headerlink" href="#90-degrees-turns" title="Permanent link">&para;</a></h3>
+<p>90 Degrees Turns</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/settings/sharp_turns.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="sharp_turns" src="../../assets/images/trail-blazer/settings/sharp_turns.PNG" width="200" /></a></p>
-<h3 id="diagonals">Diagonals<a class="headerlink" href="#diagonals" title="Permanent link">&para;</a></h3>
+<p>Diagonals</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/settings/diagonals.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="diagonals" src="../../assets/images/trail-blazer/settings/diagonals.PNG" width="200" /></a></p>
-<h3 id="no-buffer">No Buffer<a class="headerlink" href="#no-buffer" title="Permanent link">&para;</a></h3>
+<p>No Buffer</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/settings/no_buffer.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="no_buffer" src="../../assets/images/trail-blazer/settings/no_buffer.PNG" width="200" /></a></p>
-<h3 id="buffer">Buffer<a class="headerlink" href="#buffer" title="Permanent link">&para;</a></h3>
+<p>Buffer</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/settings/buffer.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="buffer" src="../../assets/images/trail-blazer/settings/buffer.PNG" width="200" /></a></p>
-<h3 id="sharp-turns">Sharp Turns<a class="headerlink" href="#sharp-turns" title="Permanent link">&para;</a></h3>
+<p>Sharp Turns</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/settings/no_smooth.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="no_smooth" src="../../assets/images/trail-blazer/settings/no_smooth.PNG" width="200" /></a></p>
-<h3 id="smooth-turns">Smooth Turns<a class="headerlink" href="#smooth-turns" title="Permanent link">&para;</a></h3>
+<p>Smooth Turns</p>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/settings/smooth.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="smooth" src="../../assets/images/trail-blazer/settings/smooth.PNG" width="200" /></a></p>
 </div>
 </div>
@@ -846,6 +748,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
         </div>
         
       </main>
@@ -906,7 +810,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "header.autohide", "navigation.instant", "navigation.expand", "search.suggest", "search.share", "navigation.footer", "navigation.sections", "navigation.tabs", "toc.integrate"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "header.autohide", "navigation.instant", "navigation.expand", "search.suggest", "search.share", "navigation.footer", "navigation.sections", "navigation.tabs", "toc.integrate", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
