@@ -19,6 +19,17 @@ Epic Store | [Documentation](https://carboniq-dev.github.io/site/trail-blazer)
 
 ![Get Snap Parameters](./assets/images/trail-blazer/trail-blazer-cover.png){ width="500" }
 
+## Flux point
+
+!!! Info "Comming soon"
+    Estimated release: **January 2024**
+
+Flux point is a versatile plugin that effortlessly generates vectors for spawning particles or meshes, suitable for both 2D and 3D shapes. Its user-friendly design and seamless integration with blueprint libraries make it an essential tool for creative and technical projects.
+
+Epic Store | Documentation
+
+![Get Snap Parameters](./assets/images/flux-point/cover.png){ width="500" }
+
 <!-- ## Atmo Sim
 
 A comprehensive atmospheric simulation plugin for Unreal Engine
