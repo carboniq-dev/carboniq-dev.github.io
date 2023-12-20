@@ -62,12 +62,12 @@ strong {
 
 .md-typeset .example > .admonition-title:before,
 .md-typeset .example > summary:before {
-  background-color: rgb(57, 153, 255);
+  background-color: rgb(255, 205, 205);
 }
 
 .md-typeset .example > .admonition-title,
 .md-typeset .example > summary {
-  background-color: rgb(218, 236, 255);
+  background-color: rgb(255, 149, 158);
 }
 
 .social-media {

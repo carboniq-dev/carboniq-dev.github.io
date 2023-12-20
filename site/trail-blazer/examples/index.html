@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#examples" class="md-skip">
+        <a href="#chebyshev" class="md-skip">
           Skip to content
         </a>
       
@@ -579,8 +579,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Examples
@@ -597,8 +595,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -607,180 +603,79 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#heuristic-types" class="md-nav__link">
-    Heuristic Types
-  </a>
-  
-    <nav class="md-nav" aria-label="Heuristic Types">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#chebyshev" class="md-nav__link">
     Chebyshev
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#euclidean" class="md-nav__link">
     Euclidean
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#euclidean-weighted" class="md-nav__link">
     Euclidean Weighted
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#manhatten" class="md-nav__link">
     Manhatten
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#tie-breaking-euclidean" class="md-nav__link">
     Tie Breaking Euclidean
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
-  <a href="#pathfinding-settings" class="md-nav__link">
-    Pathfinding Settings
-  </a>
-  
-    <nav class="md-nav" aria-label="Pathfinding Settings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#90-degrees-turns" class="md-nav__link">
     90 Degrees Turns
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#diagonals" class="md-nav__link">
     Diagonals
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#no-buffer" class="md-nav__link">
     No Buffer
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#buffer" class="md-nav__link">
     Buffer
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#sharp-turns" class="md-nav__link">
     Sharp Turns
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#smooth-turns" class="md-nav__link">
     Smooth Turns
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#show-cases" class="md-nav__link">
-    Show cases
-  </a>
-  
-    <nav class="md-nav" aria-label="Show cases">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pathfinding-on-a-maze" class="md-nav__link">
-    Pathfinding on a maze.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pathfinding-on-stairs" class="md-nav__link">
-    Pathfinding on stairs.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#handling-multiple-elevated-maps" class="md-nav__link">
-    Handling multiple elevated maps.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ingore-specific-obstacles-for-detection-andor-height-adjustments" class="md-nav__link">
-    Ingore specific obstacles for detection and/or height adjustments.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pathfinding-on-a-fairly-large-maze" class="md-nav__link">
-    Pathfinding on a fairly large maze.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#edge-cases" class="md-nav__link">
-    Edge cases
-  </a>
-  
-    <nav class="md-nav" aria-label="Edge cases">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#obstacles-rotation-not-aligned-with-grid" class="md-nav__link">
-    Obstacles rotation not aligned with grid.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#spherical-obstacles-detection" class="md-nav__link">
-    Spherical obstacles detection.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -870,8 +765,50 @@
                   
 
 
-<h1 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h1>
-<h2 id="heuristic-types">Heuristic Types<a class="headerlink" href="#heuristic-types" title="Permanent link">&para;</a></h2>
+  <h1>Examples</h1>
+
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Showcases</label><label for="__tabbed_1_2">Edge cases</label><label for="__tabbed_1_3">Heuristic Types</label><label for="__tabbed_1_4">Pathfinding Settings</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition example">
+<p class="admonition-title">1. Pathfinding on a maze</p>
+<p><a class="glightbox" href="../../assets/images/trail-blazer/example_1.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_1" src="../../assets/images/trail-blazer/example_1.PNG" width="200" /></a></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">2. Pathfinding on large maze. (Maxed out)</p>
+<p>Landscape settings</p>
+<p><a class="glightbox" href="../../assets/images/trail-blazer/example_8_2.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_8" src="../../assets/images/trail-blazer/example_8_2.PNG" width="100" /></a></p>
+<p>Grid settings</p>
+<p><a class="glightbox" href="../../assets/images/trail-blazer/example_8_3.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_8" src="../../assets/images/trail-blazer/example_8_3.PNG" width="100" /></a></p>
+<p>Maze</p>
+<p><a class="glightbox" href="../../assets/images/trail-blazer/example_8.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_8" src="../../assets/images/trail-blazer/example_8.PNG" width="200" /></a></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">3. Pathfinding on stairs</p>
+<p><a class="glightbox" href="../../assets/images/trail-blazer/example_4.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_4" src="../../assets/images/trail-blazer/example_4.PNG" width="200" /></a></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">4. Handling multiple elevated landscapes</p>
+<p><a class="glightbox" href="../../assets/images/trail-blazer/example_7.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_7" src="../../assets/images/trail-blazer/example_7.PNG" width="200" /></a></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">5. Ingoring specific obstacles for detection and/or height adjustments</p>
+<p><a class="glightbox" href="../../assets/images/trail-blazer/example_3.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_3" src="../../assets/images/trail-blazer/example_3.PNG" width="200" /></a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<p><mark class="critic">These scenarios go beyond what this plugin was originally designed for. However, with the new options for spherical and rectangular precision, you can adapt it to handle some unique situations. But remember, these adjustments come with a trade-off: longer load times. It's particularly important to be mindful when you're expanding the grid size while also shrinking the cell size to a smaller dimension. Doing so can lead to significantly longer load times, especially when you're working with rectangular precision. The reason behind this is the complex way the system calculates obstructions. There's a noticeable difference in how it processes objects that are rotated versus those aligned with the grid's orientation. Each requires a specific method in their calculation, adding to the complexity and load time.</mark></p>
+<p>The current limitations are recognized, and there are plans for future optimization. This will aim to streamline these functionalities and incorporate them seamlessly as a feature of the plugin. Stay tuned for updates!</p>
+<div class="admonition example">
+<p class="admonition-title">8. Obstacles rotation not aligned with grid  "</p>
+<p><a class="glightbox" href="../../assets/images/trail-blazer/example_2.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_2" src="../../assets/images/trail-blazer/example_2.PNG" width="200" /></a></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">9. Spherical obstacles detection</p>
+<p><a class="glightbox" href="../../assets/images/trail-blazer/example_5.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_5" src="../../assets/images/trail-blazer/example_5.PNG" width="200" /></a></p>
+</div>
+</div>
+<div class="tabbed-block">
 <h3 id="chebyshev">Chebyshev<a class="headerlink" href="#chebyshev" title="Permanent link">&para;</a></h3>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/heuristic/chebyshev.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="chebyshev" src="../../assets/images/trail-blazer/heuristic/chebyshev.PNG" width="200" /></a></p>
 <h3 id="euclidean">Euclidean<a class="headerlink" href="#euclidean" title="Permanent link">&para;</a></h3>
@@ -882,7 +819,8 @@
 <p><a class="glightbox" href="../../assets/images/trail-blazer/heuristic/manhatten.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="manhatten" src="../../assets/images/trail-blazer/heuristic/manhatten.PNG" width="200" /></a></p>
 <h3 id="tie-breaking-euclidean">Tie Breaking Euclidean<a class="headerlink" href="#tie-breaking-euclidean" title="Permanent link">&para;</a></h3>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/heuristic/tieBreakingEuclidean.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="tieBreakingEuclidean" src="../../assets/images/trail-blazer/heuristic/tieBreakingEuclidean.PNG" width="200" /></a></p>
-<h2 id="pathfinding-settings">Pathfinding Settings<a class="headerlink" href="#pathfinding-settings" title="Permanent link">&para;</a></h2>
+</div>
+<div class="tabbed-block">
 <h3 id="90-degrees-turns">90 Degrees Turns<a class="headerlink" href="#90-degrees-turns" title="Permanent link">&para;</a></h3>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/settings/sharp_turns.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="sharp_turns" src="../../assets/images/trail-blazer/settings/sharp_turns.PNG" width="200" /></a></p>
 <h3 id="diagonals">Diagonals<a class="headerlink" href="#diagonals" title="Permanent link">&para;</a></h3>
@@ -895,23 +833,9 @@
 <p><a class="glightbox" href="../../assets/images/trail-blazer/settings/no_smooth.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="no_smooth" src="../../assets/images/trail-blazer/settings/no_smooth.PNG" width="200" /></a></p>
 <h3 id="smooth-turns">Smooth Turns<a class="headerlink" href="#smooth-turns" title="Permanent link">&para;</a></h3>
 <p><a class="glightbox" href="../../assets/images/trail-blazer/settings/smooth.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="smooth" src="../../assets/images/trail-blazer/settings/smooth.PNG" width="200" /></a></p>
-<h2 id="show-cases">Show cases<a class="headerlink" href="#show-cases" title="Permanent link">&para;</a></h2>
-<h3 id="pathfinding-on-a-maze">Pathfinding on a maze.<a class="headerlink" href="#pathfinding-on-a-maze" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="../../assets/images/trail-blazer/example_1.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_1" src="../../assets/images/trail-blazer/example_1.PNG" width="200" /></a></p>
-<h3 id="pathfinding-on-stairs">Pathfinding on stairs.<a class="headerlink" href="#pathfinding-on-stairs" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="../../assets/images/trail-blazer/example_4.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_4" src="../../assets/images/trail-blazer/example_4.PNG" width="200" /></a></p>
-<h3 id="handling-multiple-elevated-maps">Handling multiple elevated maps.<a class="headerlink" href="#handling-multiple-elevated-maps" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="../../assets/images/trail-blazer/example_7.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_7" src="../../assets/images/trail-blazer/example_7.PNG" width="200" /></a></p>
-<h3 id="ingore-specific-obstacles-for-detection-andor-height-adjustments">Ingore specific obstacles for detection and/or height adjustments.<a class="headerlink" href="#ingore-specific-obstacles-for-detection-andor-height-adjustments" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="../../assets/images/trail-blazer/example_3.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_3" src="../../assets/images/trail-blazer/example_3.PNG" width="200" /></a></p>
-<h3 id="pathfinding-on-a-fairly-large-maze">Pathfinding on a fairly large maze.<a class="headerlink" href="#pathfinding-on-a-fairly-large-maze" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="../../assets/images/trail-blazer/example_6.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_6" src="../../assets/images/trail-blazer/example_6.PNG" width="200" /></a></p>
-<h2 id="edge-cases">Edge cases<a class="headerlink" href="#edge-cases" title="Permanent link">&para;</a></h2>
-<p><mark class="critic">These scenarios fall beyond the intended application range of this plugin.</mark></p>
-<h3 id="obstacles-rotation-not-aligned-with-grid">Obstacles rotation not aligned with grid.<a class="headerlink" href="#obstacles-rotation-not-aligned-with-grid" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="../../assets/images/trail-blazer/example_2.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_2" src="../../assets/images/trail-blazer/example_2.PNG" width="200" /></a></p>
-<h3 id="spherical-obstacles-detection">Spherical obstacles detection.<a class="headerlink" href="#spherical-obstacles-detection" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="../../assets/images/trail-blazer/example_5.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="example_5" src="../../assets/images/trail-blazer/example_5.PNG" width="200" /></a></p>
+</div>
+</div>
+</div>
 
 
 
