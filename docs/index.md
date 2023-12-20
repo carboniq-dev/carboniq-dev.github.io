@@ -12,6 +12,7 @@ Designed for runtime usage that provides a versatile and efficient solution for 
 
 !!! Danger "Review"
     This plugin is currently undergoing the review process by Epic Games.
+    Estimated release: **December 2024**
 
 Provides customizable solutions for specific pathfinding requirements in game development. It features dynamic obstacle handling and grid-based logic.
 
