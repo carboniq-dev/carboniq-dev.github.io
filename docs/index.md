@@ -22,10 +22,10 @@ Epic Store | [Documentation](https://carboniq-dev.github.io/site/trail-blazer)
 
 ## Flux point
 
-!!! Info "Comming soon"
+!!! Tip "Comming soon"
     Estimated release: **January 2024**
 
-Flux point is a versatile plugin that effortlessly generates vectors for spawning particles or meshes, suitable for both 2D and 3D shapes. Its user-friendly design and seamless integration with blueprint libraries make it an essential tool for creative and technical projects.
+Flux point is a versatile plugin that effortlessly generates vectors for spawning particles or meshes, suitable for both 2D and 3D shapes.
 
 Epic Store | Documentation
 
