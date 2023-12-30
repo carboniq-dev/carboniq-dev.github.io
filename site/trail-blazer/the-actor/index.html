@@ -783,7 +783,7 @@
 <tr>
 <td>Include Diagonals</td>
 <td>Boolean</td>
-<td>This setting enables diagonal movements in pathfinding, offering a balance between simplicity and coverage. It is the most performant option, ideal for environments where precise obstacle shapes and rotations are less critical.</td>
+<td>This setting enables diagonal movements in pathfinding, offering a balance between simplicity and coverage. It is the most performant option.</td>
 </tr>
 <tr>
 <td>Use Sperical Precision</td>
@@ -791,7 +791,7 @@
 <td>When enabled, this mode takes spherical shapes into account during obstacle detection. This setting is useful for environments with round obstacles like spheres or cylinders, providing more accurate paths around such shapes. However, this increased precision comes with a moderate performance cost on game start.</td>
 </tr>
 <tr>
-<td>Use Rotation Precision</td>
+<td>Use Rectangular Precision</td>
 <td>Boolean</td>
 <td>This is the most detailed and performance-intensive mode during obstacle detection on game start. It considers the rotation obstacles, allowing for precise pathfinding around irregularly shaped and rotated objects. This mode is ideal for complex environments with non-axis aligned or intricately shaped obstacles. <mark class="critic"><strong>WARNING: This option can significantly increase load times due to its highly intensive calculations.</strong></mark></td>
 </tr>
@@ -905,7 +905,7 @@
 <tr>
 <td>Trace Extent Z</td>
 <td>Float</td>
-<td>Determines the vertical range for landscape height adjustments during path calculations. Increase for more accurate results on varied terrain.</td>
+<td>Determines the vertical range for landscape height adjustments during path calculations.</td>
 </tr>
 <tr>
 <td>Actors To Exclude</td>
