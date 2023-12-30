@@ -18,8 +18,8 @@ Provides customizable solutions for specific pathfinding requirements in game de
 
 Epic Store | [Documentation](https://carboniq-dev.github.io/site/trail-blazer)
 
-![Get Snap Parameters](./assets/images/trail-blazer/trail-blazer-cover.png){ width="500" }
-
+![Trail Blazer](./assets/images/trail-blazer/trail-blazer-cover.png){ width="500" }
+<!-- 
 ## Flux point
 
 !!! Tip "Comming soon"
@@ -29,7 +29,7 @@ Flux point is a versatile plugin that effortlessly generates vectors for spawnin
 
 Epic Store | Documentation
 
-![Get Snap Parameters](./assets/images/flux-point/cover.png){ width="500" }
+![Flux point](./assets/images/flux-point/cover.png){ width="500" } -->
 
 <!-- ## Atmo Sim
 
