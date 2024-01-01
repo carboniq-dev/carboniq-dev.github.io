@@ -1,8 +1,5 @@
 # Introduction
 
-!!! Danger "Review"
-    This plugin is currently undergoing the review process by Epic Games.
-
 ![Get Snap Parameters](../assets/images/trail-blazer/trail-blazer-cover.png){ width="200" }
 
 TrailBlazer is a plugin crafted for {==grid-based pathfinding==}, offering a valuable option for projects requiring accurate and adaptable navigation solutions. While its primary strength lies in {==2D grid-based pathfinding==}, it also offers an option to consider landscape height along the z-axis. This plugin is particularly well-suited for puzzle games, mazes, and game environments of small to medium size.

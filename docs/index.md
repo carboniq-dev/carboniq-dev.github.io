@@ -10,12 +10,9 @@ Designed for runtime usage that provides a versatile and efficient solution for 
 
 ## Trail Blazer
 
-!!! Danger "Review"
-    This plugin is currently undergoing the review process by Epic Games
-
 Provides customizable solutions for specific pathfinding requirements in game development. It features dynamic obstacle handling and grid-based logic.
 
-Epic Store | [Documentation](https://carboniq-dev.github.io/site/trail-blazer)
+[Epic Store](https://www.unrealengine.com/marketplace/en-US/product/trail-blazer){:target="_blank"} | [Documentation](https://carboniq-dev.github.io/site/trail-blazer)
 
 ![Trail Blazer](./assets/images/trail-blazer/trail-blazer-cover.png){ width="500" }
 <!-- 
