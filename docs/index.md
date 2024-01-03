@@ -15,6 +15,19 @@ Provides customizable solutions for specific pathfinding requirements in game de
 [Epic Store](https://www.unrealengine.com/marketplace/en-US/product/trail-blazer){:target="_blank"} | [Documentation](https://carboniq-dev.github.io/site/trail-blazer)
 
 ![Trail Blazer](./assets/images/trail-blazer/trail-blazer-cover.png){ width="500" }
+
+
+## Aero Sim
+
+!!! Tip "Comming soon"
+    Estimated release: **January 2024**
+
+The Advanced Atmosphere Simulator stands as a sophisticated and powerful plugin for Unreal Engine, meticulously crafted to elevate the authenticity of environmental elements in game development.
+
+Epic Store | Documentation
+
+![Aero Sim](./assets/images/aero-sim/aero-sim-cover.png){ width="500" }
+
 <!-- 
 ## Flux point
 
