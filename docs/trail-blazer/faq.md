@@ -1,4 +1,4 @@
-# Epilogue
+# FAQ
 
 **How does the performance of TrailBlazer compare to Unreal Engine's native pathfinding?**
 

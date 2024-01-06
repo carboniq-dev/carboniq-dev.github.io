@@ -38,6 +38,13 @@ nav:
      - Usage: ./trail-blazer/usage.md
      - Epilog: ./trail-blazer/epilogue.md
      - FAQ: ./trail-blazer/faq.md
+  - Aero Sim:
+     - Introduction: ./aero-sim/index.md
+     - Possible Use Cases: ./aero-sim/use-cases.md
+     - Actors: ./aero-sim/actors.md
+     - Usage: ./aero-sim/usage.md
+     - Epilog: ./aero-sim/epilogue.md
+     - FAQ: ./aero-sim/faq.md
 plugins:
   - search
   - glightbox
