@@ -43,7 +43,7 @@ nav:
      - Possible Use Cases: ./aero-sim/use-cases.md
      - Actors: ./aero-sim/actors.md
      - Usage: ./aero-sim/usage.md
-     - Gallery: ./aero-sim/gallery.md
+     - Visuals: ./aero-sim/visuals.md
      - Epilog: ./aero-sim/epilogue.md
      - FAQ: ./aero-sim/faq.md
 plugins:
