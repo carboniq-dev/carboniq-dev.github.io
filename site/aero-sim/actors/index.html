@@ -774,8 +774,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#condensor" class="md-nav__link">
-    Condensor
+  <a href="#condenser" class="md-nav__link">
+    Condenser
   </a>
   
 </li>
@@ -942,54 +942,99 @@
 </thead>
 <tbody>
 <tr>
-<td>StartHeight</td>
-<td>Float</td>
-<td>Starting altitude for atmospheric calculations.</td>
+<td>Is Active</td>
+<td>Boolean</td>
+<td>Activates or deactivates the atmospheric influence.</td>
 </tr>
 <tr>
-<td>MaxHeight</td>
-<td>Float</td>
-<td>Maximum altitude for atmospheric effects.</td>
+<td>Calc Humidity</td>
+<td>Boolean</td>
+<td>Toggle to calculate humidity effects.</td>
 </tr>
 <tr>
-<td>BaseGasConcentrations</td>
+<td>Calc Pressure</td>
+<td>Boolean</td>
+<td>Toggle to calculate atmospheric pressure effects.</td>
+</tr>
+<tr>
+<td>Calc Temperature</td>
+<td>Boolean</td>
+<td>Toggle to calculate temperature effects.</td>
+</tr>
+<tr>
+<td>Use Advanced Influence</td>
+<td>Boolean</td>
+<td>Use advanced algorithms for influence calculations.</td>
+</tr>
+<tr>
+<td>Use Boiling Point</td>
+<td>Boolean</td>
+<td>Consider boiling points of gases in calculations.</td>
+</tr>
+<tr>
+<td>Report On Location Changed</td>
+<td>Boolean</td>
+<td>Report changes when location is changed.</td>
+</tr>
+<tr>
+<td>Show Debug Panel</td>
+<td>Boolean</td>
+<td>Displays a debug panel showing the atmosphere measurement values.</td>
+</tr>
+<tr>
+<td>Base Gas Concentrations</td>
 <td>Map</td>
 <td>Base concentrations for different gas types.</td>
 </tr>
 <tr>
-<td>GasConcentrationCaps</td>
+<td>Gas Concentration Caps</td>
 <td>Map</td>
 <td>Caps on concentrations for different gases.</td>
 </tr>
 <tr>
-<td>CalcHumidity</td>
-<td>Booleanean</td>
-<td>Toggle to calculate humidity effects.</td>
+<td>Influence Unbound</td>
+<td>Boolean</td>
+<td>If true, the influence is always active, regardless of distance.</td>
 </tr>
 <tr>
-<td>CalcPressure</td>
-<td>Booleanean</td>
-<td>Toggle to calculate atmospheric pressure effects.</td>
+<td>Influence Radius</td>
+<td>Float</td>
+<td>This parameter defines the spatial extent of the atmospheric region, specifying the maximum distance from the central point or source within which atmospheric effects are applied.</td>
 </tr>
 <tr>
-<td>CalcTemperature</td>
-<td>Booleanean</td>
-<td>Toggle to calculate temperature effects.</td>
+<td>Apply Atmospheric Boundary Falloff</td>
+<td>Boolean</td>
+<td>Activates simulation of decreasing impact with increasing distance from the atmosphere's center.</td>
 </tr>
 <tr>
-<td>UseAdvancedInfluence</td>
-<td>Booleanean</td>
-<td>Use advanced algorithms for influence calculations.</td>
+<td>Atmospheric Boundary Falloff Factor</td>
+<td>Float</td>
+<td>Determines the rate at which atmospheric effects decrease towards the outer boundary. Higher values result in a sharper decrease.</td>
 </tr>
 <tr>
-<td>UseBoilingPoint</td>
-<td>Booleanean</td>
-<td>Consider boiling points of gases in calculations.</td>
+<td>Show Influence</td>
+<td>Boolean</td>
+<td>Determines whether to show the boundary area visually.</td>
 </tr>
 <tr>
-<td>ReportOnLocationChanged</td>
-<td>Booleanean</td>
-<td>Report changes when location is changed.</td>
+<td>Bounds Color</td>
+<td>LinearColor</td>
+<td>Color of the indicator for the boundary area.</td>
+</tr>
+<tr>
+<td>Start Height</td>
+<td>Float</td>
+<td>Starting altitude for atmospheric calculations.</td>
+</tr>
+<tr>
+<td>Max Height</td>
+<td>Float</td>
+<td>Maximum altitude for atmospheric effects.</td>
+</tr>
+<tr>
+<td>Height Influence Factor</td>
+<td>Float</td>
+<td>Determines how much height affects the atmosphere composition.</td>
 </tr>
 <tr>
 <td>Temperature</td>
@@ -997,14 +1042,14 @@
 <td>Planets average temperature.</td>
 </tr>
 <tr>
-<td>TemperatureCap</td>
+<td>Temperature Cap</td>
 <td>Float</td>
-<td>How much temperature affects the gas concentration.</td>
+<td>The maximum cap for temperature in the atmosphere calculation.</td>
 </tr>
 <tr>
-<td>TempEffectOnGasFactor</td>
+<td>Temp Effect On Gas Factor</td>
 <td>Float</td>
-<td>How much temperature affects the gas concentration.</td>
+<td>Determines how much temperature affects the gas concentration.</td>
 </tr>
 <tr>
 <td>Humidity</td>
@@ -1012,9 +1057,9 @@
 <td>Planets average humidity.</td>
 </tr>
 <tr>
-<td>HumidityEffectFactor</td>
+<td>Humidity Effect Factor</td>
 <td>Float</td>
-<td>How much humidity affects the gas concentration.</td>
+<td>Determines how much humidity affects the gas concentration.</td>
 </tr>
 <tr>
 <td>Gravity</td>
@@ -1022,9 +1067,19 @@
 <td>Planets average gravity.</td>
 </tr>
 <tr>
-<td>GravityEffectFactor</td>
+<td>Gravity Effect Factor</td>
 <td>Float</td>
-<td>How much gravity affects the gas concentration.</td>
+<td>Determines how much gravity affects the gas concentration.</td>
+</tr>
+<tr>
+<td>Pressure Cap</td>
+<td>Float</td>
+<td>The maximum cap for atmospheric pressure in the atmosphere calculation.</td>
+</tr>
+<tr>
+<td>Pressure Multiplier</td>
+<td>Float</td>
+<td>A modifier that adjusts the rate of atmospheric pressure buildup, used to either increase or decrease the resulting pressure.</td>
 </tr>
 </tbody>
 </table>
@@ -1040,7 +1095,7 @@
 </thead>
 <tbody>
 <tr>
-<td>IsActive</td>
+<td>Is Active</td>
 <td>Boolean</td>
 <td>Activates or deactivates the atmospheric influence.</td>
 </tr>
@@ -1050,49 +1105,49 @@
 <td>Defines the types and properties of gases in the atmosphere.</td>
 </tr>
 <tr>
-<td>InfluenceAlways</td>
+<td>Influence Unbound</td>
 <td>Boolean</td>
 <td>If true, the influence is always active, regardless of distance.</td>
 </tr>
 <tr>
-<td>InfluenceRadius</td>
+<td>Influence Radius</td>
 <td>Float</td>
 <td>Radius within which the atmospheric influence is effective.</td>
 </tr>
 <tr>
-<td>UseVisuals</td>
+<td>Use Visuals</td>
 <td>Boolean</td>
 <td>Toggle to use the built-in visual representations.</td>
 </tr>
 <tr>
-<td>MainMesh</td>
+<td>Main Mesh</td>
 <td>Static Mesh</td>
 <td>The main mesh to represent the atmospheric source visually.</td>
 </tr>
 <tr>
-<td>FXLocation</td>
+<td>FX Location</td>
 <td>FVector</td>
 <td>Location of visual effects visualizing the influence.</td>
 </tr>
 <tr>
-<td>FXColor</td>
+<td>FX Color</td>
 <td>FLinearColor</td>
 <td>Color of the visual effects for atmospheric influence.</td>
 </tr>
 <tr>
-<td>ShowInfluenceRadius</td>
+<td>Show Influence Radius</td>
 <td>Boolean</td>
 <td>Determines whether to show the influence radius visually.</td>
 </tr>
 <tr>
-<td>IndicatorColor</td>
+<td>Indicator Color</td>
 <td>FLinearColor</td>
 <td>Color of the indicator for the influence radius.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="condensor">Condensor<a class="headerlink" href="#condensor" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../../assets/images/aero-sim/condenser.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Condensor" src="../../assets/images/aero-sim/condenser.PNG" /></a></p>
+<h2 id="condenser">Condenser<a class="headerlink" href="#condenser" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="../../assets/images/aero-sim/condenser.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Condenser" src="../../assets/images/aero-sim/condenser.PNG" /></a></p>
 <table>
 <thead>
 <tr>
@@ -1103,7 +1158,7 @@
 </thead>
 <tbody>
 <tr>
-<td>IsActive</td>
+<td>Is Active</td>
 <td>Boolean</td>
 <td>Activates or deactivates the atmospheric influence.</td>
 </tr>
@@ -1113,52 +1168,52 @@
 <td>Average humidity.</td>
 </tr>
 <tr>
-<td>MaxHumidityDecrease</td>
+<td>Max Humidity Decrease</td>
 <td>Float</td>
 <td>Maximum amount of humidity decrease allowed.</td>
 </tr>
 <tr>
-<td>AbsorptionRate</td>
+<td>Absorption Rate</td>
 <td>Float</td>
 <td>Rate at which the condenser absorbs humidity.</td>
 </tr>
 <tr>
-<td>InfluenceAlways</td>
+<td>Influence Unbound</td>
 <td>Boolean</td>
 <td>If true, the influence is always active, regardless of distance.</td>
 </tr>
 <tr>
-<td>InfluenceRadius</td>
+<td>Influence Radius</td>
 <td>Float</td>
 <td>Radius within which the atmospheric influence is effective.</td>
 </tr>
 <tr>
-<td>UseVisuals</td>
+<td>Use Visuals</td>
 <td>Boolean</td>
 <td>Toggle to use the built-in visual representations.</td>
 </tr>
 <tr>
-<td>MainMesh</td>
+<td>Main Mesh</td>
 <td>Static Mesh</td>
 <td>The main mesh to represent the atmospheric source visually.</td>
 </tr>
 <tr>
-<td>FXLocation</td>
+<td>FX Location</td>
 <td>FVector</td>
 <td>Location of visual effects visualizing the influence.</td>
 </tr>
 <tr>
-<td>FXColor</td>
+<td>FX Color</td>
 <td>FLinearColor</td>
 <td>Color of the visual effects for atmospheric influence.</td>
 </tr>
 <tr>
-<td>ShowInfluenceRadius</td>
+<td>Show Influence Radius</td>
 <td>Boolean</td>
 <td>Determines whether to show the influence radius visually.</td>
 </tr>
 <tr>
-<td>IndicatorColor</td>
+<td>Indicator Color</td>
 <td>FLinearColor</td>
 <td>Color of the indicator for the influence radius.</td>
 </tr>
@@ -1176,62 +1231,62 @@
 </thead>
 <tbody>
 <tr>
-<td>IsActive</td>
+<td>Is Active</td>
 <td>Boolean</td>
 <td>Activates or deactivates the atmospheric influence.</td>
 </tr>
 <tr>
-<td>HeatAbsorption</td>
+<td>Heat Absorption</td>
 <td>Float</td>
 <td>Heat absorbed by the planet on average.</td>
 </tr>
 <tr>
-<td>MaxHeatAbsorption</td>
+<td>Max Heat Absorption</td>
 <td>Float</td>
 <td>Maximum limit of heat that can be absorbed.</td>
 </tr>
 <tr>
-<td>AbsorptionRate</td>
+<td>Absorption Rate</td>
 <td>Float</td>
 <td>Rate at which heat is absorbed.</td>
 </tr>
 <tr>
-<td>InfluenceAlways</td>
+<td>Influence Unbound</td>
 <td>Boolean</td>
 <td>If true, the influence is always active, regardless of distance.</td>
 </tr>
 <tr>
-<td>InfluenceRadius</td>
+<td>Influence Radius</td>
 <td>Float</td>
 <td>Radius within which the atmospheric influence is effective.</td>
 </tr>
 <tr>
-<td>UseVisuals</td>
+<td>Use Visuals</td>
 <td>Boolean</td>
 <td>Toggle to use the built-in visual representations.</td>
 </tr>
 <tr>
-<td>MainMesh</td>
+<td>Main Mesh</td>
 <td>Static Mesh</td>
 <td>The main mesh to represent the atmospheric source visually.</td>
 </tr>
 <tr>
-<td>FXLocation</td>
+<td>FX Location</td>
 <td>FVector</td>
 <td>Location of visual effects visualizing the influence.</td>
 </tr>
 <tr>
-<td>FXColor</td>
+<td>FX Color</td>
 <td>FLinearColor</td>
 <td>Color of the visual effects for atmospheric influence.</td>
 </tr>
 <tr>
-<td>ShowInfluenceRadius</td>
+<td>Show Influence Radius</td>
 <td>Boolean</td>
 <td>Determines whether to show the influence radius visually.</td>
 </tr>
 <tr>
-<td>IndicatorColor</td>
+<td>Indicator Color</td>
 <td>FLinearColor</td>
 <td>Color of the indicator for the influence radius.</td>
 </tr>
@@ -1249,62 +1304,62 @@
 </thead>
 <tbody>
 <tr>
-<td>IsActive</td>
+<td>Is Active</td>
 <td>Boolean</td>
 <td>Activates or deactivates the atmospheric influence.</td>
 </tr>
 <tr>
-<td>HeatOutput</td>
+<td>Heat Output</td>
 <td>Float</td>
 <td>Average heat output of the planet.</td>
 </tr>
 <tr>
-<td>MaxHeatOutput</td>
+<td>Max Heat Output</td>
 <td>Float</td>
 <td>Maximum heat output that the planet can produce.</td>
 </tr>
 <tr>
-<td>RadiationRate</td>
+<td>Radiation Rate</td>
 <td>Float</td>
 <td>Rate at which the planet radiates heat.</td>
 </tr>
 <tr>
-<td>InfluenceAlways</td>
+<td>Influence Unbound</td>
 <td>Boolean</td>
 <td>If true, the influence is always active, regardless of distance.</td>
 </tr>
 <tr>
-<td>InfluenceRadius</td>
+<td>Influence Radius</td>
 <td>Float</td>
 <td>Radius within which the atmospheric influence is effective.</td>
 </tr>
 <tr>
-<td>UseVisuals</td>
+<td>Use Visuals</td>
 <td>Boolean</td>
 <td>Toggle to use the built-in visual representations.</td>
 </tr>
 <tr>
-<td>MainMesh</td>
+<td>Main Mesh</td>
 <td>Static Mesh</td>
 <td>The main mesh to represent the atmospheric source visually.</td>
 </tr>
 <tr>
-<td>FXLocation</td>
+<td>FX Location</td>
 <td>FVector</td>
 <td>Location of visual effects visualizing the influence.</td>
 </tr>
 <tr>
-<td>FXColor</td>
+<td>FX Color</td>
 <td>FLinearColor</td>
 <td>Color of the visual effects for atmospheric influence.</td>
 </tr>
 <tr>
-<td>ShowInfluenceRadius</td>
+<td>Show Influence Radius</td>
 <td>Boolean</td>
 <td>Determines whether to show the influence radius visually.</td>
 </tr>
 <tr>
-<td>IndicatorColor</td>
+<td>Indicator Color</td>
 <td>FLinearColor</td>
 <td>Color of the indicator for the influence radius.</td>
 </tr>
@@ -1322,7 +1377,7 @@
 </thead>
 <tbody>
 <tr>
-<td>IsActive</td>
+<td>Is Active</td>
 <td>Boolean</td>
 <td>Activates or deactivates the atmospheric influence.</td>
 </tr>
@@ -1332,52 +1387,52 @@
 <td>Average steam produced.</td>
 </tr>
 <tr>
-<td>MaxSteamEmission</td>
+<td>Max Steam Emission</td>
 <td>Float</td>
 <td>Maximum limit of steam emission.</td>
 </tr>
 <tr>
-<td>SteamEmission</td>
+<td>Steam Emission</td>
 <td>Float</td>
 <td>Rate at which steam is emitted.</td>
 </tr>
 <tr>
-<td>InfluenceAlways</td>
+<td>Influence Unbound</td>
 <td>Boolean</td>
 <td>If true, the influence is always active, regardless of distance.</td>
 </tr>
 <tr>
-<td>InfluenceRadius</td>
+<td>Influence Radius</td>
 <td>Float</td>
 <td>Radius within which the atmospheric influence is effective.</td>
 </tr>
 <tr>
-<td>UseVisuals</td>
+<td>Use Visuals</td>
 <td>Boolean</td>
 <td>Toggle to use the built-in visual representations.</td>
 </tr>
 <tr>
-<td>MainMesh</td>
+<td>Main Mesh</td>
 <td>Static Mesh</td>
 <td>The main mesh to represent the atmospheric source visually.</td>
 </tr>
 <tr>
-<td>FXLocation</td>
+<td>FX Location</td>
 <td>FVector</td>
 <td>Location of visual effects visualizing the influence.</td>
 </tr>
 <tr>
-<td>FXColor</td>
+<td>FX Color</td>
 <td>FLinearColor</td>
 <td>Color of the visual effects for atmospheric influence.</td>
 </tr>
 <tr>
-<td>ShowInfluenceRadius</td>
+<td>Show Influence Radius</td>
 <td>Boolean</td>
 <td>Determines whether to show the influence radius visually.</td>
 </tr>
 <tr>
-<td>IndicatorColor</td>
+<td>Indicator Color</td>
 <td>FLinearColor</td>
 <td>Color of the indicator for the influence radius.</td>
 </tr>
@@ -1395,7 +1450,7 @@
 </thead>
 <tbody>
 <tr>
-<td>IsActive</td>
+<td>Is Active</td>
 <td>Boolean</td>
 <td>Activates or deactivates the atmospheric influence.</td>
 </tr>
@@ -1405,42 +1460,42 @@
 <td>Defines the types and properties of gases in the atmosphere.</td>
 </tr>
 <tr>
-<td>InfluenceAlways</td>
+<td>Influence Unbound</td>
 <td>Boolean</td>
 <td>If true, the influence is always active, regardless of distance.</td>
 </tr>
 <tr>
-<td>InfluenceRadius</td>
+<td>Influence Radius</td>
 <td>Float</td>
 <td>Radius within which the atmospheric influence is effective.</td>
 </tr>
 <tr>
-<td>UseVisuals</td>
+<td>Use Visuals</td>
 <td>Boolean</td>
 <td>Toggle to use the built-in visual representations.</td>
 </tr>
 <tr>
-<td>MainMesh</td>
+<td>Main Mesh</td>
 <td>Static Mesh</td>
 <td>The main mesh to represent the atmospheric source visually.</td>
 </tr>
 <tr>
-<td>FXLocation</td>
+<td>FX Location</td>
 <td>FVector</td>
 <td>Location of visual effects visualizing the influence.</td>
 </tr>
 <tr>
-<td>FXColor</td>
+<td>FX Color</td>
 <td>FLinearColor</td>
 <td>Color of the visual effects for atmospheric influence.</td>
 </tr>
 <tr>
-<td>ShowInfluenceRadius</td>
+<td>Show Influence Radius</td>
 <td>Boolean</td>
 <td>Determines whether to show the influence radius visually.</td>
 </tr>
 <tr>
-<td>IndicatorColor</td>
+<td>Indicator Color</td>
 <td>FLinearColor</td>
 <td>Color of the indicator for the influence radius.</td>
 </tr>
@@ -1542,8 +1597,8 @@
 <h3 id="gas-properties-mutable">Gas Properties (mutable)<a class="headerlink" href="#gas-properties-mutable" title="Permanent link">&para;</a></h3>
 <p>Based on your specific requirements, it's not necessary to configure every parameter.</p>
 <ul>
-<li><strong>Vents</strong>: Concentration, GasEmission, and MaxGasIncrease.</li>
-<li><strong>Absorbers</strong>: Concentration, GasAbsorption, and MaxGasDecrease.</li>
+<li><strong>Vents</strong>: Concentration, Gas Emission, and Max Gas Increase.</li>
+<li><strong>Absorbers</strong>: Concentration, Gas Absorption, and Max Gas Decrease.</li>
 </ul>
 <table>
 <thead>
@@ -1560,22 +1615,22 @@
 <td>The concentration level of the gas.</td>
 </tr>
 <tr>
-<td>GasEmission</td>
+<td>Gas Emission</td>
 <td>Float</td>
 <td>The rate at which gas is emitted.</td>
 </tr>
 <tr>
-<td>GasAbsorption</td>
+<td>Gas Absorption</td>
 <td>Float</td>
 <td>The rate at which gas is absorbed.</td>
 </tr>
 <tr>
-<td>MaxGasIncrease</td>
+<td>Max Gas Increase</td>
 <td>Float</td>
 <td>Maximum increase limit for gas concentration.</td>
 </tr>
 <tr>
-<td>MaxGasDecrease</td>
+<td>Max Gas Decrease</td>
 <td>Float</td>
 <td>Maximum decrease limit for gas concentration.</td>
 </tr>
@@ -1597,7 +1652,7 @@
 <td>Gas properties.</td>
 </tr>
 <tr>
-<td>MolecularWeight</td>
+<td>Molecular Weight</td>
 <td>Float</td>
 <td>Molecular weight of the gas, affecting its density.</td>
 </tr>
@@ -1612,7 +1667,7 @@
 <td>Toxicity level of the gas, ranging from non-toxic (0) to very toxic (1).</td>
 </tr>
 <tr>
-<td>BoilingPoint</td>
+<td>Boiling Point</td>
 <td>Float</td>
 <td>Boiling point of the gas in Celsius.</td>
 </tr>
@@ -1622,7 +1677,7 @@
 <td>Volume occupied by the gas.</td>
 </tr>
 <tr>
-<td>MaxConcentration</td>
+<td>Max Concentration</td>
 <td>Float</td>
 <td>Maximum concentration limit of the gas.</td>
 </tr>
