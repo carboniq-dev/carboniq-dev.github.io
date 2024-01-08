@@ -905,20 +905,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#atmospheric-gas" class="md-nav__link">
-    Atmospheric Gas
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gas-config" class="md-nav__link">
-    Gas Config
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1869,90 +1855,6 @@
 <td>Dark Purple (75, 0, 130)</td>
 <td>0.0</td>
 <td>-108.1°C</td>
-</tr>
-</tbody>
-</table>
-<h3 id="atmospheric-gas">Atmospheric Gas<a class="headerlink" href="#atmospheric-gas" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Name</td>
-<td>String</td>
-<td>Name of the target gas.</td>
-</tr>
-<tr>
-<td>Config</td>
-<td>GasConfig</td>
-<td>Gas properties.</td>
-</tr>
-<tr>
-<td>Molecular Weight</td>
-<td>Float</td>
-<td>Molecular weight of the gas, affecting its density.</td>
-</tr>
-<tr>
-<td>Color</td>
-<td>Color</td>
-<td>Color used for visual representation of the gas.</td>
-</tr>
-<tr>
-<td>Toxicity</td>
-<td>Float</td>
-<td>Toxicity level of the gas, ranging from non-toxic (0) to very toxic (1).</td>
-</tr>
-<tr>
-<td>Boiling Point</td>
-<td>Float</td>
-<td>Boiling point of the gas in Celsius.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="gas-config">Gas Config<a class="headerlink" href="#gas-config" title="Permanent link">&para;</a></h3>
-<p>It's not obligatory to configure each parameter when initializing the baseline atmospheric concentration or when setting configurations for <strong>Vents</strong> or <strong>Absorbers</strong> gas mapping.</p>
-<ul>
-<li>For <strong>Vents</strong> set Concentration, Gas Emission, and Max Gas Increase.</li>
-<li>For <strong>Absorbers</strong> set Concentration, Gas Absorption, and Max Gas Decrease.</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Concentration</td>
-<td>Float</td>
-<td>The concentration level of the gas.</td>
-</tr>
-<tr>
-<td>Gas Emission</td>
-<td>Float</td>
-<td>The rate at which gas is emitted.</td>
-</tr>
-<tr>
-<td>Gas Absorption</td>
-<td>Float</td>
-<td>The rate at which gas is absorbed.</td>
-</tr>
-<tr>
-<td>Max Gas Increase</td>
-<td>Float</td>
-<td>Maximum increase limit for gas concentration.</td>
-</tr>
-<tr>
-<td>Max Gas Decrease</td>
-<td>Float</td>
-<td>Maximum decrease limit for gas concentration.</td>
 </tr>
 </tbody>
 </table>
