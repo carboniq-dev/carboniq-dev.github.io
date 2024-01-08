@@ -9,15 +9,17 @@
       
       
       
-        <link rel="prev" href="../epilogue/">
+        <link rel="prev" href="../actors/">
       
+      
+        <link rel="next" href="../usage/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
     
     
       
-        <title>FAQ - CarbonIQ Plugins (UE)</title>
+        <title>Nodes - CarbonIQ Plugins (UE)</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#faq" class="md-skip">
+        <a href="#nodes" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              FAQ
+              Nodes
             
           </span>
         </div>
@@ -736,11 +738,92 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../nodes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Nodes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Nodes
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#calc-async-function" class="md-nav__link">
+    Calc Async Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-measurement-delegate" class="md-nav__link">
+    On Measurement Delegate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#return-type" class="md-nav__link">
+    Return Type
+  </a>
+  
+    <nav class="md-nav" aria-label="Return Type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atmospheric-gas" class="md-nav__link">
+    Atmospheric Gas
+  </a>
+  
+    <nav class="md-nav" aria-label="Atmospheric Gas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gas-config" class="md-nav__link">
+    Gas Config
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -792,21 +875,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
         FAQ
       </a>
-      
     </li>
   
 
@@ -833,35 +906,93 @@
                   
 
 
-<h1 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h1>
-<p><strong>What is Aero Sim?</strong></p>
-<ul>
-<li>Aero Sim is a plugin designed for managing atmospheric conditions in virtual environments. It offers customizable settings for gas concentrations, temperature, humidity, and visual effects, enhancing the realism and dynamics of your game world.</li>
-</ul>
-<p><strong>Can Aero Sim simulate real-world atmospheric conditions?</strong></p>
-<ul>
-<li>While Aero Sim provides detailed atmospheric control, it is optimized for game development rather than simulating exact real-world conditions. It offers a balance between realism and computational efficiency, making it ideal for creating believable yet manageable virtual environments.</li>
-</ul>
-<p><strong>How does Aero Sim handle different gases?</strong></p>
-<ul>
-<li>Aero Sim allows you to manage a variety of gases through its <strong>Gases</strong> property. You can set base concentrations and cap concentrations for different gas types, tailoring the atmospheric composition to your specific requirements.</li>
-</ul>
-<p><strong>Can I control the influence radius of atmospheric effects?</strong></p>
-<ul>
-<li>Yes, Aero Sim lets you set an <strong>Influence Radius</strong> to define the area within which atmospheric changes are effective. This can be overridden to always influence the atmosphere, regardless of distance, using the <strong>bInfluenceUnbound</strong> property.</li>
-</ul>
-<p><strong>Is Aero Sim suitable for simulating extreme weather conditions?</strong></p>
-<ul>
-<li>Aero Sim is flexible enough to handle a range of atmospheric scenarios, including extreme weather conditions. By adjusting temperature, humidity, and gas concentrations, you can create diverse environmental conditions.</li>
-</ul>
-<p><strong>Does Aero Sim include humidity control?</strong></p>
-<ul>
-<li>Yes, Aero Sim includes a humidity control feature. You can set the average humidity level and define how it influences gas concentrations in your virtual environment.</li>
-</ul>
-<p><strong>How does temperature management work in Aero Sim?</strong></p>
-<ul>
-<li>Aero Sim allows you to set an average temperature and a maximum temperature cap, which influence the overall thermal characteristics of your environment. These settings are crucial for simulating different climatic conditions. Additionally, you can activate the <strong>bUseAdvancedInfluence</strong> option, which allows factors such as temperature, humidity, and gravity to influence your gas concentrations.</li>
-</ul>
+<h1 id="nodes">Nodes<a class="headerlink" href="#nodes" title="Permanent link">&para;</a></h1>
+<h2 id="calc-async-function"><strong>Calc Async</strong> Function<a class="headerlink" href="#calc-async-function" title="Permanent link">&para;</a></h2>
+<p>This function must be run to initiate the calculation process. For instance, input the location by using the position of your player or camera actor.</p>
+<p><a class="glightbox" href="../../assets/images/aero-sim/function.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Function" src="../../assets/images/aero-sim/function.PNG" /></a></p>
+<h2 id="on-measurement-delegate"><strong>On Measurement</strong> Delegate<a class="headerlink" href="#on-measurement-delegate" title="Permanent link">&para;</a></h2>
+<p>To obtain measurement values, you must establish a connection to the <em>OnMeasurement</em> delegate by binding a custom event. Alternatively, if you are in the early stages of development and simply require to access the values, you can utilize the integrated debug panel.</p>
+<p><a class="glightbox" href="../../assets/images/aero-sim/delegate.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Delegate" src="../../assets/images/aero-sim/delegate.PNG" /></a></p>
+<h2 id="return-type">Return Type<a class="headerlink" href="#return-type" title="Permanent link">&para;</a></h2>
+<h3 id="atmospheric-gas">Atmospheric Gas<a class="headerlink" href="#atmospheric-gas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>String</td>
+<td>Name of the target gas.</td>
+</tr>
+<tr>
+<td>Config</td>
+<td>Gas Config</td>
+<td>Gas properties.</td>
+</tr>
+<tr>
+<td>Molecular Weight</td>
+<td>Float</td>
+<td>Molecular weight of the gas, affecting its density.</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Color</td>
+<td>Color used for visual representation of the gas.</td>
+</tr>
+<tr>
+<td>Toxicity</td>
+<td>Float</td>
+<td>Toxicity level of the gas, ranging from non-toxic (0) to very toxic (1).</td>
+</tr>
+<tr>
+<td>Boiling Point</td>
+<td>Float</td>
+<td>Boiling point of the gas in Celsius.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="gas-config">Gas Config<a class="headerlink" href="#gas-config" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Concentration</td>
+<td>Float</td>
+<td>The concentration level of the gas.</td>
+</tr>
+<tr>
+<td>Gas Emission</td>
+<td>Float</td>
+<td>The rate at which gas is emitted. (Ignored by Absorbers)</td>
+</tr>
+<tr>
+<td>Gas Absorption</td>
+<td>Float</td>
+<td>The rate at which gas is absorbed. (Ignored by Vents)</td>
+</tr>
+<tr>
+<td>Max Gas Increase</td>
+<td>Float</td>
+<td>Maximum increase limit for gas concentration. (Ignored by Absorbers)</td>
+</tr>
+<tr>
+<td>Max Gas Decrease</td>
+<td>Float</td>
+<td>Maximum decrease limit for gas concentration. (Ignored by Vents)</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -890,7 +1021,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../epilogue/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Epilog" rel="prev">
+          <a href="../actors/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Actors" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -899,11 +1030,26 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Epilog
+                Actors
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../usage/" class="md-footer__link md-footer__link--next" aria-label="Next: Usage" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Usage
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     

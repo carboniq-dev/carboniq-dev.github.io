@@ -12,7 +12,7 @@
         <link rel="prev" href="../use-cases/">
       
       
-        <link rel="next" href="../usage/">
+        <link rel="next" href="../nodes/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
@@ -906,15 +906,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#gas-properties-mutable" class="md-nav__link">
-    Gas Properties (mutable)
+  <a href="#atmospheric-gas" class="md-nav__link">
+    Atmospheric Gas
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#gas-properties-immutable" class="md-nav__link">
-    Gas Properties (immutable)
+  <a href="#gas-config" class="md-nav__link">
+    Gas Config
   </a>
   
 </li>
@@ -928,6 +928,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nodes/" class="md-nav__link">
+        Nodes
+      </a>
     </li>
   
 
@@ -1858,11 +1872,53 @@
 </tr>
 </tbody>
 </table>
-<h3 id="gas-properties-mutable">Gas Properties (mutable)<a class="headerlink" href="#gas-properties-mutable" title="Permanent link">&para;</a></h3>
-<p>Based on your specific requirements, it's not necessary to configure every parameter.</p>
+<h3 id="atmospheric-gas">Atmospheric Gas<a class="headerlink" href="#atmospheric-gas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>String</td>
+<td>Name of the target gas.</td>
+</tr>
+<tr>
+<td>Config</td>
+<td>GasConfig</td>
+<td>Gas properties.</td>
+</tr>
+<tr>
+<td>Molecular Weight</td>
+<td>Float</td>
+<td>Molecular weight of the gas, affecting its density.</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Color</td>
+<td>Color used for visual representation of the gas.</td>
+</tr>
+<tr>
+<td>Toxicity</td>
+<td>Float</td>
+<td>Toxicity level of the gas, ranging from non-toxic (0) to very toxic (1).</td>
+</tr>
+<tr>
+<td>Boiling Point</td>
+<td>Float</td>
+<td>Boiling point of the gas in Celsius.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gas-config">Gas Config<a class="headerlink" href="#gas-config" title="Permanent link">&para;</a></h3>
+<p>It's not obligatory to configure each parameter when initializing the baseline atmospheric concentration or when setting configurations for <strong>Vents</strong> or <strong>Absorbers</strong> gas mapping.</p>
 <ul>
-<li><strong>Vents</strong>: Concentration, Gas Emission, and Max Gas Increase.</li>
-<li><strong>Absorbers</strong>: Concentration, Gas Absorption, and Max Gas Decrease.</li>
+<li>For <strong>Vents</strong> set Concentration, Gas Emission, and Max Gas Increase.</li>
+<li>For <strong>Absorbers</strong> set Concentration, Gas Absorption, and Max Gas Decrease.</li>
 </ul>
 <table>
 <thead>
@@ -1897,53 +1953,6 @@
 <td>Max Gas Decrease</td>
 <td>Float</td>
 <td>Maximum decrease limit for gas concentration.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="gas-properties-immutable">Gas Properties (immutable)<a class="headerlink" href="#gas-properties-immutable" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Gas</td>
-<td>Gas</td>
-<td>Gas properties.</td>
-</tr>
-<tr>
-<td>Molecular Weight</td>
-<td>Float</td>
-<td>Molecular weight of the gas, affecting its density.</td>
-</tr>
-<tr>
-<td>Color</td>
-<td>Color</td>
-<td>Color used for visual representation of the gas.</td>
-</tr>
-<tr>
-<td>Toxicity</td>
-<td>Float</td>
-<td>Toxicity level of the gas, ranging from non-toxic (0) to very toxic (1).</td>
-</tr>
-<tr>
-<td>Boiling Point</td>
-<td>Float</td>
-<td>Boiling point of the gas in Celsius.</td>
-</tr>
-<tr>
-<td>Volume</td>
-<td>Float</td>
-<td>Volume occupied by the gas.</td>
-</tr>
-<tr>
-<td>Max Concentration</td>
-<td>Float</td>
-<td>Maximum concentration limit of the gas.</td>
 </tr>
 </tbody>
 </table>
@@ -1991,13 +2000,13 @@
         
         
           
-          <a href="../usage/" class="md-footer__link md-footer__link--next" aria-label="Next: Usage" rel="next">
+          <a href="../nodes/" class="md-footer__link md-footer__link--next" aria-label="Next: Nodes" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Usage
+                Nodes
               </div>
             </div>
             <div class="md-footer__button md-icon">

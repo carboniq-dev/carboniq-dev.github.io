@@ -48,6 +48,7 @@ nav:
      - Introduction: ./aero-sim/index.md
      - Possible Use Cases: ./aero-sim/use-cases.md
      - Actors: ./aero-sim/actors.md
+     - Nodes: ./aero-sim/nodes.md
      - Usage: ./aero-sim/usage.md
      - Visuals: ./aero-sim/visuals.md
      - Epilog: ./aero-sim/epilogue.md
