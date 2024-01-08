@@ -3,6 +3,7 @@ dev_addr: 0.0.0.0:8000
 theme:
   name: material
   features:
+    - navigation.top
     - navigation.tracking
     - header.autohide
     - navigation.instant
@@ -11,7 +12,12 @@ theme:
     - search.share
     - navigation.footer
     - navigation.sections
+    - navigation.tracking
+    - navigation.tabs.sticky
     - navigation.tabs
+    - navigation.instant.progress
+    - navigation.instant.prefetch
+    - navigation.prune
     - toc.integrate
     - content.tabs.link
 nav:
