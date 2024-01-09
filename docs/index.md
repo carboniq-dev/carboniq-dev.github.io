@@ -21,7 +21,7 @@ Provides customizable solutions for specific pathfinding requirements in game de
 !!! Danger "Review"
     Epic Games is currently in the process of reviewing this plugin. -->
 
-!!! Tip "Comming soon"
+!!! Example "Comming soon"
     Estimated release: **January 2024**
 
 The Advanced Atmosphere Simulator stands as a sophisticated and powerful plugin for Unreal Engine, meticulously crafted to elevate the authenticity of environmental elements in game development.
