@@ -47,7 +47,8 @@ nav:
   - Aero Sim:
      - Introduction: ./aero-sim/index.md
      - Possible Use Cases: ./aero-sim/use-cases.md
-     - Actors: ./aero-sim/actors.md
+     - Atmosphere Actor: ./aero-sim/atmosphere.md
+     - Influence Actors: ./aero-sim/influencers.md
      - Gas Types: ./aero-sim/gases.md
      - Nodes: ./aero-sim/nodes.md
      - Usage: ./aero-sim/usage.md

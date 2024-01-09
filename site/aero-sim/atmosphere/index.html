@@ -12,14 +12,14 @@
         <link rel="prev" href="../use-cases/">
       
       
-        <link rel="next" href="../gases/">
+        <link rel="next" href="../influencers/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
     
     
       
-        <title>Actors - CarbonIQ Plugins (UE)</title>
+        <title>Atmosphere Actor - CarbonIQ Plugins (UE)</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#actors" class="md-skip">
+        <a href="#atmosphere-actor" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Actors
+              Atmosphere Actor
             
           </span>
         </div>
@@ -736,12 +736,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Actors
+          Atmosphere Actor
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Actors
+        Atmosphere Actor
       </a>
       
         
@@ -848,52 +848,24 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#absorber" class="md-nav__link">
-    Absorber
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#condenser" class="md-nav__link">
-    Condenser
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cooler" class="md-nav__link">
-    Cooler
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#heater" class="md-nav__link">
-    Heater
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#steam-vent" class="md-nav__link">
-    Steam Vent
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gas-vent" class="md-nav__link">
-    Gas Vent
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../influencers/" class="md-nav__link">
+        Influence Actors
+      </a>
     </li>
   
 
@@ -1004,8 +976,8 @@
                   
 
 
-<h1 id="actors">Actors<a class="headerlink" href="#actors" title="Permanent link">&para;</a></h1>
-<p>This section provides an overview of the <strong>Aero Sim</strong> actor's and properties that affect the atmospheric composiwidth="400"tion.</p>
+<h1 id="atmosphere-actor">Atmosphere Actor<a class="headerlink" href="#atmosphere-actor" title="Permanent link">&para;</a></h1>
+<p>This section offers a summary of the properties of the <strong>Atmosphere Actor</strong> that impact the calculations related to atmospheric composition.</p>
 <h2 id="atmosphere">Atmosphere<a class="headerlink" href="#atmosphere" title="Permanent link">&para;</a></h2>
 <p><a class="glightbox" href="../../assets/images/aero-sim/atmosphere1.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Atmosphere" src="../../assets/images/aero-sim/atmosphere1.PNG" /></a></p>
 <table>
@@ -1278,424 +1250,6 @@
 </tr>
 </tbody>
 </table>
-<h2 id="absorber">Absorber<a class="headerlink" href="#absorber" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../../assets/images/aero-sim/absorber.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Absorber" src="../../assets/images/aero-sim/absorber.PNG" /></a></p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Is Active</td>
-<td>Boolean</td>
-<td>Activates or deactivates the atmospheric influence.</td>
-</tr>
-<tr>
-<td>Gases</td>
-<td>TMap</td>
-<td>Defines the types and properties of gases in the atmosphere.</td>
-</tr>
-<tr>
-<td>Influence Unbound</td>
-<td>Boolean</td>
-<td>If true, the influence is always active, regardless of distance.</td>
-</tr>
-<tr>
-<td>Influence Radius</td>
-<td>Float</td>
-<td>Radius within which the atmospheric influence is effective.</td>
-</tr>
-<tr>
-<td>Use Visuals</td>
-<td>Boolean</td>
-<td>Toggle to use the built-in visual representations.</td>
-</tr>
-<tr>
-<td>Show Bounds</td>
-<td>Boolean</td>
-<td>Determines whether to show the bounds visually.</td>
-</tr>
-<tr>
-<td>Main Mesh</td>
-<td>Static Mesh</td>
-<td>The main mesh to represent the atmospheric source visually.</td>
-</tr>
-<tr>
-<td>FX Location</td>
-<td>FVector</td>
-<td>Location of visual effects visualizing the influence.</td>
-</tr>
-<tr>
-<td>FX Color</td>
-<td>FLinearColor</td>
-<td>Color of the visual effects for atmospheric influence.</td>
-</tr>
-<tr>
-<td>Indicator Color</td>
-<td>FLinearColor</td>
-<td>Color of the indicator for the influence radius.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="condenser">Condenser<a class="headerlink" href="#condenser" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../../assets/images/aero-sim/condenser.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Condenser" src="../../assets/images/aero-sim/condenser.PNG" /></a></p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Is Active</td>
-<td>Boolean</td>
-<td>Activates or deactivates the atmospheric influence.</td>
-</tr>
-<tr>
-<td>Condensate</td>
-<td>Float</td>
-<td>Average humidity.</td>
-</tr>
-<tr>
-<td>Max Humidity Decrease</td>
-<td>Float</td>
-<td>Maximum amount of humidity decrease allowed.</td>
-</tr>
-<tr>
-<td>Absorption Rate</td>
-<td>Float</td>
-<td>Rate at which the condenser absorbs humidity.</td>
-</tr>
-<tr>
-<td>Influence Unbound</td>
-<td>Boolean</td>
-<td>If true, the influence is always active, regardless of distance.</td>
-</tr>
-<tr>
-<td>Influence Radius</td>
-<td>Float</td>
-<td>Radius within which the atmospheric influence is effective.</td>
-</tr>
-<tr>
-<td>Use Visuals</td>
-<td>Boolean</td>
-<td>Toggle to use the built-in visual representations.</td>
-</tr>
-<tr>
-<td>Show Bounds</td>
-<td>Boolean</td>
-<td>Determines whether to show the bounds visually.</td>
-</tr>
-<tr>
-<td>Main Mesh</td>
-<td>Static Mesh</td>
-<td>The main mesh to represent the atmospheric source visually.</td>
-</tr>
-<tr>
-<td>FX Location</td>
-<td>FVector</td>
-<td>Location of visual effects visualizing the influence.</td>
-</tr>
-<tr>
-<td>FX Color</td>
-<td>FLinearColor</td>
-<td>Color of the visual effects for atmospheric influence.</td>
-</tr>
-<tr>
-<td>Indicator Color</td>
-<td>FLinearColor</td>
-<td>Color of the indicator for the influence radius.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="cooler">Cooler<a class="headerlink" href="#cooler" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../../assets/images/aero-sim/cooler.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Cooler" src="../../assets/images/aero-sim/cooler.PNG" /></a></p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Is Active</td>
-<td>Boolean</td>
-<td>Activates or deactivates the atmospheric influence.</td>
-</tr>
-<tr>
-<td>Heat Absorption</td>
-<td>Float</td>
-<td>Heat absorbed by the planet on average.</td>
-</tr>
-<tr>
-<td>Max Heat Absorption</td>
-<td>Float</td>
-<td>Maximum limit of heat that can be absorbed.</td>
-</tr>
-<tr>
-<td>Absorption Rate</td>
-<td>Float</td>
-<td>Rate at which heat is absorbed.</td>
-</tr>
-<tr>
-<td>Influence Unbound</td>
-<td>Boolean</td>
-<td>If true, the influence is always active, regardless of distance.</td>
-</tr>
-<tr>
-<td>Influence Radius</td>
-<td>Float</td>
-<td>Radius within which the atmospheric influence is effective.</td>
-</tr>
-<tr>
-<td>Use Visuals</td>
-<td>Boolean</td>
-<td>Toggle to use the built-in visual representations.</td>
-</tr>
-<tr>
-<td>Show Bounds</td>
-<td>Boolean</td>
-<td>Determines whether to show the bounds visually.</td>
-</tr>
-<tr>
-<td>Main Mesh</td>
-<td>Static Mesh</td>
-<td>The main mesh to represent the atmospheric source visually.</td>
-</tr>
-<tr>
-<td>FX Location</td>
-<td>FVector</td>
-<td>Location of visual effects visualizing the influence.</td>
-</tr>
-<tr>
-<td>FX Color</td>
-<td>FLinearColor</td>
-<td>Color of the visual effects for atmospheric influence.</td>
-</tr>
-<tr>
-<td>Indicator Color</td>
-<td>FLinearColor</td>
-<td>Color of the indicator for the influence radius.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="heater">Heater<a class="headerlink" href="#heater" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../../assets/images/aero-sim/heater.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Heater" src="../../assets/images/aero-sim/heater.PNG" /></a></p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Is Active</td>
-<td>Boolean</td>
-<td>Activates or deactivates the atmospheric influence.</td>
-</tr>
-<tr>
-<td>Heat Output</td>
-<td>Float</td>
-<td>Average heat output of the planet.</td>
-</tr>
-<tr>
-<td>Max Heat Output</td>
-<td>Float</td>
-<td>Maximum heat output that the planet can produce.</td>
-</tr>
-<tr>
-<td>Radiation Rate</td>
-<td>Float</td>
-<td>Rate at which the planet radiates heat.</td>
-</tr>
-<tr>
-<td>Influence Unbound</td>
-<td>Boolean</td>
-<td>If true, the influence is always active, regardless of distance.</td>
-</tr>
-<tr>
-<td>Influence Radius</td>
-<td>Float</td>
-<td>Radius within which the atmospheric influence is effective.</td>
-</tr>
-<tr>
-<td>Use Visuals</td>
-<td>Boolean</td>
-<td>Toggle to use the built-in visual representations.</td>
-</tr>
-<tr>
-<td>Show Bounds</td>
-<td>Boolean</td>
-<td>Determines whether to show the bounds visually.</td>
-</tr>
-<tr>
-<td>Main Mesh</td>
-<td>Static Mesh</td>
-<td>The main mesh to represent the atmospheric source visually.</td>
-</tr>
-<tr>
-<td>FX Location</td>
-<td>FVector</td>
-<td>Location of visual effects visualizing the influence.</td>
-</tr>
-<tr>
-<td>FX Color</td>
-<td>FLinearColor</td>
-<td>Color of the visual effects for atmospheric influence.</td>
-</tr>
-<tr>
-<td>Indicator Color</td>
-<td>FLinearColor</td>
-<td>Color of the indicator for the influence radius.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="steam-vent">Steam Vent<a class="headerlink" href="#steam-vent" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../../assets/images/aero-sim/steamvent.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Steam Vent" src="../../assets/images/aero-sim/steamvent.PNG" /></a></p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Is Active</td>
-<td>Boolean</td>
-<td>Activates or deactivates the atmospheric influence.</td>
-</tr>
-<tr>
-<td>Steam</td>
-<td>Float</td>
-<td>Average steam produced.</td>
-</tr>
-<tr>
-<td>Max Steam Emission</td>
-<td>Float</td>
-<td>Maximum limit of steam emission.</td>
-</tr>
-<tr>
-<td>Steam Emission</td>
-<td>Float</td>
-<td>Rate at which steam is emitted.</td>
-</tr>
-<tr>
-<td>Influence Unbound</td>
-<td>Boolean</td>
-<td>If true, the influence is always active, regardless of distance.</td>
-</tr>
-<tr>
-<td>Influence Radius</td>
-<td>Float</td>
-<td>Radius within which the atmospheric influence is effective.</td>
-</tr>
-<tr>
-<td>Use Visuals</td>
-<td>Boolean</td>
-<td>Toggle to use the built-in visual representations.</td>
-</tr>
-<tr>
-<td>Show Bounds</td>
-<td>Boolean</td>
-<td>Determines whether to show the bounds visually.</td>
-</tr>
-<tr>
-<td>Main Mesh</td>
-<td>Static Mesh</td>
-<td>The main mesh to represent the atmospheric source visually.</td>
-</tr>
-<tr>
-<td>FX Location</td>
-<td>FVector</td>
-<td>Location of visual effects visualizing the influence.</td>
-</tr>
-<tr>
-<td>FX Color</td>
-<td>FLinearColor</td>
-<td>Color of the visual effects for atmospheric influence.</td>
-</tr>
-<tr>
-<td>Indicator Color</td>
-<td>FLinearColor</td>
-<td>Color of the indicator for the influence radius.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="gas-vent">Gas Vent<a class="headerlink" href="#gas-vent" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../../assets/images/aero-sim/vent.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Gas Vent" src="../../assets/images/aero-sim/vent.PNG" /></a></p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Is Active</td>
-<td>Boolean</td>
-<td>Activates or deactivates the atmospheric influence.</td>
-</tr>
-<tr>
-<td>Gases</td>
-<td>TMap</td>
-<td>Defines the types and properties of gases in the atmosphere.</td>
-</tr>
-<tr>
-<td>Influence Unbound</td>
-<td>Boolean</td>
-<td>If true, the influence is always active, regardless of distance.</td>
-</tr>
-<tr>
-<td>Influence Radius</td>
-<td>Float</td>
-<td>Radius within which the atmospheric influence is effective.</td>
-</tr>
-<tr>
-<td>Use Visuals</td>
-<td>Boolean</td>
-<td>Toggle to use the built-in visual representations.</td>
-</tr>
-<tr>
-<td>Show Bounds</td>
-<td>Boolean</td>
-<td>Determines whether to show the bounds visually.</td>
-</tr>
-<tr>
-<td>Main Mesh</td>
-<td>Static Mesh</td>
-<td>The main mesh to represent the atmospheric source visually.</td>
-</tr>
-<tr>
-<td>FX Location</td>
-<td>FVector</td>
-<td>Location of visual effects visualizing the influence.</td>
-</tr>
-<tr>
-<td>FX Color</td>
-<td>FLinearColor</td>
-<td>Color of the visual effects for atmospheric influence.</td>
-</tr>
-<tr>
-<td>Indicator Color</td>
-<td>FLinearColor</td>
-<td>Color of the indicator for the influence radius.</td>
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1740,13 +1294,13 @@
         
         
           
-          <a href="../gases/" class="md-footer__link md-footer__link--next" aria-label="Next: Gas Types" rel="next">
+          <a href="../influencers/" class="md-footer__link md-footer__link--next" aria-label="Next: Influence Actors" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Gas Types
+                Influence Actors
               </div>
             </div>
             <div class="md-footer__button md-icon">
