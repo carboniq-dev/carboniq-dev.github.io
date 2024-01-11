@@ -1,4 +1,4 @@
-# Carbon IQ Plugins
+# Unreal Engine Plugins
 
 ## Snap Central
 
@@ -30,47 +30,13 @@ Epic Store | [Documentation](https://carboniq-dev.github.io/site/aero-sim)
 
 ![Aero Sim](./assets/images/aero-sim/aero-sim-cover.png){ width="500" }
 
-<!-- 
 ## Flux point
 
-!!! Tip "Comming soon"
+!!! Example "Comming soon"
     Estimated release: **January 2024**
 
 Flux point is a versatile plugin that effortlessly generates vectors for spawning particles or meshes, suitable for both 2D and 3D shapes.
 
 Epic Store | Documentation
 
-![Flux point](./assets/images/flux-point/cover.png){ width="500" } -->
-
-<!-- ## Atmo Sim
-
-A comprehensive atmospheric simulation plugin for Unreal Engine
-
-Epic Store | Documentation
-
-![Get Snap Parameters](./assets/images/atmo-sim/atmo-sim-cover.png){ width="500" }
-
-!!! Note
-    Release date: 01.02.2024
-
-## Cube Verse
-
-xxxxxxxxxxxxxxxxxxxxxxxxx
-
-Epic Store | Documentation
-
-![Get Snap Parameters](./assets/images/cube-verse/cover-cube-verse.png){ width="500" }
-
-!!! Note
-    Release date: 01.02.2024
-
-## Flux Point
-
-xxxxxxxxxxxxxxxxxxxxxxxxx
-
-Epic Store | Documentation
-
-![Get Snap Parameters](./images/atmo-sim-cover.png){ width="500" }
-
-!!! Note
-    Release date: 01.02.2024 -->
+![Flux point](./assets/images/flux-point/cover.png){ width="500" }

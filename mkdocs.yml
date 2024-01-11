@@ -1,4 +1,4 @@
-site_name: CarbonIQ Plugins (UE)
+site_name: Unreal Engine Plugins
 dev_addr: 0.0.0.0:8000
 theme:
   name: material
@@ -56,6 +56,9 @@ nav:
      - Visuals: ./aero-sim/visuals.md
      - Epilog: ./aero-sim/epilogue.md
      - FAQ: ./aero-sim/faq.md
+  - Flux Point:
+     - Introduction: ./flux-point/index.md
+     - Shapes: ./flux-point/index.md
 plugins:
   - search
   - glightbox

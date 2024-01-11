@@ -1,8 +1,8 @@
 # Introduction
 
-![Get Snap Parameters](../assets/images/snap-central/snap-central-banner.jpg){ width="200" }
+![Get Snap Parameters](../assets/images/snap-central/snap-central-banner.png){ width="200" }
 
-Welcome to the documentation for **Snap Central**, an Unreal Engine 5 plugin designed for <mark>runtime usage</mark> that provides a versatile and efficient solution for managing a precise 3D snapping system that spans across the entire world, ensuring <mark>high performance</mark>.
+Welcome to the documentation for **Snap Central**, an Unreal Engine 5 plugin designed for {==runtime usage==} that provides a versatile and efficient solution for managing a precise 3D snapping system that spans across the entire world, ensuring {==high performance==}.
 
 The plugin's **Central Grid** actor simplifies snapping management by exposing its functionality through a single function, allowing developers to obtain snap locations, UIDs, and other relevant information. This enables easy implementation of custom snapping logic at runtime, making it suitable for games that require dynamic or procedural level design.
 
