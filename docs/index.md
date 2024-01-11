@@ -6,7 +6,7 @@ Designed for runtime usage that provides a versatile and efficient solution for 
 
 [Epic Store](https://www.unrealengine.com/marketplace/en-US/product/snap-central){:target="_blank"} | [Trailer](https://www.youtube.com/watch?v=WuYTlhWh9xs&ab_channel=carbonIQ){:target="_blank"} | [Documentation](https://carboniq-dev.github.io/site/snap-central/)
 
-![Get Snap Parameters](./assets/images/snap-central/snap-central-banner.jpg){ width="500" }
+![Get Snap Parameters](./assets/images/snap-central/snap-central-banner.png){ width="500" }
 
 ## Trail Blazer
 
