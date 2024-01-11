@@ -51,6 +51,7 @@ nav:
      - Influence Actors: ./aero-sim/influencers.md
      - Gas Types: ./aero-sim/gases.md
      - Nodes: ./aero-sim/nodes.md
+     - Measurement: ./aero-sim/measurement.md
      - Usage: ./aero-sim/usage.md
      - Visuals: ./aero-sim/visuals.md
      - Epilog: ./aero-sim/epilogue.md
