@@ -67,8 +67,8 @@ strong {
 .md-nav__item .md-nav__link {
   padding: 8px;
   min-height: 30px;
-  color: rgb(255, 255, 255) !important;
-  background-color: rgb(27, 27, 27) !important;
+  color: rgb(22, 22, 22) !important;
+  background-color: rgb(216, 216, 216) !important;
   box-shadow: none !important;
 }
 
