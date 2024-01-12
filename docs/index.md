@@ -4,7 +4,7 @@
 
 Designed for runtime usage that provides a versatile and efficient solution for managing a precise 3D snapping system that spans across the entire world
 
-[Epic Store](https://www.unrealengine.com/marketplace/en-US/product/snap-central){:target="_blank"} | [Trailer](https://www.youtube.com/watch?v=WuYTlhWh9xs&ab_channel=carbonIQ){:target="_blank"} | [Documentation](https://carboniq-dev.github.io/site/snap-central/)
+[Epic Store](https://www.unrealengine.com/marketplace/en-US/product/snap-central){:target="_blank"} [Trailer](https://www.youtube.com/watch?v=WuYTlhWh9xs&ab_channel=carbonIQ){:target="_blank"} [Documentation](https://carboniq-dev.github.io/site/snap-central/)
 
 ![Get Snap Parameters](./assets/images/snap-central/snap-central-banner.png){ width="500" }
 
@@ -12,7 +12,7 @@ Designed for runtime usage that provides a versatile and efficient solution for 
 
 Provides customizable solutions for specific pathfinding requirements in game development. It features dynamic obstacle handling and grid-based logic.
 
-[Epic Store](https://www.unrealengine.com/marketplace/en-US/product/trail-blazer){:target="_blank"} | [Documentation](https://carboniq-dev.github.io/site/trail-blazer)
+[Epic Store](https://www.unrealengine.com/marketplace/en-US/product/trail-blazer){:target="_blank"} [Documentation](https://carboniq-dev.github.io/site/trail-blazer)
 
 ![Trail Blazer](./assets/images/trail-blazer/trail-blazer-cover.png){ width="500" }
 
@@ -26,7 +26,7 @@ Provides customizable solutions for specific pathfinding requirements in game de
 
 The Advanced Atmosphere Simulator stands as a sophisticated and powerful plugin for Unreal Engine, meticulously crafted to elevate the authenticity of environmental elements in game development.
 
-Epic Store | [Documentation](https://carboniq-dev.github.io/site/aero-sim)
+Epic Store [Documentation](https://carboniq-dev.github.io/site/aero-sim)
 
 ![Aero Sim](./assets/images/aero-sim/aero-sim-cover.png){ width="500" }
 

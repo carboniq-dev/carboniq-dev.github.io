@@ -2,7 +2,7 @@ site_name: Unreal Engine Plugins
 dev_addr: 0.0.0.0:8000
 theme:
   palette:
-    scheme: slate
+    scheme: default
   name: material
   features:
     - navigation.top

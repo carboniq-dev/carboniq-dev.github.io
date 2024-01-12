@@ -1,9 +1,17 @@
 .md-main {
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(226, 226, 226);
 }
 
-a {
-  color: rgb(255, 164, 128) !important;
+p > a {
+  color: rgb(255, 156, 116) !important;
+  font-weight: 600;
+  background-color: rgb(12, 12, 12);
+  padding: 6px 10px;
+}
+
+.md-tabs__item > a {
+  color: rgb(255, 156, 116) !important;
+  font-weight: 600;
 }
 
 .md-header {
@@ -16,11 +24,11 @@ a {
 
 /* OVERRIDES --> */
 .critic {
-  background-color: rgb(168, 62, 0);
+  background-color: rgb(255, 125, 50);
 }
 
 .md-tabs {
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(20, 20, 20);
 }
 
 /* OVERRIDES <-- */
@@ -33,7 +41,7 @@ div {
 }
 
 .md-typeset mark {
-  background-color: rgb(168, 62, 0);
+  background-color: rgb(255, 152, 93);
   padding: 3px;
 }
 
@@ -48,7 +56,7 @@ div {
 }
 
 strong {
-  color: rgb(224, 224, 224);
+  color: rgb(44, 44, 44);
   font-weight: 400;
 }
 
