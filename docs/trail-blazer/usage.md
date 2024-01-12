@@ -18,7 +18,7 @@ Since the plugin operates on a grid-based system, it naturally assumes that obst
 
 So when dealing with rotated static meshes and actors, it's crucial to place them within an actor that includes a box collision component accurately encapsulating the target mesh. This step ensures that the obstacle detection system can precisely identify the boundaries of the actual shape, when the actor is not aligned with the grid rotation.
 
-## Warning Handling round objects
+## Handling round objects
 
 Similarly, if you have round objects that need to be considered in obstacle detection, it's advisable to enclose them within an actor featuring a sphere collision component. This approach allows the system to accurately detect the boundaries of round objects, ensuring they are appropriately recognized during pathfinding calculations. If circular path calculations are unnecessary, you can enclose it with a box collision to have it treated as a rectangular shape.
 
@@ -32,6 +32,6 @@ Given that the plugin offers numerous settings that impact obstacle detection an
 
 Another possible reason for the inability to find a path is a highly complex environment. It's important to stress that this plugin is {==NOT==} designed for handling vast maps typically found in Open World games. Therefore, its use in such scenarios should be approached with caution.
 
-## Info Plugin content
+## Plugin content
 
 If for any reason you cannot locate the plugin content mentioned in this documentation within the _Place Actor_ tab, please enable the option to display plugin content and navigate directly to the TrailBlazer plugin folder.
