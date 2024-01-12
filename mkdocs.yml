@@ -1,6 +1,8 @@
 site_name: Unreal Engine Plugins
 dev_addr: 0.0.0.0:8000
 theme:
+  palette:
+    scheme: slate
   name: material
   features:
     - navigation.top
@@ -56,9 +58,9 @@ nav:
      - Visuals: ./aero-sim/visuals.md
      - Epilog: ./aero-sim/epilogue.md
      - FAQ: ./aero-sim/faq.md
-  - Flux Point:
-     - Introduction: ./flux-point/index.md
-     - Shapes: ./flux-point/index.md
+  # - Flux Point:
+  #    - Introduction: ./flux-point/index.md
+  #    - Shapes: ./flux-point/index.md
 plugins:
   - search
   - glightbox
