@@ -30,12 +30,12 @@ Epic Store | [Documentation](https://carboniq-dev.github.io/site/aero-sim)
 
 ![Aero Sim](./assets/images/aero-sim/aero-sim-cover.png){ width="500" }
 
-## Flux point
+## Flux Point
 
 !!! Example "Comming soon"
     Estimated release: **January 2024**
 
-Flux point is a versatile plugin that effortlessly generates vectors for spawning particles or meshes, suitable for both 2D and 3D shapes.
+Flux Point is a versatile plugin that effortlessly generates vectors for spawning particles or meshes, suitable for both 2D and 3D shapes.
 
 Epic Store | Documentation
 
