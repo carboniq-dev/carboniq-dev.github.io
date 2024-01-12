@@ -26,7 +26,7 @@ Similarly, if you have round objects that need to be considered in obstacle dete
 
 Cameras and pawns hovering within the obstacle detection range on game start will be detected as obstacles, potentially preventing a path from being found. In such cases, they should be explicitly excluded in the obstacles section to avoid this issue.
 
-## Tip Path calculation
+## Path calculation
 
 Given that the plugin offers numerous settings that impact obstacle detection and path calculation, it's crucial to be aware that if a path cannot be found, it may be due to conflicting settings.  These conflicts could arise from options such as an excessively large enabled buffer, precision settings, or heuristics.
 

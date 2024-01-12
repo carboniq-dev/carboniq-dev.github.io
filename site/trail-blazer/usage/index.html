@@ -696,8 +696,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tip-path-calculation" class="md-nav__link">
-    Tip Path calculation
+  <a href="#path-calculation" class="md-nav__link">
+    Path calculation
   </a>
   
 </li>
@@ -973,7 +973,7 @@ Connect the nodes as illustrated below.</p>
 <p>Similarly, if you have round objects that need to be considered in obstacle detection, it's advisable to enclose them within an actor featuring a sphere collision component. This approach allows the system to accurately detect the boundaries of round objects, ensuring they are appropriately recognized during pathfinding calculations. If circular path calculations are unnecessary, you can enclose it with a box collision to have it treated as a rectangular shape.</p>
 <h2 id="object-detection">Object detection<a class="headerlink" href="#object-detection" title="Permanent link">&para;</a></h2>
 <p>Cameras and pawns hovering within the obstacle detection range on game start will be detected as obstacles, potentially preventing a path from being found. In such cases, they should be explicitly excluded in the obstacles section to avoid this issue.</p>
-<h2 id="tip-path-calculation">Tip Path calculation<a class="headerlink" href="#tip-path-calculation" title="Permanent link">&para;</a></h2>
+<h2 id="path-calculation">Path calculation<a class="headerlink" href="#path-calculation" title="Permanent link">&para;</a></h2>
 <p>Given that the plugin offers numerous settings that impact obstacle detection and path calculation, it's crucial to be aware that if a path cannot be found, it may be due to conflicting settings.  These conflicts could arise from options such as an excessively large enabled buffer, precision settings, or heuristics.</p>
 <p>Another possible reason for the inability to find a path is a highly complex environment. It's important to stress that this plugin is <mark class="critic">NOT</mark> designed for handling vast maps typically found in Open World games. Therefore, its use in such scenarios should be approached with caution.</p>
 <h2 id="info-plugin-content">Info Plugin content<a class="headerlink" href="#info-plugin-content" title="Permanent link">&para;</a></h2>
