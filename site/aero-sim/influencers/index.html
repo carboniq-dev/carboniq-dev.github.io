@@ -782,6 +782,40 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#common-properties" class="md-nav__link">
+    Common properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Common properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main" class="md-nav__link">
+    Main
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#influence" class="md-nav__link">
+    Influence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visuals" class="md-nav__link">
+    Visuals
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#absorber" class="md-nav__link">
     Absorber
   </a>
@@ -819,13 +853,6 @@
         <li class="md-nav__item">
   <a href="#gas-vent" class="md-nav__link">
     Gas Vent
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#visuals" class="md-nav__link">
-    Visuals
   </a>
   
 </li>
@@ -960,8 +987,10 @@
 
 <h1 id="influence-actors">Influence Actors<a class="headerlink" href="#influence-actors" title="Permanent link">&para;</a></h1>
 <p>This section offers a summary of the properties of the <strong>Influence Actors</strong> that impact the calculations related to atmospheric composition.</p>
-<h2 id="absorber">Absorber<a class="headerlink" href="#absorber" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../../assets/images/aero-sim/absorber.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Absorber" src="../../assets/images/aero-sim/absorber.PNG" /></a></p>
+<h2 id="common-properties">Common properties<a class="headerlink" href="#common-properties" title="Permanent link">&para;</a></h2>
+<p>All <mark class="critic">Influence Actors</mark> come with a set of common properties to control their behavior and appearance.</p>
+<h3 id="main">Main<a class="headerlink" href="#main" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="../../assets/images/aero-sim/gasabsorber/main.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Common Properties Main" src="../../assets/images/aero-sim/gasabsorber/main.PNG" /></a></p>
 <table>
 <thead>
 <tr>
@@ -981,11 +1010,19 @@
 <td>Boolean</td>
 <td>Activates or deactivates the atmospheric influence.</td>
 </tr>
+</tbody>
+</table>
+<h3 id="influence">Influence<a class="headerlink" href="#influence" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="../../assets/images/aero-sim/common-influence.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Common Properties Influence" src="../../assets/images/aero-sim/common-influence.PNG" /></a></p>
+<table>
+<thead>
 <tr>
-<td>Gases</td>
-<td>Map&lt;<strong><a href="https://carboniq-dev.github.io/site/aero-sim/gases/">GasType</a>, <a href="https://carboniq-dev.github.io/site/aero-sim/measurement/#gas-config">GasConfig</a></strong>&gt;</td>
-<td>Defines the types and properties of gases absorbed from the atmosphere.</td>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>Influence Unbound</td>
 <td>Boolean</td>
@@ -1013,314 +1050,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="condenser">Condenser<a class="headerlink" href="#condenser" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../../assets/images/aero-sim/condenser.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Condenser" src="../../assets/images/aero-sim/condenser.PNG" /></a></p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Atmosphere</td>
-<td>Atmosphere Actor</td>
-<td>The atmosphere the influence actor should be assigned to.</td>
-</tr>
-<tr>
-<td>Is Active</td>
-<td>Boolean</td>
-<td>Activates or deactivates the atmospheric influence.</td>
-</tr>
-<tr>
-<td>Condensate</td>
-<td>Float</td>
-<td>Average humidity.</td>
-</tr>
-<tr>
-<td>Max Humidity Decrease</td>
-<td>Float</td>
-<td>Maximum amount of humidity decrease allowed.</td>
-</tr>
-<tr>
-<td>Absorption Rate</td>
-<td>Float</td>
-<td>Rate at which the condenser absorbs humidity.</td>
-</tr>
-<tr>
-<td>Influence Unbound</td>
-<td>Boolean</td>
-<td>If true, the influence is always active, regardless of distance.</td>
-</tr>
-<tr>
-<td>Use Cubic Influence</td>
-<td>Boolean</td>
-<td>If true, calculations regarding influence will be based on a cubic shape.</td>
-</tr>
-<tr>
-<td>Apply Influence Boundary Falloff</td>
-<td>Boolean</td>
-<td>This environmental value dynamically decreases or increases based on the measured location and its distance from the actor's center.</td>
-</tr>
-<tr>
-<td>Influence Boundary Falloff Factor</td>
-<td>Float</td>
-<td>Determines the rate at which the influence effects decrease towards the outer boundary. Higher values result in a sharper decrease.</td>
-</tr>
-<tr>
-<td>Influence Extent</td>
-<td>Float</td>
-<td>Radius within which the influence is effective.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="cooler">Cooler<a class="headerlink" href="#cooler" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../../assets/images/aero-sim/cooler.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Cooler" src="../../assets/images/aero-sim/cooler.PNG" /></a></p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Atmosphere</td>
-<td>Atmosphere Actor</td>
-<td>The atmosphere the influence actor should be assigned to.</td>
-</tr>
-<tr>
-<td>Is Active</td>
-<td>Boolean</td>
-<td>Activates or deactivates the atmospheric influence.</td>
-</tr>
-<tr>
-<td>Heat Absorption</td>
-<td>Float</td>
-<td>Heat absorbed by the planet on average.</td>
-</tr>
-<tr>
-<td>Max Heat Absorption</td>
-<td>Float</td>
-<td>Maximum limit of heat that can be absorbed.</td>
-</tr>
-<tr>
-<td>Absorption Rate</td>
-<td>Float</td>
-<td>Rate at which heat is absorbed.</td>
-</tr>
-<tr>
-<td>Influence Unbound</td>
-<td>Boolean</td>
-<td>If true, the influence is always active, regardless of distance.</td>
-</tr>
-<tr>
-<td>Use Cubic Influence</td>
-<td>Boolean</td>
-<td>If true, calculations regarding influence will be based on a cubic shape.</td>
-</tr>
-<tr>
-<td>Apply Influence Boundary Falloff</td>
-<td>Boolean</td>
-<td>This environmental value dynamically decreases or increases based on the measured location and its distance from the actor's center.</td>
-</tr>
-<tr>
-<td>Influence Boundary Falloff Factor</td>
-<td>Float</td>
-<td>Determines the rate at which the influence effects decrease towards the outer boundary. Higher values result in a sharper decrease.</td>
-</tr>
-<tr>
-<td>Influence Extent</td>
-<td>Float</td>
-<td>Radius within which the influence is effective.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="heater">Heater<a class="headerlink" href="#heater" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../../assets/images/aero-sim/heater.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Heater" src="../../assets/images/aero-sim/heater.PNG" /></a></p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Atmosphere</td>
-<td>Atmosphere Actor</td>
-<td>The atmosphere the influence actor should be assigned to.</td>
-</tr>
-<tr>
-<td>Is Active</td>
-<td>Boolean</td>
-<td>Activates or deactivates the atmospheric influence.</td>
-</tr>
-<tr>
-<td>Heat Output</td>
-<td>Float</td>
-<td>Average heat output of the planet.</td>
-</tr>
-<tr>
-<td>Max Heat Output</td>
-<td>Float</td>
-<td>Maximum heat output that the planet can produce.</td>
-</tr>
-<tr>
-<td>Radiation Rate</td>
-<td>Float</td>
-<td>Rate at which the planet radiates heat.</td>
-</tr>
-<tr>
-<td>Influence Unbound</td>
-<td>Boolean</td>
-<td>If true, the influence is always active, regardless of distance.</td>
-</tr>
-<tr>
-<td>Use Cubic Influence</td>
-<td>Boolean</td>
-<td>If true, calculations regarding influence will be based on a cubic shape.</td>
-</tr>
-<tr>
-<td>Apply Influence Boundary Falloff</td>
-<td>Boolean</td>
-<td>This environmental value dynamically decreases or increases based on the measured location and its distance from the actor's center.</td>
-</tr>
-<tr>
-<td>Influence Boundary Falloff Factor</td>
-<td>Float</td>
-<td>Determines the rate at which the influence effects decrease towards the outer boundary. Higher values result in a sharper decrease.</td>
-</tr>
-<tr>
-<td>Influence Extent</td>
-<td>Float</td>
-<td>Radius within which the influence is effective.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="steam-vent">Steam Vent<a class="headerlink" href="#steam-vent" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../../assets/images/aero-sim/steamvent.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Steam Vent" src="../../assets/images/aero-sim/steamvent.PNG" /></a></p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Atmosphere</td>
-<td>Atmosphere Actor</td>
-<td>The atmosphere the influence actor should be assigned to.</td>
-</tr>
-<tr>
-<td>Is Active</td>
-<td>Boolean</td>
-<td>Activates or deactivates the atmospheric influence.</td>
-</tr>
-<tr>
-<td>Steam</td>
-<td>Float</td>
-<td>Average steam produced.</td>
-</tr>
-<tr>
-<td>Max Steam Emission</td>
-<td>Float</td>
-<td>Maximum limit of steam emission.</td>
-</tr>
-<tr>
-<td>Steam Emission</td>
-<td>Float</td>
-<td>Rate at which steam is emitted.</td>
-</tr>
-<tr>
-<td>Influence Unbound</td>
-<td>Boolean</td>
-<td>If true, the influence is always active, regardless of distance.</td>
-</tr>
-<tr>
-<td>Use Cubic Influence</td>
-<td>Boolean</td>
-<td>If true, calculations regarding influence will be based on a cubic shape.</td>
-</tr>
-<tr>
-<td>Apply Influence Boundary Falloff</td>
-<td>Boolean</td>
-<td>This environmental value dynamically decreases or increases based on the measured location and its distance from the actor's center.</td>
-</tr>
-<tr>
-<td>Influence Boundary Falloff Factor</td>
-<td>Float</td>
-<td>Determines the rate at which the influence effects decrease towards the outer boundary. Higher values result in a sharper decrease.</td>
-</tr>
-<tr>
-<td>Influence Extent</td>
-<td>Float</td>
-<td>Radius within which the influence is effective.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="gas-vent">Gas Vent<a class="headerlink" href="#gas-vent" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../../assets/images/aero-sim/gas-vent.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Gas Vent" src="../../assets/images/aero-sim/gas-vent.PNG" /></a></p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Atmosphere</td>
-<td>Atmosphere Actor</td>
-<td>The atmosphere the influence actor should be assigned to.</td>
-</tr>
-<tr>
-<td>Is Active</td>
-<td>Boolean</td>
-<td>Activates or deactivates the atmospheric influence.</td>
-</tr>
-<tr>
-<td>Gases</td>
-<td>Map&lt;<strong>GasType&gt;, GasConfig</strong>&gt;</td>
-<td>Defines the types and properties of gases emitted to the atmosphere.</td>
-</tr>
-<tr>
-<td>Influence Unbound</td>
-<td>Boolean</td>
-<td>If true, the influence is always active, regardless of distance.</td>
-</tr>
-<tr>
-<td>Use Cubic Influence</td>
-<td>Boolean</td>
-<td>If true, calculations regarding influence will be based on a cubic shape.</td>
-</tr>
-<tr>
-<td>Apply Influence Boundary Falloff</td>
-<td>Boolean</td>
-<td>This environmental value dynamically decreases or increases based on the measured location and its distance from the actor's center.</td>
-</tr>
-<tr>
-<td>Influence Boundary Falloff Factor</td>
-<td>Float</td>
-<td>Determines the rate at which the influence effects decrease towards the outer boundary. Higher values result in a sharper decrease.</td>
-</tr>
-<tr>
-<td>Influence Extent</td>
-<td>Float</td>
-<td>Radius within which the influence is effective.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="visuals">Visuals<a class="headerlink" href="#visuals" title="Permanent link">&para;</a></h2>
+<h3 id="visuals">Visuals<a class="headerlink" href="#visuals" title="Permanent link">&para;</a></h3>
 <p>Every influence actor comes with a visual representation feature that can help you kickstart your project.</p>
-<p><a class="glightbox" href="../../assets/images/aero-sim/visuals.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Visuals" src="../../assets/images/aero-sim/visuals.PNG" /></a></p>
+<p><a class="glightbox" href="../../assets/images/aero-sim/visuals.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Common Properties Visuals" src="../../assets/images/aero-sim/visuals.PNG" /></a></p>
 <table>
 <thead>
 <tr>
@@ -1341,24 +1073,192 @@
 <td>Determines whether to show the bounds visually.</td>
 </tr>
 <tr>
+<td>Bounds Color</td>
+<td>FLinearColor</td>
+<td>Color of the bounds indicator.</td>
+</tr>
+<tr>
 <td>Main Mesh</td>
 <td>Static Mesh</td>
 <td>The main mesh to represent the atmospheric source visually.</td>
 </tr>
 <tr>
+<td>Main Mesh Location</td>
+<td>FVector</td>
+<td>Location of the main mesh.</td>
+</tr>
+<tr>
+<td>Main Mesh Rotation</td>
+<td>FVector</td>
+<td>Rotation of the main mesh.</td>
+</tr>
+<tr>
+<td>FX</td>
+<td>Niagara System</td>
+<td>The Niagara system to represent the atmospheric effect visually.</td>
+</tr>
+<tr>
 <td>FX Location</td>
 <td>FVector</td>
-<td>Location of visual effects visualizing the influence.</td>
+<td>Location of the Niagara effects.</td>
+</tr>
+<tr>
+<td>FX Rotation</td>
+<td>FVector</td>
+<td>Rotation of the Niagara effects.</td>
 </tr>
 <tr>
 <td>FX Color</td>
 <td>FLinearColor</td>
-<td>Color of the visual effects for atmospheric influence.</td>
+<td>Color of the Niagara effects.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="absorber">Absorber<a class="headerlink" href="#absorber" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="../../assets/images/aero-sim/gasvent/effects.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Gas Absorber Effects" src="../../assets/images/aero-sim/gasvent/effects.PNG" /></a></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gases</td>
+<td>Map&lt;<strong><a href="https://carboniq-dev.github.io/site/aero-sim/gases/">GasType</a>, <a href="https://carboniq-dev.github.io/site/aero-sim/measurement/#gas-config">GasConfig</a></strong>&gt;</td>
+<td>Defines the types and properties of gases absorbed from the atmosphere.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="condenser">Condenser<a class="headerlink" href="#condenser" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="../../assets/images/aero-sim/condenser/effects.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Condenser Effects" src="../../assets/images/aero-sim/condenser/effects.PNG" /></a></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Condensate</td>
+<td>Float</td>
+<td>Average humidity.</td>
 </tr>
 <tr>
-<td>Indicator Color</td>
-<td>FLinearColor</td>
-<td>Color of the indicator for the Influence Extent.</td>
+<td>Max Humidity Decrease</td>
+<td>Float</td>
+<td>Maximum amount of humidity decrease allowed.</td>
+</tr>
+<tr>
+<td>Absorption Rate</td>
+<td>Float</td>
+<td>Rate at which the condenser absorbs humidity.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cooler">Cooler<a class="headerlink" href="#cooler" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="../../assets/images/aero-sim/cooler/effects.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Cooler Effects" src="../../assets/images/aero-sim/cooler/effects.PNG" /></a></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Heat Absorption</td>
+<td>Float</td>
+<td>Heat absorbed by the planet on average.</td>
+</tr>
+<tr>
+<td>Max Heat Absorption</td>
+<td>Float</td>
+<td>Maximum limit of heat that can be absorbed.</td>
+</tr>
+<tr>
+<td>Absorption Rate</td>
+<td>Float</td>
+<td>Rate at which heat is absorbed.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="heater">Heater<a class="headerlink" href="#heater" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="../../assets/images/aero-sim/heater/effects.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Heater Effects" src="../../assets/images/aero-sim/heater/effects.PNG" /></a></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Heat Output</td>
+<td>Float</td>
+<td>Average heat output of the planet.</td>
+</tr>
+<tr>
+<td>Max Heat Output</td>
+<td>Float</td>
+<td>Maximum heat output that the planet can produce.</td>
+</tr>
+<tr>
+<td>Radiation Rate</td>
+<td>Float</td>
+<td>Rate at which the planet radiates heat.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="steam-vent">Steam Vent<a class="headerlink" href="#steam-vent" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="../../assets/images/aero-sim/steamvent/effects.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Steam Vent Effects" src="../../assets/images/aero-sim/steamvent/effects.PNG" /></a></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Steam</td>
+<td>Float</td>
+<td>Average steam produced.</td>
+</tr>
+<tr>
+<td>Max Steam Emission</td>
+<td>Float</td>
+<td>Maximum limit of steam emission.</td>
+</tr>
+<tr>
+<td>Steam Emission</td>
+<td>Float</td>
+<td>Rate at which steam is emitted.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gas-vent">Gas Vent<a class="headerlink" href="#gas-vent" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="../../assets/images/aero-sim/gasvent/effects.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Gas Vent Effects" src="../../assets/images/aero-sim/gasvent/effects.PNG" /></a></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gases</td>
+<td>Map&lt;<strong><a href="https://carboniq-dev.github.io/site/aero-sim/gases/">GasType</a>, <a href="https://carboniq-dev.github.io/site/aero-sim/measurement/#gas-config">GasConfig</a></strong>&gt;</td>
+<td>Defines the types and properties of gases emitted to the atmosphere.</td>
 </tr>
 </tbody>
 </table>
