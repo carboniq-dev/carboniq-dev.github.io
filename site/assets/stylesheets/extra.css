@@ -2,6 +2,10 @@
   background-color: rgb(226, 226, 226);
 }
 
+/* .md-typeset .admonition {
+  max-width: 600px; /* <-- adjust to fit */
+} */
+
 p > a {
   color: rgb(255, 156, 116) !important;
   font-weight: 600;
@@ -24,7 +28,7 @@ p > a {
 
 /* OVERRIDES --> */
 .critic {
-  background-color: rgb(255, 125, 50);
+  background-color: rgb(255, 170, 136) !important;
 }
 
 .md-tabs {
@@ -47,7 +51,7 @@ div {
 
 .md-typeset .info > .admonition-title,
 .md-typeset .info > summary {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(245, 124, 55);
 }
 
 .md-typeset .info > .admonition-title:before,
