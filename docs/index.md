@@ -24,7 +24,7 @@ Provides customizable solutions for specific pathfinding requirements in game de
 !!! Example "Comming soon"
     Estimated release: **January 2024**
 
-The Advanced Atmosphere Simulator stands as a sophisticated and powerful plugin for Unreal Engine, meticulously crafted to elevate the authenticity of environmental elements in game development.
+This plugin simulates game atmospheres, featuring a variety of gas types and atmospheric actors for enhanced environmental control.
 
 Epic Store [Documentation](https://carboniq-dev.github.io/site/aero-sim)
 
