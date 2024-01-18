@@ -49,6 +49,11 @@ div {
   padding: 3px;
 }
 
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary {
+  background-color: rgb(173, 49, 0) !important;
+}
+
 .md-typeset .info > .admonition-title,
 .md-typeset .info > summary {
   background-color: rgb(245, 124, 55);
