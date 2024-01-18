@@ -17,12 +17,12 @@ Provides customizable solutions for specific pathfinding requirements in game de
 ![Trail Blazer](./assets/images/trail-blazer/trail-blazer-cover.png){ width="500" }
 
 ## Aero Sim
-<!-- 
-!!! Danger "Review"
-    Epic Games is currently in the process of reviewing this plugin. -->
 
-!!! Example "Comming soon"
-    Estimated release: **January 2024**
+!!! Danger "Review"
+    Epic Games is currently in the process of reviewing this plugin.
+
+<!-- !!! Example "Comming soon"
+    Estimated release: **January 2024** -->
 
 This plugin simulates game atmospheres, featuring a variety of gas types and atmospheric actors for enhanced environmental control.
 
@@ -30,7 +30,7 @@ Epic Store [Documentation](https://carboniq-dev.github.io/site/aero-sim)
 
 ![Aero Sim](./assets/images/aero-sim/aero-sim-cover.png){ width="500" }
 
-## Flux Point
+<!-- ## Flux Point
 
 !!! Example "Comming soon"
     Estimated release: **January 2024**
@@ -39,4 +39,4 @@ Flux Point is a versatile plugin that effortlessly generates vectors for spawnin
 
 Epic Store | Documentation
 
-![Flux point](./assets/images/flux-point/cover.png){ width="500" }
+![Flux point](./assets/images/flux-point/cover.png){ width="500" } -->
