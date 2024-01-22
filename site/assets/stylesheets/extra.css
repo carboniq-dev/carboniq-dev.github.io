@@ -52,12 +52,13 @@ div {
 
 .md-typeset .info > .admonition-title,
 .md-typeset .info > summary {
-  background-color: rgb(245, 124, 55);
+  background-color: rgb(219, 219, 219);
+  color: rgb(66, 66, 66) !important;
 }
 
 .md-typeset .info > .admonition-title:before,
 .md-typeset .info > summary:before {
-  background-color: rgb(255, 255, 255) !important;
+  background-color: rgb(66, 66, 66) !important;
 }
 
 strong {
@@ -88,6 +89,10 @@ strong {
   font-weight: 600;
 }
 
+.admonition-title:before {
+  background-color: rgb(255, 255, 255) !important;
+}
+
 .md-typeset .tip > .admonition-title,
 .md-typeset .tip > summary {
   background-color: rgb(20, 20, 20);
@@ -97,21 +102,20 @@ strong {
   background-color: rgb(20, 20, 20);
 }
 
-.md-typeset .example > summary:before {
-  background-color: rgb(20, 20, 20);
-}
 
 .md-typeset .example > .admonition-title,
 .md-typeset .example > summary {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(219, 219, 219);
+  color: rgb(66, 66, 66) !important;
+}
+
+.md-typeset .example > .admonition-title:before,
+.md-typeset .example > summary:before {
+  background-color: rgb(66, 66, 66) !important;
 }
 
 .md-typeset .note>.admonition-title, .md-typeset .warning>.admonition-title, .md-typeset .note>summary {
   background-color: rgb(20, 20, 20);
-}
-
-.admonition-title:before {
-  background-color: rgb(255, 255, 255) !important;
 }
 
 .admonition-title {
