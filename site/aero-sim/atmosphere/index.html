@@ -892,20 +892,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../gases/" class="md-nav__link">
-        Gas Types
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../nodes/" class="md-nav__link">
         Nodes
       </a>
@@ -950,6 +936,20 @@
     <li class="md-nav__item">
       <a href="../visuals/" class="md-nav__link">
         Visuals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gases/" class="md-nav__link">
+        Gas Types
       </a>
     </li>
   
@@ -1039,27 +1039,27 @@
 <tr>
 <td>Calc Humidity</td>
 <td>Boolean</td>
-<td>Toggle to calculate humidity effects.</td>
+<td>Toggle to calculate humidity.</td>
 </tr>
 <tr>
 <td>Calc Pressure</td>
 <td>Boolean</td>
-<td>Toggle to calculate atmospheric pressure effects.</td>
+<td>Toggle to calculate atmospheric pressure.</td>
 </tr>
 <tr>
 <td>Calc Temperature</td>
 <td>Boolean</td>
-<td>Toggle to calculate temperature effects.</td>
+<td>Toggle to calculate temperature.</td>
 </tr>
 <tr>
 <td>Use Boiling Point</td>
 <td>Boolean</td>
-<td>Checks if the temperature at the center of the <strong>Gas Vent</strong> or <strong>Absorber</strong> is above the boiling point.</td>
+<td>Checks if the temperature at the center of the <strong>Gas Vent</strong> or <strong>Absorber</strong> is above the boiling point and only then emits or absorbs gas.</td>
 </tr>
 <tr>
 <td>Report On Location Changed</td>
 <td>Boolean</td>
-<td>Report changes when location is changed.</td>
+<td>Report changes only when location vector passed changes.</td>
 </tr>
 </tbody>
 </table>
@@ -1076,13 +1076,13 @@
 <tbody>
 <tr>
 <td>Base Gas Concentrations</td>
-<td>Map&lt;<strong><a href="https://carboniq-dev.github.io/site/aero-sim/gases/">GasType</a>, float</strong>&gt;</td>
-<td>Base concentrations for different gas types.</td>
+<td>Map&lt;<a href="https://carboniq-dev.github.io/site/aero-sim/gases">Gas Type</a>, float&gt;</td>
+<td>Base gas amount applied t the atmosphere.</td>
 </tr>
 <tr>
 <td>Gas Concentration Caps</td>
-<td>Map&lt;<strong><a href="https://carboniq-dev.github.io/site/aero-sim/gases/">GasType</a>, float</strong>&gt;</td>
-<td>Caps on concentrations for different gases.</td>
+<td>Map&lt;<a href="https://carboniq-dev.github.io/site/aero-sim/gases">Gas Type</a>, float&gt;</td>
+<td>Gas amount caps.</td>
 </tr>
 </tbody>
 </table>
@@ -1110,14 +1110,14 @@
 <td>If true, calculations regarding influence will be based on a cubic shape.</td>
 </tr>
 <tr>
-<td>Influence Radius</td>
+<td>Influence Extent</td>
 <td>Float</td>
-<td>This parameter defines the spatial extent of the atmospheric region, specifying the maximum distance from the central point or source within which atmospheric effects are applied.</td>
+<td>This parameter defines the spatial extent of the atmospheric region, specifying the maximum distance from the central point of the atmospheric.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="falloff">Falloff<a class="headerlink" href="#falloff" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="../../assets/images/aero-sim/atmosphere-falloff.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Falloff" src="../../assets/images/aero-sim/atmosphere-falloff.PNG" /></a></p>
+<p><a class="glightbox" href="../../assets/images/aero-sim/atmosphere-falloff.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Influence" src="../../assets/images/aero-sim/atmosphere-falloff.PNG" /></a></p>
 <table>
 <thead>
 <tr>
@@ -1129,27 +1129,27 @@
 <tbody>
 <tr>
 <td>Apply Atmospheric Boundary Falloff</td>
-<td>bool</td>
-<td>Activates the simulation of decreasing atmospheric effects as measurements approach the outer boundary of the atmosphere.</td>
+<td>Boolean</td>
+<td>Activates simulation of decreasing impact with increasing distance from the atmosphere's center.</td>
 </tr>
 <tr>
 <td>Gas Falloff Factor</td>
-<td>float</td>
-<td>Determines the rate at which gas concentrations decrease as measurements approach the outer boundary of the atmosphere. Higher values result in a sharper decrease.</td>
+<td>Float</td>
+<td>Determines the rate at which gas amount decreases as measurements approach the outer boundary of the atmosphere. Higher values result in a sharper decrease.</td>
 </tr>
 <tr>
 <td>Humidity Falloff Factor</td>
-<td>float</td>
+<td>Float</td>
 <td>Determines the rate at which humidity decreases as measurements approach the outer boundary of the atmosphere. Higher values result in a sharper decrease.</td>
 </tr>
 <tr>
 <td>Pressure Falloff Factor</td>
-<td>float</td>
+<td>Float</td>
 <td>Determines the rate at which the base pressure decreases as measurements approach the outer boundary of the atmosphere. Higher values result in a more pronounced decrease.</td>
 </tr>
 <tr>
 <td>Temperature Falloff Factor</td>
-<td>float</td>
+<td>Float</td>
 <td>Determines the rate at which temperature decreases as measurements approach the outer boundary of the atmosphere. Higher values result in a more pronounced decrease.</td>
 </tr>
 </tbody>
@@ -1195,7 +1195,12 @@
 <tr>
 <td>Humidity</td>
 <td>Float</td>
-<td>Planets average humidity. Maximum value caps at 100 (%).</td>
+<td>Planets average humidity.</td>
+</tr>
+<tr>
+<td>Humidity Effect On Gas Factor</td>
+<td>Float</td>
+<td>Determines how much humidity affects the gas concentration.</td>
 </tr>
 </tbody>
 </table>
@@ -1256,9 +1261,28 @@
 </tbody>
 </table>
 <h3 id="visuals">Visuals<a class="headerlink" href="#visuals" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="../../assets/images/aero-sim/atmosphere-visuals.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Visuals" src="../../assets/images/aero-sim/atmosphere-visuals.PNG" /></a></p>
-<p>| Show Bounds | Boolean | Determines whether to show the boundary area visually.|
-| Bounds Color | LinearColor | Color of the indicator for the boundary area.|</p>
+<p><a class="glightbox" href="../../assets/images/aero-sim/atmosphere-debug.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Debug" src="../../assets/images/aero-sim/atmosphere-debug.PNG" /></a></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Show Bounds</td>
+<td>Boolean</td>
+<td>Determines whether to show the boundary area visually.</td>
+</tr>
+<tr>
+<td>Bounds Color</td>
+<td>Linear Color</td>
+<td>Color of the bounds indicator.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="debug">Debug<a class="headerlink" href="#debug" title="Permanent link">&para;</a></h3>
 <p><a class="glightbox" href="../../assets/images/aero-sim/atmosphere-debug.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Debug" src="../../assets/images/aero-sim/atmosphere-debug.PNG" /></a></p>
 <table>

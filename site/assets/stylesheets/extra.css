@@ -2,14 +2,10 @@
   background-color: rgb(226, 226, 226);
 }
 
-/* .md-typeset .admonition {
-  max-width: 600px; /* <-- adjust to fit */
-} */
-
 p > a {
-  color: rgb(255, 156, 116) !important;
+  color: rgb(209, 115, 78) !important;
   font-weight: 600;
-  background-color: rgb(12, 12, 12);
+  /* background-color: rgb(12, 12, 12); */
   padding: 6px 10px;
 }
 

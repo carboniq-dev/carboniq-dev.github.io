@@ -762,20 +762,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../gases/" class="md-nav__link">
-        Gas Types
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../nodes/" class="md-nav__link">
         Nodes
       </a>
@@ -886,6 +872,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../gases/" class="md-nav__link">
+        Gas Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../epilogue/" class="md-nav__link">
         Epilog
       </a>
@@ -941,13 +941,13 @@
 <tbody>
 <tr>
 <td>Gases</td>
-<td>Map&lt;<strong>GasType, AtmosphericGas</strong>&gt;</td>
-<td>Holds the list of gas concetrations.</td>
+<td>Map<GasType, AtmosphericGas></td>
+<td>Holds the list of gases used.</td>
 </tr>
 <tr>
 <td>Is Toxic</td>
 <td>Boolean</td>
-<td>If true, at least on gas has a toxicity level above 0.</td>
+<td>If true, at least one gas has a toxicity level above 0.</td>
 </tr>
 <tr>
 <td>Humidity</td>
@@ -983,13 +983,18 @@
 </tr>
 <tr>
 <td>Config</td>
-<td><strong>Gas Config</strong></td>
+<td>Gas Config</td>
 <td>Gas properties.</td>
 </tr>
 <tr>
 <td>Molecular Weight</td>
 <td>Float</td>
-<td>Molecular weight of the gas. <mark class="critic">NOT used for calculations</mark></td>
+<td>Molecular weight of the gas.</td>
+</tr>
+<tr>
+<td>Density</td>
+<td>Float</td>
+<td>Density of the gas.</td>
 </tr>
 <tr>
 <td>Color</td>
@@ -1021,7 +1026,7 @@
 <tr>
 <td>Concentration</td>
 <td>Float</td>
-<td>The concentration level of the gas which will be emitted or absorbed.</td>
+<td>The concentration/level/amount of the gas. <mark class="critic">What this value represents in your game is up to you.</mark></td>
 </tr>
 <tr>
 <td>Gas Emission</td>
@@ -1031,17 +1036,17 @@
 <tr>
 <td>Gas Absorption</td>
 <td>Float</td>
-<td>The rate at which gas is absorbed. <mark class="critic">Ignored by Gas Vents</mark></td>
+<td>The rate at which gas is absorbed. <mark class="critic">Ignored by Vents</mark></td>
 </tr>
 <tr>
 <td>Max Gas Increase</td>
 <td>Float</td>
-<td>Maximum increase limit for gas concentration. <mark class="critic">Ignored by Absorber</mark></td>
+<td>Maximum increase limit for gas concentration. <mark class="critic">Ignored by Absorbers</mark></td>
 </tr>
 <tr>
 <td>Max Gas Decrease</td>
 <td>Float</td>
-<td>Maximum decrease limit for gas concentration. <mark class="critic">Ignored by Gas Vents</mark></td>
+<td>Maximum decrease limit for gas concentration. <mark class="critic">Ignored by Vents</mark></td>
 </tr>
 </tbody>
 </table>
