@@ -18,9 +18,6 @@ Provides customizable solutions for specific pathfinding requirements in game de
 
 ## Aero Sim
 
-!!! Danger "Review"
-    Epic Games is currently in the process of reviewing this plugin.
-
 This plugin simulates game atmospheres, featuring a variety of gas types and atmospheric actors for enhanced environmental control.
 
 Epic Store | [Documentation](https://carboniq-dev.github.io/site/aero-sim)
