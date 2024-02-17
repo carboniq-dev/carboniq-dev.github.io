@@ -58,9 +58,9 @@ nav:
      - Gas Types: ./aero-sim/gases.md
      - Epilog: ./aero-sim/epilogue.md
      - FAQ: ./aero-sim/faq.md
-  # - Flux Point:
-  #    - Introduction: ./flux-point/index.md
-  #    - Shapes: ./flux-point/index.md
+  - Flux Point:
+     - Introduction: ./flux-point/index.md
+     - Generators: ./flux-point/generators.md
 plugins:
   - search
   - glightbox

@@ -23,3 +23,15 @@ This plugin simulates game atmospheres, featuring a variety of gas types and atm
 [Epic Store](https://www.unrealengine.com/marketplace/en-US/product/aero-sim){:target="_blank"}| [Trailer](https://www.youtube.com/watch?v=Eusi11w4dRo){:target="_blank"} | [Documentation](https://carboniq-dev.github.io/site/aero-sim)
 
 ![Aero Sim](./assets/images/aero-sim/aero-sim-cover.png){ width="500" }
+
+
+## Flux Point
+
+!!! Danger "Review"
+    This Plugin is currently being reviewed by Epic
+
+This plugin is a ShapeGen toolkit for Unreal Engine, offering 18 meticulously crafted functions for effortlessly generating vectors across various 2D and 3D shapes.
+
+Epic Store | [Documentation](https://carboniq-dev.github.io/site/flux-point)
+
+![Flux Point](./assets/images/flux-point/cover.png){ width="500" }

@@ -9,5 +9,3 @@ The plugin's **Central Grid** actor simplifies snapping management by exposing i
 The visuals provide a clear and intuitive visual representation of the snapping system, simplifying the process for developers.
 
 **In summary**, SnapCentral is a useful tool for developers looking to implement a grid snapping system at runtime in their Unreal Engine 5 games. With its straightforward function and optimized performance, the plugin simplifies snapping management with no computational overhead.
-
-You can purchase the [plugin on the Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/en-US/product/snap-central)
