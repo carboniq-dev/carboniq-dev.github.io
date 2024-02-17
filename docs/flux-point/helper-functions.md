@@ -8,6 +8,6 @@
 
 ![World Space](../assets/images/flux-point/world-space.png){ width="200" }
 
-## Rotates a set of vectors
+## Helper function to rotate around specific axes
 
 ![Update Rotation](../assets/images/flux-point/update-rotation.png){ width="200" }
