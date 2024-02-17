@@ -6,6 +6,8 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 
 ### Line
 
+![Line](../assets/images/flux-point/2d/line.png){ width="300" }
+
 | Property    | Type     | Description              |
 | ----------- | -------- | ------------------------ |
 | BaseCenter  | FVector  | Center of the line.      |
@@ -15,14 +17,21 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 
 ### Circle
 
-| Property    | Type     | Description              |
-| ----------- | -------- | ------------------------ |
-| BaseCenter  | FVector  | Center of the line.      |
-| Rotation    | FRotator | Rotation of the line.    |
-| Space       | float    | Spacing between points.  |
-| NumPoints   | int      | Number of points.        |
+![Circle](../assets/images/flux-point/2d/circle.png){ width="300" }
+
+| Property          | Type    | Description                           |
+| ----------------- | ------- | ------------------------------------- |
+| BaseCenter        | FVector | Center of the circle.                 |
+| Rotation          | FRotator| Rotation of the circle.               |
+| Radius            | float   | Radius of the circle.                 |
+| NumPointsEdge     | int     | Number of points on the edge.         |
+| Fill             | bool    | Whether to fill the circle.           |
+| CircleCounts      | int     | Number of circles to generate.        |
+| bAddCenterPoint   | bool    | Whether to add a center point.        |
 
 ### Heart
+
+![Heart](../assets/images/flux-point/2d/heart.png){ width="300" }
 
 | Property    | Type     | Description              |
 | ----------- | -------- | ------------------------ |
@@ -32,16 +41,20 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 
 ### Pentagon
 
+![Pentagon](../assets/images/flux-point/2d/pentagon.png){ width="300" }
+
 | Property          | Type    | Description                           |
 | ----------------- | ------- | ------------------------------------- |
 | BaseCenter        | FVector | Center of the pentagon.               |
 | Rotation          | FRotator| Rotation of the pentagon.             |
 | Radius            | float   | Radius of the pentagon.               |
 | NumEdgePoints     | int     | Number of points on the edge.         |
-| bFill             | bool    | Whether to fill the pentagon.         |
+| Fill             | bool    | Whether to fill the pentagon.         |
 | NumFacePoints     | int     | Number of points on the face.         |
 
 ### Rectangle
+
+![Rectangle](../assets/images/flux-point/2d/rectangle.png){ width="300" }
 
 | Property          | Type    | Description                           |
 | ----------------- | ------- | ------------------------------------- |
@@ -51,9 +64,11 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 | Height            | float   | Height of the rectangle.              |
 | NumWidthPoints    | int     | Number of points along the width.     |
 | NumHeightPoints   | int     | Number of points along the height.    |
-| bFill             | bool    | Whether to fill the rectangle.        |
+| Fill             | bool    | Whether to fill the rectangle.        |
 
 ### Sine Wave
+
+![Sine Wave](../assets/images/flux-point/2d/sine-wave.png){ width="300" }
 
 | Property    | Type     | Description              |
 | ----------- | -------- | ------------------------ |
@@ -65,6 +80,8 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 | NumPoints   | int      | Number of points.        |
 
 ### Growing Sine Wave
+
+![Growing Sine Wave](../assets/images/flux-point/2d/growing-sine-wave.png){ width="300" }
 
 | Property       | Type     | Description                     |
 | -------------- | -------- | ------------------------------- |
@@ -78,6 +95,8 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 
 ### Triangle
 
+![Triangle](../assets/images/flux-point/2d/triangle.png){ width="300" }
+
 | Property       | Type     | Description                |
 | -------------- | -------- | -------------------------- |
 | BaseCenter     | FVector  | Center of the triangle.    |
@@ -86,6 +105,8 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 | NumFacePoints  | int      | Number of points.          |
 
 ### Yin Yang
+
+![Yin Yang](../assets/images/flux-point/2d/yin-yang.png){ width="300" }
 
 | Property           | Type     | Description                     |
 | ------------------ | -------- | ------------------------------- |
@@ -100,6 +121,8 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 
 ### Cone
 
+![Cone](../assets/images/flux-point/3d/cone.png){ width="300" }
+
 | Property      | Type     | Description               |
 | ------------- | -------- | ------------------------- |
 | BaseCenter    | FVector  | Center of the cone.       |
@@ -111,6 +134,8 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 | bAddBottom    | bool     | Whether to add the bottom.|
 
 ### Cylinder
+
+![Cylinder](../assets/images/flux-point/3d/cylinder.png){ width="300" }
 
 | Property           | Type     | Description                      |
 | ------------------ | -------- | --------------------------------|
@@ -126,6 +151,8 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 
 ### Helix
 
+![Helix](../assets/images/flux-point/3d/helix.png){ width="300" }
+
 | Property         | Type     | Description                |
 | ---------------- | -------- | -------------------------- |
 | BaseCenter       | FVector  | Center of the helix.       |
@@ -137,6 +164,8 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 
 ### Pyramid
 
+![Pyramid](../assets/images/flux-point/3d/pyramid.png){ width="300" }
+
 | Property       | Type     | Description                |
 | -------------- | -------- | -------------------------- |
 | BaseCenter     | FVector  | Center of the pyramid.     |
@@ -146,7 +175,9 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 | NumFacePoints  | int      | Number of face points.     |
 | bAddBottom     | bool     | Whether to add the bottom. |
 
-### RectanglePrism
+### Rectangle Prism
+
+![Rectangle Prism](../assets/images/flux-point/3d/rectangle-prism.png){ width="300" }
 
 | Property        | Type     | Description                           |
 | --------------- | -------- | ------------------------------------- |
@@ -158,9 +189,11 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 | NumWidthPoints  | int      | Number of points along the width.     |
 | NumHeightPoints | int      | Number of points along the height.    |
 | NumDepthPoints  | int      | Number of points along the depth.     |
-| bFill           | bool     | Whether to fill the rectangular prism.|
+| Fill           | bool     | Whether to fill the rectangular prism.|
 
 ### Sphere
+
+![Sphere](../assets/images/flux-point/3d/sphere.png){ width="300" }
 
 | Property    | Type     | Description               |
 | ----------- | -------- | -------------------------|
@@ -170,6 +203,8 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 | NumPoints   | int      | Number of points.        |
 
 ### Growing Spiral
+
+![Growing Spiral](../assets/images/flux-point/3d/growing-spiral.png){ width="300" }
 
 | Property        | Type     | Description                     |
 | --------------- | -------- | -------------------------------|
@@ -183,6 +218,8 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 
 ### Torus
 
+![Torus](../assets/images/flux-point/3d/torus.png){ width="300" }
+
 | Property          | Type     | Description                       |
 | ----------------- | -------- | --------------------------------- |
 | BaseCenter        | FVector  | Center of the torus.              |
@@ -194,11 +231,11 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 
 ### Trefoil Knot
 
+![Trefoil Knot](../assets/images/flux-point/3d/trefoil-knot.png){ width="300" }
+
 | Property    | Type     | Description              |
 | ----------- | -------- | ------------------------|
 | BaseCenter  | FVector  | Center of the knot.      |
 | Rotation    | FRotator | Rotation of the knot.    |
 | Size        | float    | Size of the knot.        |
 | NumPoints   | int      | Number of points.        |
-
-
