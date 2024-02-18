@@ -1,6 +1,6 @@
 # Generators
 
-The subsequent functions produce a diverse range of 2D and 3D shapes.
+The subsequent functions produce a diverse range of 2D and 3D shapes. Each generator yields a set of vectors that collectively define the respective shape.
 
 ## 2D
 
@@ -25,7 +25,7 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 | Rotation          | FRotator| Rotation of the circle.               |
 | Radius            | float   | Radius of the circle.                 |
 | NumPointsEdge     | int     | Number of points on the edge.         |
-| Fill             | bool    | Whether to fill the circle.           |
+| Fill              | bool    | Whether to fill the circle.           |
 | CircleCounts      | int     | Number of circles to generate.        |
 | bAddCenterPoint   | bool    | Whether to add a center point.        |
 
@@ -64,7 +64,7 @@ The subsequent functions produce a diverse range of 2D and 3D shapes.
 | Height            | float   | Height of the rectangle.              |
 | NumWidthPoints    | int     | Number of points along the width.     |
 | NumHeightPoints   | int     | Number of points along the height.    |
-| Fill             | bool    | Whether to fill the rectangle.        |
+| Fill              | bool    | Whether to fill the rectangle.        |
 
 ### Sine Wave
 
