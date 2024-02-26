@@ -29,6 +29,6 @@ This plugin simulates game atmospheres, featuring a variety of gas types and atm
 
 This plugin is a ShapeGen toolkit for Unreal Engine, offering 18 meticulously crafted functions for effortlessly generating vectors across various 2D and 3D shapes.
 
-[Epic Store](https://www.unrealengine.com/marketplace/en-US/product/flux-point) | [Documentation](https://carboniq-dev.github.io/site/flux-point)
+[Epic Store](https://www.unrealengine.com/marketplace/en-US/product/flux-point){:target="_blank"} | [Documentation](https://carboniq-dev.github.io/site/flux-point)
 
 ![Flux Point](./assets/images/flux-point/cover.png){ width="500" }
