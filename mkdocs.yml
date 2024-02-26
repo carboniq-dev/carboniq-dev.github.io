@@ -62,6 +62,7 @@ nav:
      - Introduction: ./flux-point/index.md
      - Generators: ./flux-point/generators.md
      - Helper Functions: ./flux-point/helper-functions.md
+     - Examples: ./flux-point/examples.md
 plugins:
   - search
   - glightbox
